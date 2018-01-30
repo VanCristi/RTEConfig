@@ -134,33 +134,6 @@ def main():
     open(output_path + '/result.log', 'w').close()
 
     retrieve_data(input_path, logger)
-    # create_list(input_path, output_path, logger)
-
-    # lst = LinkedList()
-    # lst.add("run1")
-    # #lst.insert_before("run1", "run3")
-    # lst.insert_after("run2", "run1")
-    # lst.insert_after("run3", "run2")
-    # lst.insert_before("run4", "run2")
-    # lst.insert_after("run4", "run3")
-    # lst.insert_before("run5", "run3")
-    # #print(lst.printList())
-    # #lst.insert_before(1, 2)
-    # #lst.insert_after(5, 3)
-    # #print(lst.printList())
-    # print(lst.length())
-    #
-    # current = lst.head
-    # while current is not None:
-    #     print(current, current.value)#, "=>", str(current.reference.value))
-    #     current = current.reference
-    # current = lst.head
-    # for i in range(lst.length()):
-    #     if lst.count(current.value) > 1:
-    #         print("cycle identified")
-    #         break
-    #     #print(lst.count(current.value), current.value)
-    #     current = current.reference
 
 
 def arg_parse(parser):
