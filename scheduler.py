@@ -306,6 +306,7 @@ def retrieve_data(input_path, logger):
         current = current.reference
 
 
+
 def create_list(input_path, output_path, logger):
     current_path = os.path.realpath(__file__)
     head, tail = ntpath.split(current_path)
