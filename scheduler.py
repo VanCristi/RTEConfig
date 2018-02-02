@@ -1,6 +1,8 @@
-import argparse, os, logging, ntpath
-import xml.etree.ElementTree as ET
-# from xml.dom import minidom
+import argparse, os, logging, ntpath, scipy
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import *
+from collections import defaultdict
+from numpy import *
 from xml.sax.handler import ContentHandler
 from xml.sax import make_parser
 from lxml import etree
@@ -109,7 +111,7 @@ class LinkedList:
         prev = None
         current = self.head
         while current:
-            if current.getData == value:
+            if current.getData() == value:
                 if prev:
                     prev.setNext(current.getNext())
                 else:
@@ -119,6 +121,55 @@ class LinkedList:
             current = current.getNext()
         return False
 
+    def find_node(self, value):
+        current = self.head
+        while current:
+            item = current.getData()
+            temp = item['EVENT']
+            if item['EVENT'] in value:
+                return item
+            current = current.getNext()
+        return False
+
+# https://www.geeksforgeeks.org/topological-sorting/
+class Graph:
+    def __init__(self, vertices):
+        self.graph = defaultdict(list)  # dictionary containing adjacency List
+        self.V = vertices  # No. of vertices
+
+    # function to add an edge to graph
+    def add_edge(self, u, v):
+        self.graph[u].append(v)
+
+    # A recursive function used by topologicalSort
+    def topological_sort_util(self, v, visited, stack):
+
+        # Mark the current node as visited.
+        visited[v] = True
+
+        # Recur for all the vertices adjacent to this vertex
+        for i in self.graph[v]:
+            if visited[i] is False:
+                self.topological_sort_util(i, visited, stack)
+
+        # Push current vertex to stack which stores result
+        stack.insert(0, v)
+
+    # The function to do Topological Sort. It uses recursive
+    # topologicalSortUtil()
+    def topological_sort(self):
+        # Mark all the vertices as not visited
+        visited = [False] * self.V
+        stack = []
+
+        # Call the recursive helper function to store Topological
+        # Sort starting from all vertices one by one
+        for i in range(self.V):
+            if visited[i] is False:
+                self.topological_sort_util(i, visited, stack)
+
+        # return contents of stack
+        return stack
 
 def main():
     # parsing the command line arguments
@@ -325,42 +376,66 @@ def create_list(input_path, output_path, logger):
                     obj_event['AFTER-EVENT'] = after_list
                     obj_event['BEFORE-EVENT'] = before_list
                     events.append(obj_event)
-    priority = []
     for elem in events:
-        task = elem['EVENT']
-        count = 0
-        structure = {}
-        for element in events:
-            if task in element['AFTER-EVENT']:
-                count = count + 1
-            if task in element['BEFORE-EVENT']:
-                count = count - 1
-        structure['EVENT'] = task
-        structure['PRIORITY'] = count
-        if elem['DURATION'] is not None:
-            structure['DURATION'] = elem['DURATION']
-        if elem['AFTER-EVENT'] is not None:
-            structure['AFTER-EVENT'] = elem['AFTER-EVENT']
-        if elem['BEFORE-EVENT'] is not None:
-            structure['BEFORE-EVENT'] = elem['BEFORE-EVENT']
-        priority.append(structure)
-    sorted_list = sorted(priority, key=lambda k: k['PRIORITY'], reverse=True)
-    event_list = LinkedList()
-    for elem in sorted_list:
-        event_list.add(elem)
-    current = event_list.head
-    while current is not None:
-        print(current, current.value)
-        current = current.reference
-    for elem in event_list:
-        temp = elem['BEFORE-EVENT']
-        if temp:
-            event_list.remove_node(elem)
-            event_list.insert_before(elem, elem['BEFORE-EVENT'])
-    current = event_list.head
-    while current is not None:
-        print(current, current.value)
-        current = current.reference
+        print(elem)
+    g = Graph(len(events))
+    for elem in events:
+        if elem['AFTER-EVENT']:
+            i = events.index(elem)
+            j = 0
+            temp = elem['AFTER-EVENT']
+            for t in temp:
+                for element in events:
+                    if element['EVENT'] == t:
+                        j = events.index(element)
+                g.add_edge(j, i)
+        if elem['BEFORE-EVENT']:
+            i = events.index(elem)
+            j = 0
+            temp = elem['BEFORE-EVENT']
+            for t in temp:
+                for element in events:
+                    if element['EVENT'] == t:
+                        j = events.index(element)
+                g.add_edge(i, j)
+    sequence = g.topological_sort()
+    print(sequence)
+    # priority = []
+    # for elem in events:
+    #     task = elem['EVENT']
+    #     count = 0
+    #     structure = {}
+    #     for element in events:
+    #         if task in element['AFTER-EVENT']:
+    #             count = count + 1.1
+    #         if task in element['BEFORE-EVENT']:
+    #             count = count - 1
+    #     structure['EVENT'] = task
+    #     structure['PRIORITY'] = count
+    #     if elem['DURATION'] is not None:
+    #         structure['DURATION'] = elem['DURATION']
+    #     if elem['AFTER-EVENT'] is not None:
+    #         structure['AFTER-EVENT'] = elem['AFTER-EVENT']
+    #     if elem['BEFORE-EVENT'] is not None:
+    #         structure['BEFORE-EVENT'] = elem['BEFORE-EVENT']
+    #     priority.append(structure)
+    # sorted_list = sorted(priority, key=lambda k: k['PRIORITY'], reverse=True)
+    # event_list = LinkedList()
+    # for elem in sorted_list:
+    #     event_list.add(elem)
+    # #current = event_list.head
+    # #while current is not None:
+    # #    print(current, current.value)
+    # #    current = current.reference
+    # for elem in event_list:
+    #     temp = elem['BEFORE-EVENT']
+    #     if temp:
+    #         event_list.remove_node(elem)
+    #         event_list.insert_before(elem, event_list.find_node(elem['BEFORE-EVENT']))
+    # current = event_list.head
+    # while current is not None:
+    #     print(current, current.value)
+    #     current = current.reference
 
 
 
