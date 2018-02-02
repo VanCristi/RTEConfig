@@ -57,14 +57,6 @@ class LinkedList:
                 current = current.reference
             current.reference = Node(newvalue)
 
-    def printList(self):
-        current = self.head
-        i = ""
-        while current.getNext() is not None:
-            i = i + "-" + str(current.getData())
-            current = current.getNext()
-        i = i + "-" + str(current.getData)
-        return i
 
     def insert_before(self, item, element):  # insert item before element
         current = self.head
@@ -113,6 +105,20 @@ class LinkedList:
                 count_sum += 1
         return count_sum
 
+    def remove_node(self, value):
+        prev = None
+        current = self.head
+        while current:
+            if current.getData == value:
+                if prev:
+                    prev.setNext(current.getNext())
+                else:
+                    self.head = current.getNext()
+                return True
+            prev = current
+            current = current.getNext()
+        return False
+
 
 def main():
     # parsing the command line arguments
@@ -133,7 +139,8 @@ def main():
     logger.setLevel(logging.INFO)
     open(output_path + '/result.log', 'w').close()
 
-    retrieve_data(input_path, logger)
+    #retrieve_data(input_path, logger)
+    create_list(input_path, output_path, logger)
 
 
 def arg_parse(parser):
@@ -184,7 +191,7 @@ def retrieve_data(input_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "PER"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = ""
                     obj_event['BEFORE-EVENT'] = ""
                     obj_event['AFTER-EVENT'] = ""
                     obj_event['CORE'] = ""
@@ -212,7 +219,7 @@ def retrieve_data(input_path, logger):
                     if element.find('DURATION') is not None:
                         obj_event['DURATION'] = element.find('DURATION').text
                     else:
-                        obj_event['DURATION'] = "1"
+                        obj_event['DURATION'] = "1µs"
                     if element.find('AFTER-EVENT-REF') is not None:
                         obj_event['AFTER-EVENT'] = element.find('AFTER-EVENT-REF').text
                     else:
@@ -297,60 +304,64 @@ def create_list(input_path, output_path, logger):
                     logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                     return
                 validate_xml_with_xsd(path, fullname, logger)
-                tree = ET.parse(fullname)
+                tree = etree.parse(fullname)
                 root = tree.getroot()
                 event = root.findall(".//EVENT")
                 for element in event:
                     obj_event = {}
-                    obj_event['EVENT'] = element.find('EVENT-REF').text
-                    if element.find('DURATION') is not None:
-                        obj_event['DURATION'] = element.find('DURATION').text
-                    else:
-                        obj_event['DURATION'] = "1"
-                    if element.find('AFTER-EVENT-REF') is not None:
-                        obj_event['AFTER-EVENT'] = element.find('AFTER-EVENT-REF').text
-                    else:
-                        obj_event['AFTER-EVENT'] = ""
-                    if element.find('BEFORE-EVENT-REF') is not None:
-                        obj_event['BEFORE-EVENT'] = element.find('BEFORE-EVENT-REF').text
-                    else:
-                        obj_event['BEFORE-EVENT'] = ""
+                    after_list = []
+                    before_list = []
+                    duration = "1µs"
+                    for child in element.iterchildren():
+                        if child.tag == 'EVENT-REF':
+                            obj_event['EVENT'] = child.text
+                        if child.tag == 'DURATION':
+                            duration = child.text
+                        if child.tag == 'AFTER-EVENT-REF':
+                            after_list.append(child.text)
+                        if child.tag == 'BEFORE-EVENT-REF':
+                            before_list.append(child.text)
+                    obj_event['DURATION'] = duration
+                    obj_event['AFTER-EVENT'] = after_list
+                    obj_event['BEFORE-EVENT'] = before_list
                     events.append(obj_event)
-    # for elem in events:
-    #     print(elem['EVENT'], elem['DURATION'], elem['AFTER-EVENT'])
-    event_list = LinkedList()
+    priority = []
     for elem in events:
-        added = False
-        if elem['AFTER-EVENT'] != "":
-            if elem['AFTER-EVENT'] in event_list:
-                event_list.insert_after(elem['EVENT'], elem['AFTER-EVENT'])
-            else:
-                print("cannot create dependence AFTER(" + elem['AFTER-EVENT'] + ": not present for " + elem['EVENT'])
-                event_list.add(elem['EVENT'])
-                added = True
-        if elem['BEFORE-EVENT'] != "":
-            if elem['BEFORE-EVENT'] in event_list:
-                event_list.insert_before(elem['EVENT'], elem['BEFORE-EVENT'])
-            elif added is False:
-                print("cannot create dependence BEFORE(" + elem['BEFORE-EVENT'] + ": not present for " + elem['EVENT'])
-                event_list.add(elem['EVENT'])
-                added = True
-            else:
-                print("cannot create dependence BEFORE(" + elem['BEFORE-EVENT'] + ": not present for " + elem['EVENT'])
-                added = True
-        if added is False:
-            if elem['AFTER-EVENT'] == "" and elem['BEFORE-EVENT'] == "":
-                event_list.add(elem['EVENT'])
+        task = elem['EVENT']
+        count = 0
+        structure = {}
+        for element in events:
+            if task in element['AFTER-EVENT']:
+                count = count + 1
+            if task in element['BEFORE-EVENT']:
+                count = count - 1
+        structure['EVENT'] = task
+        structure['PRIORITY'] = count
+        if elem['DURATION'] is not None:
+            structure['DURATION'] = elem['DURATION']
+        if elem['AFTER-EVENT'] is not None:
+            structure['AFTER-EVENT'] = elem['AFTER-EVENT']
+        if elem['BEFORE-EVENT'] is not None:
+            structure['BEFORE-EVENT'] = elem['BEFORE-EVENT']
+        priority.append(structure)
+    sorted_list = sorted(priority, key=lambda k: k['PRIORITY'], reverse=True)
+    event_list = LinkedList()
+    for elem in sorted_list:
+        event_list.add(elem)
     current = event_list.head
     while current is not None:
         print(current, current.value)
         current = current.reference
+    for elem in event_list:
+        temp = elem['BEFORE-EVENT']
+        if temp:
+            event_list.remove_node(elem)
+            event_list.insert_before(elem, elem['BEFORE-EVENT'])
     current = event_list.head
-    for i in range(event_list.length()):
-        if event_list.count(current.value) > 1:
-            print("cycle identified")
-            break
+    while current is not None:
+        print(current, current.value)
         current = current.reference
+
 
 
 def validate_xml_with_xsd(path_xsd, path_xml, logger):
