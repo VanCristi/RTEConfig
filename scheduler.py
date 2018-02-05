@@ -1,8 +1,5 @@
-import argparse, os, logging, ntpath, scipy
-from scipy.sparse import csr_matrix
-from scipy.sparse.csgraph import *
+import argparse, os, logging, ntpath
 from collections import defaultdict
-from numpy import *
 from xml.sax.handler import ContentHandler
 from xml.sax import make_parser
 from lxml import etree
@@ -131,7 +128,9 @@ class LinkedList:
             current = current.getNext()
         return False
 
+
 # https://www.geeksforgeeks.org/topological-sorting/
+# https://www.geeksforgeeks.org/detect-cycle-in-a-graph/
 class Graph:
     def __init__(self, vertices):
         self.graph = defaultdict(list)  # dictionary containing adjacency List
@@ -155,21 +154,46 @@ class Graph:
         # Push current vertex to stack which stores result
         stack.insert(0, v)
 
-    # The function to do Topological Sort. It uses recursive
-    # topologicalSortUtil()
+    # The function to do Topological Sort. It uses recursive topologicalSortUtil()
     def topological_sort(self):
         # Mark all the vertices as not visited
         visited = [False] * self.V
         stack = []
 
-        # Call the recursive helper function to store Topological
-        # Sort starting from all vertices one by one
+        # Call the recursive helper function to store Topological Sort starting from all vertices one by one
         for i in range(self.V):
             if visited[i] is False:
                 self.topological_sort_util(i, visited, stack)
 
         # return contents of stack
         return stack
+
+    def is_cyclic_util(self, v, visited, recStack):
+
+        # Mark current node as visited and adds to recursion stack
+        visited[v] = True
+        recStack[v] = True
+
+        # Recur for all neighbours; if any neighbour is visited and in recStack then graph is cyclic
+        for neighbour in self.graph[v]:
+            if visited[neighbour] is False:
+                if self.is_cyclic_util(neighbour, visited, recStack) is True:
+                    return True
+            elif recStack[neighbour] is True:
+                return True
+
+        # The node needs to be poped from recursion stack before function ends
+        recStack[v] = False
+        return False
+
+    def is_cyclic(self):
+        visited = [False] * self.V
+        recStack = [False] * self.V
+        for node in range(self.V):
+            if visited[node] is False:
+                if self.is_cyclic_util(node, visited, recStack) is True:
+                    return True
+        return False
 
 def main():
     # parsing the command line arguments
@@ -337,7 +361,6 @@ def retrieve_data(input_path, logger):
         current = current.reference
 
 
-
 def create_list(input_path, output_path, logger):
     current_path = os.path.realpath(__file__)
     head, tail = ntpath.split(current_path)
@@ -398,45 +421,16 @@ def create_list(input_path, output_path, logger):
                     if element['EVENT'] == t:
                         j = events.index(element)
                 g.add_edge(i, j)
+    if g.is_cyclic():
+        print("there is a cycle")
+    else:
+        print("there is no cycle")
     sequence = g.topological_sort()
     print(sequence)
-    # priority = []
-    # for elem in events:
-    #     task = elem['EVENT']
-    #     count = 0
-    #     structure = {}
-    #     for element in events:
-    #         if task in element['AFTER-EVENT']:
-    #             count = count + 1.1
-    #         if task in element['BEFORE-EVENT']:
-    #             count = count - 1
-    #     structure['EVENT'] = task
-    #     structure['PRIORITY'] = count
-    #     if elem['DURATION'] is not None:
-    #         structure['DURATION'] = elem['DURATION']
-    #     if elem['AFTER-EVENT'] is not None:
-    #         structure['AFTER-EVENT'] = elem['AFTER-EVENT']
-    #     if elem['BEFORE-EVENT'] is not None:
-    #         structure['BEFORE-EVENT'] = elem['BEFORE-EVENT']
-    #     priority.append(structure)
-    # sorted_list = sorted(priority, key=lambda k: k['PRIORITY'], reverse=True)
-    # event_list = LinkedList()
-    # for elem in sorted_list:
-    #     event_list.add(elem)
-    # #current = event_list.head
-    # #while current is not None:
-    # #    print(current, current.value)
-    # #    current = current.reference
-    # for elem in event_list:
-    #     temp = elem['BEFORE-EVENT']
-    #     if temp:
-    #         event_list.remove_node(elem)
-    #         event_list.insert_before(elem, event_list.find_node(elem['BEFORE-EVENT']))
-    # current = event_list.head
-    # while current is not None:
-    #     print(current, current.value)
-    #     current = current.reference
-
+    for index in range(len(sequence)):
+        for elem in range(len(event)):
+            if sequence[index] == elem:
+                print(events[elem])
 
 
 def validate_xml_with_xsd(path_xsd, path_xml, logger):
