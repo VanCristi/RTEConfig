@@ -552,9 +552,11 @@ def create_list(input_path, output_path, logger):
                         return
                     else:
                         obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
-                except Exception:
-                    logger.error('CORE or ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'])
+                except Exception as e:
+                    logger.error('CORE or ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
                     return
+                obj_event['AFTER-EVENT'] = events_aswc[elem]['AFTER-EVENT']
+                obj_event['BEFORE-EVENT'] = events_aswc[elem]['BEFORE-EVENT']
                 events.append(obj_event)
     # setting the PositionInTask parameter
     tasks = []
