@@ -2,8 +2,11 @@ import argparse
 import logging
 import ntpath
 import os
+import xml.etree.ElementTree as ET
 from collections import defaultdict
+from decimal import Decimal
 from lxml import etree
+from xml.dom import minidom
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 
@@ -216,8 +219,9 @@ def main():
     logger.addHandler(hdlr)
     logger.setLevel(logging.INFO)
     open(output_path + '/result.log', 'w').close()
-
-    create_list(input_path, output_path, logger)
+    events = []
+    create_list(input_path, events, logger)
+    create_script(events, output_path, logger)
 
 
 def arg_parse(parser):
@@ -228,7 +232,7 @@ def arg_parse(parser):
     parser.add_argument("output_path", help="folder which will contain the output files")
 
 
-def create_list(input_path, output_path, logger):
+def create_list(input_path, events, logger):
     current_path = os.path.realpath(__file__)
     head, tail = ntpath.split(current_path)
     xsd_path = head + '/AUTOSAR_4-2-2_STRICT.xsd'
@@ -236,7 +240,6 @@ def create_list(input_path, output_path, logger):
     events_rte = []
     events_aswc = []
     swc_allocation = []
-    events = []
     for directory, directories, files in os.walk(input_path):
         for file in files:
             if file.endswith('.arxml'):
@@ -255,13 +258,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 be_event = root.findall(".//{http://autosar.org/schema/r4.0}BACKGROUND-EVENT")
@@ -269,13 +274,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 dree_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVE-ERROR-EVENT")
@@ -283,13 +290,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 dre_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVED-EVENT")
@@ -297,13 +306,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 dsce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-SEND-COMPLETED-EVENT")
@@ -311,13 +322,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 dwce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-WRITE-COMPLETED-EVENT")
@@ -325,13 +338,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 etoe_event = root.findall(".//{http://autosar.org/schema/r4.0}EXTERNAL-TRIGGER-OCCURRED-EVENT")
@@ -339,13 +354,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 ie_event = root.findall(".//{http://autosar.org/schema/r4.0}INIT-EVENT")
@@ -353,13 +370,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 itoe_event = root.findall(".//{http://autosar.org/schema/r4.0}INTERNAL-TRIGGER-OCCURRED-EVENT")
@@ -367,13 +386,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 msae_event = root.findall(".//{http://autosar.org/schema/r4.0}MODE-SWITCHED-ACK-EVENT")
@@ -381,13 +402,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 oie_event = root.findall(".//{http://autosar.org/schema/r4.0}OPERATION-INVOKED-EVENT")
@@ -395,13 +418,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 smmee_event = root.findall(".//{http://autosar.org/schema/r4.0}SWC-MODE-MANAGER-ERROR-EVENT")
@@ -409,13 +434,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 smse_event = root.findall(".//{http://autosar.org/schema/r4.0}INTERNAL-TRIGGER-OCCURRED-EVENT")
@@ -423,13 +450,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 te_event = root.findall(".//{http://autosar.org/schema/r4.0}TIMING-EVENT")
@@ -437,13 +466,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "PER"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
                 thee_event = root.findall(".//{http://autosar.org/schema/r4.0}TRANSFORMER-HARD-ERROR-EVENT")
@@ -451,13 +482,15 @@ def create_list(input_path, output_path, logger):
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
-                    obj_event['DURATION'] = "1µs"
+                    obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
                     obj_event['CORE'] = ""
                     obj_event['ASIL'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
             if file.endswith('.xml'):
@@ -554,6 +587,7 @@ def create_list(input_path, output_path, logger):
                 except Exception as e:
                     logger.error('CORE or ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
                     return
+                obj_event['PERIOD'] = events_aswc[elem]['PERIOD']
                 obj_event['DURATION'] = events_aswc[elem]['DURATION']
                 obj_event['AFTER-EVENT'] = events_aswc[elem]['AFTER-EVENT']
                 obj_event['BEFORE-EVENT'] = events_aswc[elem]['BEFORE-EVENT']
@@ -569,10 +603,42 @@ def create_list(input_path, output_path, logger):
             if elem['MAPPED-TO-TASK'] == task:
                 elem['POSITION-IN-TASK'] = count
                 count = count + 1
+    # setting the RteActivationOffset parameter
+    offset = 0
+    for elem in events:
+        elem['ACTIVATION-OFFSET'] = offset
+        offset = offset + float(Decimal(elem['DURATION']))
+
     for elem in events:
         print(elem)
-    # for elem in tasks:
-    #     print(elem)
+
+
+def create_script(events, output_path, logger):
+    root_script = ET.Element('Script')
+    root_script.set('xsi:noNamespaceSchemaLocation', "Scriptor.xsd")
+    root_script.set('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance")
+    name = ET.SubElement(root_script, 'Name').text = "Test"
+    decription = ET.SubElement(root_script, 'Decription').text = "Doing something..."
+    expression = ET.SubElement(root_script, 'Expression')
+    operations_global = ET.SubElement(root_script, 'Operations')
+    for event in events:
+        operation = ET.SubElement(operations_global, 'Operation')
+        operation.set('Type', "SetValue")
+        expression_global = ET.SubElement(operation, 'Expression').text = event['EVENT']
+        operations = ET.SubElement(operation, 'Operations')
+        operation_offset = ET.SubElement(operations, 'Operation')
+        operation_offset.set('Type', "SetValue")
+        expression_offset = ET.SubElement(operation_offset, 'Expression').text = str(event['ACTIVATION-OFFSET'])
+        operation_position = ET.SubElement(operations, 'Operation')
+        operation_position.set('Type', "SetValue")
+        expression_position = ET.SubElement(operation_position, 'Expression').text = str(event['POSITION-IN-TASK'])
+        operation_task = ET.SubElement(operations, 'Operation')
+        operation_task.set('Type', "SetValue")
+        expression_task = ET.SubElement(operation_task, 'Expression').text = str(event['MAPPED-TO-TASK'])
+
+    pretty_xml = prettify_xml(root_script)
+    tree = ET.ElementTree(ET.fromstring(pretty_xml))
+    tree.write(output_path + "/script.xml", encoding="UTF-8", xml_declaration=True, method="xml")
 
 
 def validate_xml_with_xsd(path_xsd, path_xml, logger):
@@ -587,19 +653,18 @@ def validate_xml_with_xsd(path_xsd, path_xml, logger):
         logger.info('The file: ' + path_xml + ' is valid with the AUTOSAR4.2.2-STRICT schema')
 
 
+def prettify_xml(elem):
+    """Return a pretty-printed XML string for the Element."""
+    rough_string = ET.tostring(elem, 'utf-8')
+    reparsed = minidom.parseString(rough_string)
+    return reparsed.toprettyxml(indent="    ")
+
+
+
 def check_if_xml_is_wellformed(file):
     parser = make_parser()
     parser.setContentHandler(ContentHandler())
     parser.parse(file)
-
-
-def get_quantum(un_list, factor):
-    un_list.sort()
-    n = len(un_list)
-    pos = round(n * factor)
-    for index in range(n):
-        if index == pos:
-            return un_list[index-1]
 
 
 if __name__ == "__main__":
