@@ -504,7 +504,7 @@ def create_list(input_path, events, logger):
                 except Exception as e:
                     logger.error('CORE or ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
                     return
-                #obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
+                # obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
                 obj_event['PERIOD'] = events_aswc[elem]['PERIOD']
                 obj_event['DURATION'] = events_aswc[elem]['DURATION']
                 obj_event['AFTER-EVENT'] = events_aswc[elem]['AFTER-EVENT']
@@ -527,7 +527,7 @@ def create_list(input_path, events, logger):
         elem['ACTIVATION-OFFSET'] = offset
         offset = offset + float(Decimal(elem['DURATION']))
 
-     # check not to overwrite existing data from base xmd
+    # check not to overwrite existing data from base xmd
     for elem_task in events:
         for elem_xdm in xdm_events:
             if elem_task['EVENT'] == elem_xdm['NAME']:
