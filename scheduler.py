@@ -1,6 +1,5 @@
 import argparse
 import logging
-import ntpath
 import os
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -83,43 +82,73 @@ def main():
     parser = argparse.ArgumentParser()
     arg_parse(parser)
     args = parser.parse_args()
-    input_directory = args.input_directory
-    output_directory = args.output_path
-    # setting input and output paths
-    input_path = input_directory.replace("\\", "/")
-    input_path = input_path.split(';')
-    output_path = output_directory.replace("\\", "/")
+    config_file = args.input_configuration_file
+    config_file = config_file.replace("\\", "/")
+    # get all configuration parameters
+    recursive_path_arxml = []
+    simple_path_arxml = []
+    recursive_path_swc = []
+    simple_path_swc = []
+    recursive_path_event = []
+    simple_path_event = []
+    tree = etree.parse(config_file)
+    root = tree.getroot()
+    directories = root.findall(".//DIR")
+    xsds = root.findall(".//XSD")
+    xsd_arxml = ""
+    xsd_swc = ""
+    xsd_event = ""
+    for element in directories:
+        if element.getparent().tag == "ARXML":
+            if element.attrib['RECURSIVE'] == "true":
+                recursive_path_arxml.append(element.text)
+            else:
+                simple_path_arxml.append(element.text)
+        elif element.getparent().tag == "CONFIG-SWC-ALLOC":
+            if element.attrib['RECURSIVE'] == "true":
+                recursive_path_swc.append(element.text)
+            else:
+                simple_path_swc.append(element.text)
+        elif element.getparent().tag == "CONFIG-EVENT-CONSTR":
+            if element.attrib['RECURSIVE'] == "true":
+                recursive_path_event.append(element.text)
+            else:
+                simple_path_event.append(element.text)
+    for elem in xsds:
+        if elem.getparent().tag == "ARXML":
+            xsd_arxml = elem.text
+        elif elem.getparent().tag == "CONFIG-SWC-ALLOC":
+            xsd_swc = elem.text
+        elif elem.getparent().tag == "CONFIG-EVENT-CONSTR":
+            xsd_event = elem.text
+    script_path = root.find(".//SCRIPT").text
+    report_path = root.find(".//REPORT").text
     # logger creation and setting
     logger = logging.getLogger('result')
-    hdlr = logging.FileHandler(output_path + '/result.log')
+    hdlr = logging.FileHandler(report_path + '/result.log')
     formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
     hdlr.setFormatter(formatter)
     logger.addHandler(hdlr)
     logger.setLevel(logging.INFO)
-    open(output_path + '/result.log', 'w').close()
+    open(report_path + '/result.log', 'w').close()
     events = []
-    create_list(input_path, events, logger)
-    create_script(events, output_path, logger)
+    aswcs = []
+    create_list(recursive_path_arxml, simple_path_arxml, recursive_path_event, simple_path_event, recursive_path_swc, simple_path_swc, xsd_arxml, xsd_event, xsd_swc, events, aswcs, logger)
+    create_script(events, aswcs, script_path, logger)
 
 
 def arg_parse(parser):
-    # adding command line options
-    parser.add_argument("-in", action="store_const", const='-in')
-    parser.add_argument("input_directory", help="location(s) of input files")
-    parser.add_argument("-out", action="store_const", const='-out')
-    parser.add_argument("output_path", help="folder which will contain the produced files")
+    parser.add_argument("-config", action="store_const", const="-config")
+    parser.add_argument("input_configuration_file", help="configuration file location")
 
 
-def create_list(input_path, events, logger):
-    current_path = os.path.realpath(__file__)
-    head, tail = ntpath.split(current_path)
-    xsd_path = head + '/AUTOSAR_4-2-2_STRICT.xsd'
-    path = xsd_path.replace("\\", "/")
+def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, recursive_swc, simple_swc, xsd_arxml, xsd_event, xsd_swc, events, aswcs, logger):
     events_rte = []
     events_aswc = []
     swc_allocation = []
-    xdm_events = []
-    for each_path in input_path:
+    compos = []
+    # parse all arxml files and get events data
+    for each_path in recursive_arxml:
         for directory, directories, files in os.walk(each_path):
             for file in files:
                 if file.endswith('.arxml'):
@@ -130,7 +159,7 @@ def create_list(input_path, events, logger):
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
-                    validate_xml_with_xsd(path, fullname, logger)
+                    validate_xml_with_xsd(xsd_arxml, fullname, logger)
                     tree = etree.parse(fullname)
                     root = tree.getroot()
                     ascre_event = root.findall(".//{http://autosar.org/schema/r4.0}ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT")
@@ -141,13 +170,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     be_event = root.findall(".//{http://autosar.org/schema/r4.0}BACKGROUND-EVENT")
                     for elem in be_event:
@@ -157,13 +193,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     dree_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVE-ERROR-EVENT")
                     for elem in dree_event:
@@ -173,13 +216,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     dre_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVED-EVENT")
                     for elem in dre_event:
@@ -189,13 +239,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     dsce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-SEND-COMPLETED-EVENT")
                     for elem in dsce_event:
@@ -205,13 +262,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     dwce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-WRITE-COMPLETED-EVENT")
                     for elem in dwce_event:
@@ -221,13 +285,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     etoe_event = root.findall(".//{http://autosar.org/schema/r4.0}EXTERNAL-TRIGGER-OCCURRED-EVENT")
                     for elem in etoe_event:
@@ -237,13 +308,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     ie_event = root.findall(".//{http://autosar.org/schema/r4.0}INIT-EVENT")
                     for elem in ie_event:
@@ -253,13 +331,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     itoe_event = root.findall(".//{http://autosar.org/schema/r4.0}INTERNAL-TRIGGER-OCCURRED-EVENT")
                     for elem in itoe_event:
@@ -269,13 +354,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     msae_event = root.findall(".//{http://autosar.org/schema/r4.0}MODE-SWITCHED-ACK-EVENT")
                     for elem in msae_event:
@@ -285,13 +377,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     oie_event = root.findall(".//{http://autosar.org/schema/r4.0}OPERATION-INVOKED-EVENT")
                     for elem in oie_event:
@@ -301,13 +400,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     smmee_event = root.findall(".//{http://autosar.org/schema/r4.0}SWC-MODE-MANAGER-ERROR-EVENT")
                     for elem in smmee_event:
@@ -317,15 +423,22 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
-                    smse_event = root.findall(".//{http://autosar.org/schema/r4.0}INTERNAL-TRIGGER-OCCURRED-EVENT")
+                    smse_event = root.findall(".//{http://autosar.org/schema/r4.0}SWC-MODE-SWITCH-EVENT")
                     for elem in smse_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
@@ -333,13 +446,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     te_event = root.findall(".//{http://autosar.org/schema/r4.0}TIMING-EVENT")
                     for elem in te_event:
@@ -349,13 +469,20 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
                     thee_event = root.findall(".//{http://autosar.org/schema/r4.0}TRANSFORMER-HARD-ERROR-EVENT")
                     for elem in thee_event:
@@ -365,14 +492,398 @@ def create_list(input_path, events, logger):
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
+                        obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['CORE'] = ""
-                        obj_event['ASIL'] = ""
+                        obj_event['PARTITION'] = ""
+                        if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                            obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                        else:
+                            obj_event['ACTIVATION'] = None
                         if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                        obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
+                    sw_compos = root.findall(".//{http://autosar.org/schema/r4.0}SW-COMPONENT-PROTOTYPE")
+                    for elemSW in sw_compos:
+                        objSw = {}
+                        objSw['NAME'] = str(elemSW.find("{http://autosar.org/schema/r4.0}SHORT-NAME").text)
+                        objSw['TYPE'] = elemSW.find("{http://autosar.org/schema/r4.0}TYPE-TREF").text
+                        temp = objSw['TYPE'].split('/')
+                        objSw['SWC'] = temp[-1]
+                        compos.append(objSw)
+    for each_path in simple_arxml:
+        for file in os.listdir(each_path):
+            if file.endswith('.arxml'):
+                fullname = os.path.join(each_path, file)
+                try:
+                    check_if_xml_is_wellformed(fullname)
+                    logger.info(' The file ' + fullname + ' is well-formed')
+                except Exception as e:
+                    logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
+                    return
+                validate_xml_with_xsd(xsd_arxml, fullname, logger)
+                tree = etree.parse(fullname)
+                root = tree.getroot()
+                ascre_event = root.findall(".//{http://autosar.org/schema/r4.0}ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT")
+                for elem in ascre_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                be_event = root.findall(".//{http://autosar.org/schema/r4.0}BACKGROUND-EVENT")
+                for elem in be_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                dree_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVE-ERROR-EVENT")
+                for elem in dree_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                dre_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-RECEIVED-EVENT")
+                for elem in dre_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                dsce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-SEND-COMPLETED-EVENT")
+                for elem in dsce_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                dwce_event = root.findall(".//{http://autosar.org/schema/r4.0}DATA-WRITE-COMPLETED-EVENT")
+                for elem in dwce_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                etoe_event = root.findall(".//{http://autosar.org/schema/r4.0}EXTERNAL-TRIGGER-OCCURRED-EVENT")
+                for elem in etoe_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                ie_event = root.findall(".//{http://autosar.org/schema/r4.0}INIT-EVENT")
+                for elem in ie_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                itoe_event = root.findall(".//{http://autosar.org/schema/r4.0}INTERNAL-TRIGGER-OCCURRED-EVENT")
+                for elem in itoe_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                msae_event = root.findall(".//{http://autosar.org/schema/r4.0}MODE-SWITCHED-ACK-EVENT")
+                for elem in msae_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                oie_event = root.findall(".//{http://autosar.org/schema/r4.0}OPERATION-INVOKED-EVENT")
+                for elem in oie_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                smmee_event = root.findall(".//{http://autosar.org/schema/r4.0}SWC-MODE-MANAGER-ERROR-EVENT")
+                for elem in smmee_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                smse_event = root.findall(".//{http://autosar.org/schema/r4.0}SWC-MODE-SWITCH-EVENT")
+                for elem in smse_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                te_event = root.findall(".//{http://autosar.org/schema/r4.0}TIMING-EVENT")
+                for elem in te_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "PER"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                thee_event = root.findall(".//{http://autosar.org/schema/r4.0}TRANSFORMER-HARD-ERROR-EVENT")
+                for elem in thee_event:
+                    obj_event = {}
+                    obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                    obj_event['TYPE'] = "EVT"
+                    obj_event['DURATION'] = "0.01"
+                    obj_event['BEFORE-EVENT'] = []
+                    obj_event['AFTER-EVENT'] = []
+                    obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                    obj_event['UNMAPPED'] = ""
+                    obj_event['CORE'] = ""
+                    obj_event['PARTITION'] = ""
+                    if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
+                        obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
+                    else:
+                        obj_event['ACTIVATION'] = None
+                    if elem.find('{http://autosar.org/schema/r4.0}PERIOD') is not None:
+                        obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
+                    else:
+                        obj_event['PERIOD'] = None
+                    obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
+                    obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
+                    events_aswc.append(obj_event)
+                sw_compos = root.findall(".//{http://autosar.org/schema/r4.0}SW-COMPONENT-PROTOTYPE")
+                for elemSW in sw_compos:
+                    objSw = {}
+                    objSw['NAME'] = str(elemSW.find("{http://autosar.org/schema/r4.0}SHORT-NAME").text)
+                    objSw['TYPE'] = elemSW.find("{http://autosar.org/schema/r4.0}TYPE-TREF").text
+                    temp = objSw['TYPE'].split('/')
+                    objSw['SWC'] = temp[-1]
+                    compos.append(objSw)
+    # parse all xml data to get the event data
+    for each_path in recursive_event:
+        for directory, directories, files in os.walk(each_path):
+            for file in files:
                 if file.endswith('.xml'):
                     fullname = os.path.join(directory, file)
                     try:
@@ -381,16 +892,20 @@ def create_list(input_path, events, logger):
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
+                    validate_xml_with_xsd(xsd_event, fullname, logger)
                     tree = etree.parse(fullname)
                     root = tree.getroot()
                     event = root.findall(".//EVENT")
-                    swc = root.findall(".//SWC-ALLOCATION")
                     for element in event:
                         obj_event = {}
                         after_list = []
                         before_list = []
                         duration = None
+                        unmap = None
+                        name = None
                         for child in element.iterchildren():
+                            if child.tag == 'SHORT-NAME':
+                                name = child.text
                             if child.tag == 'EVENT-REF':
                                 obj_event['EVENT'] = child.text
                             if child.tag == 'DURATION':
@@ -399,17 +914,59 @@ def create_list(input_path, events, logger):
                                 after_list.append(child.text)
                             if child.tag == 'BEFORE-EVENT-REF':
                                 before_list.append(child.text)
+                            if child.tag == 'UNMAP':
+                                unmap = child.text
+                        obj_event['NAME'] = name
                         obj_event['DURATION'] = duration
+                        obj_event['UNMAP'] = unmap
                         obj_event['AFTER-EVENT'] = after_list
                         obj_event['BEFORE-EVENT'] = before_list
                         events_rte.append(obj_event)
-                    for element in swc:
-                        obj_event = {}
-                        obj_event['SWC'] = element.find('SWC-REF').text
-                        obj_event['CORE'] = element.find('CORE').text
-                        obj_event['ASIL'] = element.find('ASIL').text
-                        swc_allocation.append(obj_event)
-                if file.endswith('.xdm'):
+    for each_path in simple_event:
+        for file in os.listdir(each_path):
+            if file.endswith('.xml'):
+                fullname = os.path.join(each_path, file)
+                try:
+                    check_if_xml_is_wellformed(fullname)
+                    logger.info(' The file ' + fullname + ' is well-formed')
+                except Exception as e:
+                    logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
+                    return
+                validate_xml_with_xsd(xsd_event, fullname, logger)
+                tree = etree.parse(fullname)
+                root = tree.getroot()
+                event = root.findall(".//EVENT")
+                for element in event:
+                    obj_event = {}
+                    after_list = []
+                    before_list = []
+                    duration = None
+                    unmap = None
+                    name = None
+                    for child in element.iterchildren():
+                        if child.tag == 'SHORT-NAME':
+                            name = child.text
+                        if child.tag == 'EVENT-REF':
+                            obj_event['EVENT'] = child.text
+                        if child.tag == 'DURATION':
+                            duration = child.text
+                        if child.tag == 'AFTER-EVENT-REF':
+                            after_list.append(child.text)
+                        if child.tag == 'BEFORE-EVENT-REF':
+                            before_list.append(child.text)
+                        if child.tag == 'UNMAP':
+                            unmap = child.text
+                    obj_event['NAME'] = name
+                    obj_event['DURATION'] = duration
+                    obj_event['UNMAP'] = unmap
+                    obj_event['AFTER-EVENT'] = after_list
+                    obj_event['BEFORE-EVENT'] = before_list
+                    events_rte.append(obj_event)
+    # parse all xml data to get the swc data
+    for each_path in recursive_swc:
+        for directory, directories, files in os.walk(each_path):
+            for file in files:
+                if file.endswith('.xml'):
                     fullname = os.path.join(directory, file)
                     try:
                         check_if_xml_is_wellformed(fullname)
@@ -417,48 +974,73 @@ def create_list(input_path, events, logger):
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
+                    validate_xml_with_xsd(xsd_swc, fullname, logger)
                     tree = etree.parse(fullname)
                     root = tree.getroot()
-                    nsmap = {}
-                    for ns in tree.xpath('//namespace::*'):
-                        if ns[0]:  # Removes the None namespace, neither needed nor supported.
-                            nsmap[ns[0]] = ns[1]
-                    xdm_event = root.findall('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}ctr')
-                    for elem in xdm_event[:]:
-                        try:
-                            if elem.getparent().getparent().getparent().attrib['name'] != "RteSwComponentInstance":
-                                xdm_event.remove(elem)
-                        except Exception:
-                            xdm_event.remove(elem)
-                    for elem in xdm_event:
+                    swc = root.findall(".//SWC-ALLOCATION")
+                    for element in swc:
                         obj_event = {}
-                        obj_event['NAME'] = elem.attrib['name']
-                        if elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RteActivationOffset"]') is not None:
-                            obj_event['ACTIVATION-OFFSET'] = elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RteActivationOffset"]').attrib['value']
-                        else:
-                            obj_event['ACTIVATION-OFFSET'] = "NotSet"
-                        if elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RtePositionInTask"]') is not None:
-                            obj_event['POSITION-IN-TASK'] = elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RtePositionInTask"]').attrib['value']
-                        else:
-                            obj_event['POSITION-IN-TASK'] = "NotSet"
-                        if elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RteMappedToTaskRef"]') is not None:
-                            obj_event['MAPPED-TO-TASK'] = elem.find('.//{http://www.tresos.de/_projects/DataModel2/06/data.xsd}var[@name = "RteMappedToTaskRef"]').attrib['value']
-                        else:
-                            obj_event['MAPPED-TO-TASK'] = "NotSet"
-                        xdm_events.append(obj_event)
+                        obj_event['SWC'] = element.find('SWC-REF').text
+                        obj_event['CORE'] = element.find('CORE').text
+                        obj_event['PARTITION'] = element.find('PARTITION').text
+                        swc_allocation.append(obj_event)
+    for each_path in simple_swc:
+        for file in os.listdir(each_path):
+            if file.endswith('.xml'):
+                fullname = os.path.join(each_path, file)
+                try:
+                    check_if_xml_is_wellformed(fullname)
+                    logger.info(' The file ' + fullname + ' is well-formed')
+                except Exception as e:
+                    logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
+                    return
+                validate_xml_with_xsd(xsd_swc, fullname, logger)
+                tree = etree.parse(fullname)
+                root = tree.getroot()
+                swc = root.findall(".//SWC-ALLOCATION")
+                for element in swc:
+                    obj_event = {}
+                    obj_event['SWC'] = element.find('SWC-REF').text
+                    obj_event['CORE'] = element.find('CORE').text
+                    obj_event['PARTITION'] = element.find('PARTITION').text
+                    swc_allocation.append(obj_event)
+
+    for elemSw in compos:
+        for elemAlloc in swc_allocation:
+            temp = elemAlloc['SWC'].split("/")
+            if elemSw['SWC'] == temp[-1]:
+                objElem = {}
+                objElem['INSTANCE'] =elemSw['NAME']
+                objElem['CORE'] = elemAlloc['CORE']
+                objElem['PARTITION'] = elemAlloc['PARTITION']
+                aswcs.append(objElem)
 
     for elem_rte in events_rte:
         for elem_aswc in events_aswc:
             if elem_rte['EVENT'] == elem_aswc['NAME']:
                 elem_aswc['BEFORE-EVENT'] = elem_rte['BEFORE-EVENT']
                 elem_aswc['AFTER-EVENT'] = elem_rte['AFTER-EVENT']
+                elem_aswc['UNMAPPED'] = elem_rte['UNMAP']
                 if elem_rte['DURATION'] is not None:
                     elem_aswc['DURATION'] = elem_rte['DURATION']
     for elem_swc in swc_allocation:
         for elem_aswc in events_aswc:
-            if elem_swc['SWC'] == elem_aswc['ASWC']:
+            if elem_swc['SWC'] == "/"+elem_aswc['ROOT'] + "/" + elem_aswc['ASWC']:
                 elem_aswc['CORE'] = elem_swc['CORE']
-                elem_aswc['ASIL'] = elem_swc['ASIL']
+                elem_aswc['PARTITION'] = elem_swc['PARTITION']
+
+    # TODO: to check the correct negative value of the UNMAPPED parameter
+    for elem in events_aswc[:]:
+        if elem['UNMAPPED'] == "False":
+            events_aswc.remove(elem)
+
+    # TRS.RTECONFIG.FUNC.006
+    for elem in events_aswc:
+        if elem['ACTIVATION'] == "ON-ENTRY":
+            for elem2 in events_aswc:
+                if elem['CORE'] == elem2['CORE'] and elem['PARTITION'] == elem2['PARTITION'] and elem['TYPE'] == elem2['TYPE']:
+                    if elem2['ACTIVATION'] == "ON-EXIT":
+                        elem['AFTER-EVENT'] = elem2['NAME']
 
     g = Graph(len(events_aswc))
     for elem in events_aswc:
@@ -492,23 +1074,25 @@ def create_list(input_path, events, logger):
                 obj_event['EVENT'] = events_aswc[elem]['NAME']
                 obj_event['ACTIVATION-OFFSET'] = None
                 obj_event['POSITION-IN-TASK'] = None
+                obj_event['REF'] = events_aswc[elem]['REF']
                 try:
                     if events_aswc[elem]['CORE'] == '':
                         logger.error('CORE not set for SWC-REF:' + events_aswc[elem]['ASWC'])
                         return
-                    elif events_aswc[elem]['ASIL'] == '':
-                        logger.error('ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'])
+                    elif events_aswc[elem]['PARTITION'] == '':
+                        logger.error('PARTITION not set for SWC-REF:' + events_aswc[elem]['ASWC'])
                         return
                     else:
-                        obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
+                        obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['PARTITION']+'_'+events_aswc[elem]['TYPE']
                 except Exception as e:
-                    logger.error('CORE or ASIL not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
+                    logger.error('CORE or PARTITION not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
                     return
                 # obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
                 obj_event['PERIOD'] = events_aswc[elem]['PERIOD']
                 obj_event['DURATION'] = events_aswc[elem]['DURATION']
                 obj_event['AFTER-EVENT'] = events_aswc[elem]['AFTER-EVENT']
                 obj_event['BEFORE-EVENT'] = events_aswc[elem]['BEFORE-EVENT']
+                obj_event['ACTIVATION'] = events_aswc[elem]['ACTIVATION']
                 events.append(obj_event)
     # setting the PositionInTask parameter
     tasks = []
@@ -527,21 +1111,8 @@ def create_list(input_path, events, logger):
         elem['ACTIVATION-OFFSET'] = offset
         offset = offset + float(Decimal(elem['DURATION']))
 
-    # check not to overwrite existing data from base xmd
-    for elem_task in events:
-        for elem_xdm in xdm_events:
-            if elem_task['EVENT'] == elem_xdm['NAME']:
-                if elem_xdm['ACTIVATION-OFFSET'] != "NotSet":
-                    elem_task['ACTIVATION-OFFSET'] = elem_xdm['ACTIVATION-OFFSET']
-                if elem_xdm['POSITION-IN-TASK'] != "NotSet":
-                    elem_task['POSITION-IN-TASK'] = elem_xdm['POSITION-IN-TASK']
-                if elem_xdm['MAPPED-TO-TASK'] != "NotSet":
-                    elem_task['MAPPED-TO-TASK'] = elem_xdm['MAPPED-TO-TASK']
-    # for elem in events:
-    #     print(elem)
 
-
-def create_script(events, output_path, logger):
+def create_script(events, aswcs, output_path, logger):
     root_script = ET.Element('Script')
     root_script.set('xsi:noNamespaceSchemaLocation', "Scriptor.xsd")
     root_script.set('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance")
@@ -549,36 +1120,41 @@ def create_script(events, output_path, logger):
     decription = ET.SubElement(root_script, 'Decription').text = "Set the RTE parameters"
     expression = ET.SubElement(root_script, 'Expression').text = "as:modconf('Rte')[1]"
     operations_global = ET.SubElement(root_script, 'Operations')
-    for event in events:
+    for aswc in aswcs:
         operation = ET.SubElement(operations_global, 'Operation')
         operation.set('Type', "ForEach")
         expression_global = ET.SubElement(operation, 'Expression')
-        expression_global.text = './/d:lst[name="RteSwComponentInstance"]/d:ctr/d:lst/d:ctr[name="'+event['EVENT']+'"]'
+        expression_global.text = "as:mdconf('RTE')[1]/RteSwComponentInstance/"+aswc['INSTANCE']+"/MappedToOsApplicationRef"
         operations = ET.SubElement(operation, 'Operations')
-        operation_offset = ET.SubElement(operations, 'Operation')
-        operation_offset.set('Type', "Add")
-        expression_offset = ET.SubElement(operation_offset, 'Expression')
-        expression_offset.text = './/d:lst[name="RteSwComponentInstance"]/d:ctr/d:lst/d:ctr[name="'+event['EVENT']+'"]/d:var[name="RteActivationOffset"]'
-        operations_activation = ET.SubElement(operation_offset, "Operations")
-        operation_element = ET.SubElement(operations_activation, "Operation")
-        operation_element.set('Type', "SetValue")
-        expression_element = ET.SubElement(operation_element, "Expression").text = '"' + str(event['ACTIVATION-OFFSET']) + '"'
-        operation_position = ET.SubElement(operations, 'Operation')
-        operation_position.set('Type', "Add")
+        operation_appref = ET.SubElement(operations, 'Operation')
+        operation_appref.set('Type', "SetValue")
+        expression_appref = ET.SubElement(operation_appref, 'Expression')
+        expression_appref.text = '"ASPath:/OsRoot/OsName/OS_APP_'+aswc['CORE']+'_'+aswc['PARTITION']+'"'
+    for event in events:
+        operation_position = ET.SubElement(operations_global, 'Operation')
+        operation_position.set('Type', "ForEach")
         expression_position = ET.SubElement(operation_position, 'Expression')
-        expression_position.text = './/d:lst[name="RteSwComponentInstance"]/d:ctr/d:lst/d:ctr[name="'+event['EVENT']+'"]/d:var[name="RtePositionInTask"]'
+        expression_position.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RtePositionInTask'
         operations_activation = ET.SubElement(operation_position, "Operations")
         operation_element = ET.SubElement(operations_activation, "Operation")
         operation_element.set('Type', "SetValue")
-        expression_element = ET.SubElement(operation_element, "Expression").text = '"' + str(event['POSITION-IN-TASK']) + '"'
-        operation_task = ET.SubElement(operations, 'Operation')
-        operation_task.set('Type', "Add")
+        expression_element = ET.SubElement(operation_element, "Expression").text = 'num:i(' + str(event['POSITION-IN-TASK']) + ')'
+        operation_task = ET.SubElement(operations_global, 'Operation')
+        operation_task.set('Type', "ForEach")
         expression_task = ET.SubElement(operation_task, 'Expression')
-        expression_task.text = './/d:lst[name="RteSwComponentInstance"]/d:ctr/d:lst/d:ctr[name="'+event['EVENT']+'"]/d:var[name="RteMappedToTaskRef"]'
+        expression_task.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RteMappedToTaskRef'
         operations_activation = ET.SubElement(operation_task, "Operations")
         operation_element = ET.SubElement(operations_activation, "Operation")
         operation_element.set('Type', "SetValue")
-        expression_element = ET.SubElement(operation_element, "Expression").text = '"ASPath:/Os/Os/' + str(event['MAPPED-TO-TASK'] + '"')
+        expression_element = ET.SubElement(operation_element, "Expression").text = '"ASPath:/OsRoot/OsName/' + str(event['MAPPED-TO-TASK'] + '"')
+        operation_offset = ET.SubElement(operations_global, 'Operation')
+        operation_offset.set('Type', "ForEach")
+        expression_offset = ET.SubElement(operation_offset, 'Expression')
+        expression_offset.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RteActivationOffset'
+        operations_activation = ET.SubElement(operation_offset, "Operations")
+        operation_element = ET.SubElement(operations_activation, "Operation")
+        operation_element.set('Type', "SetEnabled")
+        expression_element = ET.SubElement(operation_element, "Expression").text = 'boolean(0)'
 
     pretty_xml = prettify_xml(root_script)
     tree = ET.ElementTree(ET.fromstring(pretty_xml))
@@ -592,9 +1168,9 @@ def validate_xml_with_xsd(path_xsd, path_xml, logger):
     # validate xml file
     xmldoc = etree.parse(path_xml)
     if xmlschema.validate(xmldoc) is not True:
-        logger.warning('The file: ' + path_xml + ' is NOT valid with the AUTOSAR4.2.2-STRICT  schema')
+        logger.warning('The file: ' + path_xml + ' is NOT valid with the provided xsd schema')
     else:
-        logger.info('The file: ' + path_xml + ' is valid with the AUTOSAR4.2.2-STRICT schema')
+        logger.info('The file: ' + path_xml + ' is valid with the provided xsd schema')
 
 
 def prettify_xml(elem):
