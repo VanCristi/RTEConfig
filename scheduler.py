@@ -57,11 +57,12 @@ class Graph:
 
         # Recur for all neighbours; if any neighbour is visited and in recStack then graph is cyclic
         for neighbour in self.graph[v]:
-            if visited[neighbour] is False:
-                if self.is_cyclic_util(neighbour, visited, recStack) is True:
+            if v != neighbour:
+                if visited[neighbour] is False:
+                    if self.is_cyclic_util(neighbour, visited, recStack) is True:
+                        return True
+                elif recStack[neighbour] is True:
                     return True
-            elif recStack[neighbour] is True:
-                return True
 
         # The node needs to be poped from recursion stack before function ends
         recStack[v] = False
@@ -911,9 +912,9 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             if child.tag == 'DURATION':
                                 duration = child.text
                             if child.tag == 'AFTER-EVENT-REF':
-                                after_list.append(child.text)
+                                after_list.append(child.text.split('/')[-1])
                             if child.tag == 'BEFORE-EVENT-REF':
-                                before_list.append(child.text)
+                                before_list.append(child.text.split('/')[-1])
                             if child.tag == 'UNMAP':
                                 unmap = child.text
                         obj_event['NAME'] = name
@@ -951,9 +952,9 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         if child.tag == 'DURATION':
                             duration = child.text
                         if child.tag == 'AFTER-EVENT-REF':
-                            after_list.append(child.text)
+                            after_list.append(child.text.split('/')[-1])
                         if child.tag == 'BEFORE-EVENT-REF':
-                            before_list.append(child.text)
+                            before_list.append(child.text.split('/')[-1])
                         if child.tag == 'UNMAP':
                             unmap = child.text
                     obj_event['NAME'] = name
@@ -1017,7 +1018,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
 
     for elem_rte in events_rte:
         for elem_aswc in events_aswc:
-            if elem_rte['EVENT'] == elem_aswc['NAME']:
+            if elem_rte['NAME'] == elem_aswc['NAME']:
                 elem_aswc['BEFORE-EVENT'] = elem_rte['BEFORE-EVENT']
                 elem_aswc['AFTER-EVENT'] = elem_rte['AFTER-EVENT']
                 elem_aswc['UNMAPPED'] = elem_rte['UNMAP']
@@ -1038,9 +1039,9 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
     for elem in events_aswc:
         if elem['ACTIVATION'] == "ON-ENTRY":
             for elem2 in events_aswc:
-                if elem['CORE'] == elem2['CORE'] and elem['PARTITION'] == elem2['PARTITION'] and elem['TYPE'] == elem2['TYPE']:
+                if elem['CORE'] == elem2['CORE'] and elem['PARTITION'] == elem2['PARTITION'] and elem['TYPE'] == elem2['TYPE'] and elem['ASWC'] == elem2['ASWC']:
                     if elem2['ACTIVATION'] == "ON-EXIT":
-                        elem['AFTER-EVENT'] = elem2['NAME']
+                        elem['AFTER-EVENT'].append(elem2['NAME'])
 
     g = Graph(len(events_aswc))
     for elem in events_aswc:
