@@ -4,10 +4,11 @@ import os
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from decimal import Decimal
-from lxml import etree
 from xml.dom import minidom
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
+
+from lxml import etree
 
 
 # https://www.geeksforgeeks.org/topological-sorting/
@@ -168,6 +169,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -183,6 +185,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -191,6 +194,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -206,6 +210,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -214,6 +219,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -229,6 +235,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -237,6 +244,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -252,6 +260,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -260,6 +269,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -275,6 +285,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -283,6 +294,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -298,6 +310,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -306,6 +319,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -321,6 +335,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -329,6 +344,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -344,6 +360,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -352,6 +369,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -367,6 +385,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -375,6 +394,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -390,6 +410,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -398,6 +419,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -413,6 +435,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -421,6 +444,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -436,6 +460,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -444,6 +469,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -459,6 +485,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -467,6 +494,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "PER"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -482,6 +510,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -490,6 +519,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                         obj_event['TYPE'] = "EVT"
+                        obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
@@ -504,6 +534,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                         else:
                             obj_event['PERIOD'] = None
+                        obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                         obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                         obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                         events_aswc.append(obj_event)
@@ -533,6 +564,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -548,6 +580,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -556,6 +589,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -571,6 +605,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -579,6 +614,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -594,6 +630,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -602,6 +639,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -617,6 +655,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -625,6 +664,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -640,6 +680,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -648,6 +689,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -663,6 +705,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -671,6 +714,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -686,6 +730,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -694,6 +739,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -709,6 +755,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -717,6 +764,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -732,6 +780,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -740,6 +789,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -755,6 +805,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -763,6 +814,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -778,6 +830,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -786,6 +839,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -801,6 +855,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -809,6 +864,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -824,6 +880,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -832,6 +889,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "PER"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -847,6 +905,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -855,6 +914,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
                     obj_event['TYPE'] = "EVT"
+                    obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
                     obj_event['AFTER-EVENT'] = []
@@ -870,6 +930,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['PERIOD'] = elem.find('{http://autosar.org/schema/r4.0}PERIOD').text
                     else:
                         obj_event['PERIOD'] = None
+                    obj_event['IB'] = elem.getparent().getparent().getchildren()[0].text
                     obj_event['ASWC'] = elem.getparent().getparent().getparent().getparent().getchildren()[0].text
                     obj_event['ROOT'] = elem.getparent().getparent().getparent().getparent().getparent().getparent().getchildren()[0].text
                     events_aswc.append(obj_event)
@@ -1006,16 +1067,6 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['PARTITION'] = element.find('PARTITION').text
                     swc_allocation.append(obj_event)
 
-    for elemSw in compos:
-        for elemAlloc in swc_allocation:
-            temp = elemAlloc['SWC'].split("/")
-            if elemSw['SWC'] == temp[-1]:
-                objElem = {}
-                objElem['INSTANCE'] =elemSw['NAME']
-                objElem['CORE'] = elemAlloc['CORE']
-                objElem['PARTITION'] = elemAlloc['PARTITION']
-                aswcs.append(objElem)
-
     for elem_rte in events_rte:
         for elem_aswc in events_aswc:
             if elem_rte['NAME'] == elem_aswc['NAME']:
@@ -1075,7 +1126,6 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 obj_event['EVENT'] = events_aswc[elem]['NAME']
                 obj_event['ACTIVATION-OFFSET'] = None
                 obj_event['POSITION-IN-TASK'] = None
-                obj_event['REF'] = events_aswc[elem]['REF']
                 try:
                     if events_aswc[elem]['CORE'] == '':
                         logger.error('CORE not set for SWC-REF:' + events_aswc[elem]['ASWC'])
@@ -1084,17 +1134,51 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         logger.error('PARTITION not set for SWC-REF:' + events_aswc[elem]['ASWC'])
                         return
                     else:
-                        obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['PARTITION']+'_'+events_aswc[elem]['TYPE']
+                        if events_aswc[elem]['TYPE'] == 'PER':
+                            obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
+                        else:
+                            if events_aswc[elem]['START-ON-EVENT']:
+                                found = False
+                                for index2 in range(len(events_aswc)):
+                                    if elem != index2:
+                                        if events_aswc[elem]['START-ON-EVENT'] == events_aswc[index2]['START-ON-EVENT']:
+                                            obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[index2]['CORE'] + '_' + events_aswc[index2]['PARTITION'] + '_' + events_aswc[index2]['TYPE']
+                                            found = True
+                                if not found:
+                                    obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_EVT'
+                            else:
+                                obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_EVT'
+
+                            #         if temp[-1] == event['NAME']:
+                            #             if event['TYPE'] == "PER":
+                            #                 obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
+                            #                 found = True
+                            #     if not found:
+                            #         obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_EVT'
+                            # else:
+                            #     obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_EVT'
                 except Exception as e:
                     logger.error('CORE or PARTITION not set for SWC-REF:' + events_aswc[elem]['ASWC'] + " -> " + str(e))
                     return
-                # obj_event['MAPPED-TO-TASK'] = 'Task_'+events_aswc[elem]['CORE']+'_'+events_aswc[elem]['ASIL']+'_'+events_aswc[elem]['TYPE']
+                obj_event['REF'] = events_aswc[elem]['REF']
                 obj_event['PERIOD'] = events_aswc[elem]['PERIOD']
                 obj_event['DURATION'] = events_aswc[elem]['DURATION']
                 obj_event['AFTER-EVENT'] = events_aswc[elem]['AFTER-EVENT']
                 obj_event['BEFORE-EVENT'] = events_aswc[elem]['BEFORE-EVENT']
                 obj_event['ACTIVATION'] = events_aswc[elem]['ACTIVATION']
+                obj_event['IB'] = events_aswc[elem]['IB']
+                obj_event['ASWC'] = events_aswc[elem]['ASWC']
+                obj_event['ROOT'] = events_aswc[elem]['ROOT']
+                obj_event['CORE'] = None
+                obj_event['PARTITION'] = None
+                obj_event['INSTANCE'] = None
                 events.append(obj_event)
+    for event in events:
+        if event['ACTIVATION'] == "ON-EXIT":
+            events.insert(0, events.pop(events.index(event)))
+        elif event['ACTIVATION'] == "ON-ENTRY":
+            events.append(events.pop(events.index(event)))
+    events = sorted(events, key=lambda x: x['MAPPED-TO-TASK'])
     # setting the PositionInTask parameter
     tasks = []
     for elem in events:
@@ -1111,6 +1195,26 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
     for elem in events:
         elem['ACTIVATION-OFFSET'] = offset
         offset = offset + float(Decimal(elem['DURATION']))
+    for elemEv in events:
+        for elemAlloc in swc_allocation:
+            temp = elemAlloc['SWC'].split("/")
+            if elemEv['ASWC'] == temp[-1]:
+                elemEv['CORE'] = elemAlloc['CORE']
+                elemEv['PARTITION'] = elemAlloc['PARTITION']
+    for elemEv in events:
+        for elemSw in compos:
+            if elemEv['ASWC'] == elemSw['SWC']:
+                elemEv['INSTANCE'] = elemSw['NAME']
+    swc_allocation = list(unique_items(swc_allocation))
+    for elemSw in compos:
+        for elemAlloc in swc_allocation:
+            temp = elemAlloc['SWC'].split("/")
+            if elemSw['SWC'] == temp[-1]:
+                objElem = {}
+                objElem['INSTANCE'] = elemSw['NAME']
+                objElem['CORE'] = elemAlloc['CORE']
+                objElem['PARTITION'] = elemAlloc['PARTITION']
+                aswcs.append(objElem)
 
 
 def create_script(events, aswcs, output_path, logger):
@@ -1125,33 +1229,42 @@ def create_script(events, aswcs, output_path, logger):
         operation = ET.SubElement(operations_global, 'Operation')
         operation.set('Type', "ForEach")
         expression_global = ET.SubElement(operation, 'Expression')
-        expression_global.text = "as:mdconf('RTE')[1]/RteSwComponentInstance/"+aswc['INSTANCE']+"/MappedToOsApplicationRef"
+        expression_global.text = "as:modconf('Rte')[1]/RteSwComponentInstance/" + aswc['INSTANCE'] + "/MappedToOsApplicationRef"
         operations = ET.SubElement(operation, 'Operations')
+        operation_general = ET.SubElement(operations, "Operation")
+        operation_general.set('Type', "SetEnabled")
+        expression_general = ET.SubElement(operation_general, "Expression").text = 'boolean(1)'
         operation_appref = ET.SubElement(operations, 'Operation')
         operation_appref.set('Type', "SetValue")
         expression_appref = ET.SubElement(operation_appref, 'Expression')
-        expression_appref.text = '"ASPath:/OsRoot/OsName/OS_APP_'+aswc['CORE']+'_'+aswc['PARTITION']+'"'
+        expression_appref.text = '"ASPath:/Os/Os/OsApp_' + aswc['CORE'] + '_' + aswc['PARTITION'] + '"'
     for event in events:
         operation_position = ET.SubElement(operations_global, 'Operation')
         operation_position.set('Type', "ForEach")
         expression_position = ET.SubElement(operation_position, 'Expression')
-        expression_position.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RtePositionInTask'
+        expression_position.text = "as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:/'+event['ROOT']+'/'+event['ASWC']+'/'+event['IB']+'/'+event['EVENT']+'"]/../RtePositionInTask'
         operations_activation = ET.SubElement(operation_position, "Operations")
+        operation_general = ET.SubElement(operations_activation, "Operation")
+        operation_general.set('Type', "SetEnabled")
+        expression_general = ET.SubElement(operation_general, "Expression").text = 'boolean(1)'
         operation_element = ET.SubElement(operations_activation, "Operation")
         operation_element.set('Type', "SetValue")
         expression_element = ET.SubElement(operation_element, "Expression").text = 'num:i(' + str(event['POSITION-IN-TASK']) + ')'
         operation_task = ET.SubElement(operations_global, 'Operation')
         operation_task.set('Type', "ForEach")
         expression_task = ET.SubElement(operation_task, 'Expression')
-        expression_task.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RteMappedToTaskRef'
+        expression_task.text = "as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:/'+event['ROOT']+'/'+event['ASWC']+'/'+event['IB']+'/'+event['EVENT']+'"]/../RteMappedToTaskRef'
         operations_activation = ET.SubElement(operation_task, "Operations")
+        operation_general = ET.SubElement(operations_activation, "Operation")
+        operation_general.set('Type', "SetEnabled")
+        expression_general = ET.SubElement(operation_general, "Expression").text = 'boolean(1)'
         operation_element = ET.SubElement(operations_activation, "Operation")
         operation_element.set('Type', "SetValue")
-        expression_element = ET.SubElement(operation_element, "Expression").text = '"ASPath:/OsRoot/OsName/' + str(event['MAPPED-TO-TASK'] + '"')
+        expression_element = ET.SubElement(operation_element, "Expression").text = '"ASPath:/Os/Os/' + str(event['MAPPED-TO-TASK'] + '"')
         operation_offset = ET.SubElement(operations_global, 'Operation')
         operation_offset.set('Type', "ForEach")
         expression_offset = ET.SubElement(operation_offset, 'Expression')
-        expression_offset.text = "as:mdconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:'+event['REF']+'"]/../RteActivationOffset'
+        expression_offset.text = "as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.=" + '"ASPath:/'+event['ROOT']+'/'+event['ASWC']+'/'+event['IB']+'/'+event['EVENT']+'"]/../RteActivationOffset'
         operations_activation = ET.SubElement(operation_offset, "Operations")
         operation_element = ET.SubElement(operations_activation, "Operation")
         operation_element.set('Type', "SetEnabled")
@@ -1159,7 +1272,7 @@ def create_script(events, aswcs, output_path, logger):
 
     pretty_xml = prettify_xml(root_script)
     tree = ET.ElementTree(ET.fromstring(pretty_xml))
-    tree.write(output_path + "/RTE_script.xml", encoding="UTF-8", xml_declaration=True, method="xml")
+    tree.write(output_path + "/RTE_Config.xml", encoding="UTF-8", xml_declaration=True, method="xml")
 
 
 def validate_xml_with_xsd(path_xsd, path_xml, logger):
@@ -1173,6 +1286,12 @@ def validate_xml_with_xsd(path_xsd, path_xml, logger):
     else:
         logger.info('The file: ' + path_xml + ' is valid with the provided xsd schema')
 
+def unique_items(L):
+    found = set()
+    for item in L:
+        if item['SWC'] not in found:
+            yield item
+            found.add(item['SWC'])
 
 def prettify_xml(elem):
     """Return a pretty-printed XML string for the Element."""
