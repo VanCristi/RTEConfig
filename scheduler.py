@@ -177,6 +177,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -202,6 +203,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -227,6 +229,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -252,6 +255,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -277,6 +281,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -302,6 +307,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -327,6 +333,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -352,6 +359,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -377,6 +385,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -402,6 +411,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -427,6 +437,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -452,6 +463,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -477,6 +489,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -502,6 +515,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -526,6 +540,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
+                        obj_event['EVENTS-CALLED'] = ""
                         if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                             obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                         else:
@@ -572,6 +587,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -597,6 +613,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -622,6 +639,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -647,6 +665,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -672,6 +691,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -697,6 +717,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -722,6 +743,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -747,6 +769,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -772,6 +795,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -797,6 +821,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -822,6 +847,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -847,6 +873,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -872,6 +899,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -897,6 +925,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -922,6 +951,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     obj_event['UNMAPPED'] = ""
                     obj_event['CORE'] = ""
                     obj_event['PARTITION'] = ""
+                    obj_event['EVENTS-CALLED'] = ""
                     if elem.find('{http://autosar.org/schema/r4.0}ACTIVATION') is not None:
                         obj_event['ACTIVATION'] = elem.find('{http://autosar.org/schema/r4.0}ACTIVATION').text
                     else:
@@ -965,6 +995,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         duration = None
                         unmap = None
                         name = None
+                        event_called = None
                         for child in element.iterchildren():
                             if child.tag == 'SHORT-NAME':
                                 name = child.text
@@ -978,9 +1009,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 before_list.append(child.text.split('/')[-1])
                             if child.tag == 'UNMAP':
                                 unmap = child.text
+                            if child.tag == 'EVENTS-CALLED':
+                                event_called = child.text
                         obj_event['NAME'] = name
                         obj_event['DURATION'] = duration
                         obj_event['UNMAP'] = unmap
+                        obj_event['EVENT-CALLED'] = event_called
                         obj_event['AFTER-EVENT'] = after_list
                         obj_event['BEFORE-EVENT'] = before_list
                         events_rte.append(obj_event)
@@ -1005,6 +1039,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     duration = None
                     unmap = None
                     name = None
+                    event_called = None
                     for child in element.iterchildren():
                         if child.tag == 'SHORT-NAME':
                             name = child.text
@@ -1018,9 +1053,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             before_list.append(child.text.split('/')[-1])
                         if child.tag == 'UNMAP':
                             unmap = child.text
+                        if child.tag == 'EVENTS-CALLED':
+                            event_called = child.text
                     obj_event['NAME'] = name
                     obj_event['DURATION'] = duration
                     obj_event['UNMAP'] = unmap
+                    obj_event['EVENT-CALLED'] = event_called
                     obj_event['AFTER-EVENT'] = after_list
                     obj_event['BEFORE-EVENT'] = before_list
                     events_rte.append(obj_event)
@@ -1073,6 +1111,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 elem_aswc['BEFORE-EVENT'] = elem_rte['BEFORE-EVENT']
                 elem_aswc['AFTER-EVENT'] = elem_rte['AFTER-EVENT']
                 elem_aswc['UNMAPPED'] = elem_rte['UNMAP']
+                elem_aswc['EVENTS-CALLED'] = elem_rte['EVENT-CALLED']
                 if elem_rte['DURATION'] is not None:
                     elem_aswc['DURATION'] = elem_rte['DURATION']
     for elem_swc in swc_allocation:
@@ -1081,9 +1120,19 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 elem_aswc['CORE'] = elem_swc['CORE']
                 elem_aswc['PARTITION'] = elem_swc['PARTITION']
 
+    # implement TRS.RTECONFIG.CHECK.003
+    for elem in events_aswc:
+        if elem['EVENTS-CALLED'] is not None:
+            temp = elem['EVENTS-CALLED'].split('/')
+            for elem2 in events_aswc:
+                if elem2['NAME'] == temp[-1]:
+                    if elem2['EVENTS-CALLED'] is not None:
+                        logger.error('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
+                        return
+
     # TODO: to check the correct negative value of the UNMAPPED parameter
     for elem in events_aswc[:]:
-        if elem['UNMAPPED'] == "False":
+        if elem['UNMAPPED'] == "false" or elem['UNMAPPED'] == "0":
             events_aswc.remove(elem)
 
     # TRS.RTECONFIG.FUNC.006
@@ -1137,7 +1186,9 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         if events_aswc[elem]['TYPE'] == 'PER':
                             obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                         else:
-                            if events_aswc[elem]['START-ON-EVENT']:
+                            if events_aswc[elem]['EVENTS-CALLED'] != '':
+                                obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[index2]['CORE'] + '_' + events_aswc[index2]['PARTITION'] + '_PER'
+                            elif events_aswc[elem]['START-ON-EVENT']:
                                 found = False
                                 for index2 in range(len(events_aswc)):
                                     if elem != index2:
