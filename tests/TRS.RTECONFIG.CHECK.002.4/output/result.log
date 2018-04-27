@@ -1,0 +1,11 @@
+2018-04-27 15:31:19,521 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-04-27 15:31:20,082 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-04-27 15:31:20,145 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-04-27 15:31:20,160 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:20,160 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-04-27 15:31:20,160 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:20,160 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-04-27 15:31:20,160 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:20,160 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-04-27 15:31:20,160 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.CHECK.002.4\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:20,160 ERROR CORE or PARTITION not set for SWC-REF:ASWC_A26 -> must be str, not NoneType

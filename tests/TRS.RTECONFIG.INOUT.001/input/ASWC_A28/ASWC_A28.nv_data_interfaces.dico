@@ -1,0 +1,2723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_NV_Data</SHORT-NAME>
+            <ELEMENTS>
+                <!-- 113 Interfaces de type NV Data -->
+                <NV-DATA-INTERFACE UUID="fd11856d-29d0-9621-fd5a-19f9c6f4d463">
+                    <SHORT-NAME>SR_ButeeXvv1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.13036.64510</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ButeeXvv1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f04e10cf-8881-1336-7e38-0380f42112ef">
+                    <SHORT-NAME>SR_ButeeXvv2DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03405.97937</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ButeeXvv2DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="a0a3fc03-462a-501d-5e21-b1743b0283a6">
+                    <SHORT-NAME>SR_ButeeXvv3DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05889.16212</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ButeeXvv3DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="de40bdc0-2dee-1fd4-a49e-064cfdb1c642">
+                    <SHORT-NAME>SR_ButeeXvv4DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28143.48079</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ButeeXvv4DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4dc2255d-618a-c89e-4689-73d354717426">
+                    <SHORT-NAME>SR_ButeeXvv5DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.24311.69130</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ButeeXvv5DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ff19d465-eb49-9d15-2856-70351579895e">
+                    <SHORT-NAME>SR_EclAccompDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23304.44956</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>EclAccompDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cAccomp</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="34a3fdc0-4a8e-7b0b-41ce-1af3dc707159">
+                    <SHORT-NAME>SR_EclDecondaDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03614.91606</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>EclDecondaDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cDeconda</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="8d183f24-1378-e21d-48c9-c9a9df8228eb">
+                    <SHORT-NAME>SR_SEC_AccueilDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06898.37105</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_AccueilDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f4ada81d-4997-f5aa-063f-f5d4698a5c2e">
+                    <SHORT-NAME>SR_SEC_ActButee1XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23317.07791</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButee1XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="0f9f3634-1366-79c1-dda4-7212f95ba568">
+                    <SHORT-NAME>SR_SEC_ActButee2XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08333.61669</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButee2XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="eb8214a6-edcf-893d-58de-7ef8ecf65d35">
+                    <SHORT-NAME>SR_SEC_ActButee3XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14868.07683</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButee3XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6cbab7cc-8a00-bd7e-e34a-4a8e6f78ce87">
+                    <SHORT-NAME>SR_SEC_ActButee4XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26247.93680</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButee4XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6dda9517-0555-560d-dab5-da132824b2c6">
+                    <SHORT-NAME>SR_SEC_ActButee5XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41147.33526</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButee5XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="521ed476-1a1e-9001-3ade-69e6ac8bc3f7">
+                    <SHORT-NAME>SR_SEC_ActButeeGenXVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10344.03804</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActButeeGenXVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="7e29c3a0-3ad0-3b19-fa6e-082f48823570">
+                    <SHORT-NAME>SR_SEC_ActivationARCDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.22505.26632</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ActivationARCDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="b4c7cf37-313c-1c1f-5e9f-6312c437fe85">
+                    <SHORT-NAME>SR_SEC_BAAActivationDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.09367.80730</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_BAAActivationDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="2a329995-578c-ca73-5023-a84099921647">
+                    <SHORT-NAME>SR_SEC_BAAAutolockingDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.12658.16903</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_BAAAutolockingDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="702cbd71-d2fa-f255-c474-840433bc4ef5">
+                    <SHORT-NAME>SR_SEC_CLIMPrecPrg1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19495.95567</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecPrg1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="52245150-3298-8550-20f9-3a51c6219a5a">
+                    <SHORT-NAME>SR_SEC_CLIMPrecPrg2DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15263.65359</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecPrg2DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6b5940e9-b805-bdf6-528b-b83e89703ac4">
+                    <SHORT-NAME>SR_SEC_CLIMPrecPrg3DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10862.93423</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecPrg3DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="a1cd1598-c475-6aa5-f1f1-9b5c287f55ed">
+                    <SHORT-NAME>SR_SEC_CLIMPrecPrg4DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01241.52495</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecPrg4DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="90765575-0627-f0a9-632e-28b3df2db3e3">
+                    <SHORT-NAME>SR_SEC_CLIMPrecSem1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29976.25837</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecSem1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="2d2930a7-eca6-eaa3-25f6-327fed4190f4">
+                    <SHORT-NAME>SR_SEC_CLIMPrecSem2DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18777.55321</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecSem2DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="cf94a933-fef4-1815-76f1-a772321e77c7">
+                    <SHORT-NAME>SR_SEC_CLIMPrecSem3DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06178.46901</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecSem3DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="5929c262-63ce-526a-68aa-688bca3506ae">
+                    <SHORT-NAME>SR_SEC_CLIMPrecSem4DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.02368.18256</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CLIMPrecSem4DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bee55501-a243-fb7b-e713-5e187d9b4211">
+                    <SHORT-NAME>SR_SEC_CMDM_DAE_4WDDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33275.69965</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CMDM_DAE_4WDDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cDAE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="e54b960f-17e4-908a-b624-1ea610c9f2e8">
+                    <SHORT-NAME>SR_SEC_CMDM_DAEDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29556.05020</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_CMDM_DAEDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cDAE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="c235f457-b3f4-7981-b216-f5291c0e3879">
+                    <SHORT-NAME>SR_SEC_DAAActivationDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25184.46097</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_DAAActivationDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bfe78ccd-8565-91d0-93f1-454028eba07b">
+                    <SHORT-NAME>SR_SEC_DecondaSelectDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05937.46580</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_DecondaSelectDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6e3723a0-1d60-ffe4-dd76-7f549f550d66">
+                    <SHORT-NAME>SR_SEC_DSGDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15540.42941</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_DSGDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="582c5b37-8e2b-3564-e267-2d181b5b1fb0">
+                    <SHORT-NAME>SR_SEC_EclAccomp</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05131.47335</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAccomp</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="91b2ec63-57dd-92a8-31d5-3e9533e4935b">
+                    <SHORT-NAME>SR_SEC_EclAccompTempo</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06546.93828</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAccompTempo</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="78ce15bc-d481-bfb0-e063-ce0fa3ad755c">
+                    <SHORT-NAME>SR_SEC_EclAdaptDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.12571.99584</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAdaptDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4b7160b3-6b07-bacc-d468-959d01ee0b16">
+                    <SHORT-NAME>SR_SEC_EclAFSDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25025.87806</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAFSDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="546509fa-1760-efc8-bb25-7710af7ed111">
+                    <SHORT-NAME>SR_SEC_EclAmbiDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40362.46595</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAmbiDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="61b8b134-dc8c-f4cb-d79a-c6b48d215770">
+                    <SHORT-NAME>SR_SEC_EclAmbiNivDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05637.91772</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAmbiNivDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="09291d67-3c93-3cdd-56a0-c605a14ad97c">
+                    <SHORT-NAME>SR_SEC_EclARSDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08973.18808</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclARSDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="a2c90260-1f73-388d-b5ed-794e151e19b8">
+                    <SHORT-NAME>SR_SEC_EclAutoDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20930.67215</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAutoDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="abb2dfbf-6dd3-bd65-f8be-6158778cc5ce">
+                    <SHORT-NAME>SR_SEC_EclAutorouteDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28720.47769</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclAutorouteDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="e8001950-09d8-1be6-0b29-491480cb5403">
+                    <SHORT-NAME>SR_SEC_EclCalandDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.16969.90582</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclCalandDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBILOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="af162eb1-a0da-4420-9fef-fc882aa1771c">
+                    <SHORT-NAME>SR_SEC_EclDeconda</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18592.10702</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclDeconda</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f1869f2b-f05c-2a32-61c2-7a27aa116ecd">
+                    <SHORT-NAME>SR_SEC_EclDecondaTempo</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.35309.06945</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EclDecondaTempo</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4655422d-ce0d-2d42-3eca-cc363db99a3d">
+                    <SHORT-NAME>SR_SEC_ECLI_PPC_ANIMDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05102.26540</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ECLI_PPC_ANIMDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4ea88ea6-bfe6-5562-9bdb-720aafb2400d">
+                    <SHORT-NAME>SR_SEC_ECLI_PPC_BLOC1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19058.53930</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ECLI_PPC_BLOC1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="5b705616-0f5b-0968-9679-ed8f733d6015">
+                    <SHORT-NAME>SR_SEC_ECLI_PPC_COL1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.36043.29001</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ECLI_PPC_COL1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="3f9fc2ff-39e6-6be0-461e-4c0bcc04a2ba">
+                    <SHORT-NAME>SR_SEC_ECLX_ECL_CAFRDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08006.78942</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ECLX_ECL_CAFRDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="2a7826d1-4152-a6e0-c30a-3c2e66da8264">
+                    <SHORT-NAME>SR_SEC_EssuiVitMarDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.00377.55722</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_EssuiVitMarDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="1c24f4a0-7d23-ef23-5a21-9ddf3ef9fc92">
+                    <SHORT-NAME>SR_SEC_FARCDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.00345.63934</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_FARCDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ff7e4cb4-b674-c53e-8b49-16c3f4a6b7ec">
+                    <SHORT-NAME>SR_SEC_FctToucheCfgDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07378.83179</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_FctToucheCfgDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cFTCG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="e1766c52-a686-55da-e32e-1effa0a9741a">
+                    <SHORT-NAME>SR_SEC_FeuxDiurneDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19035.73502</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_FeuxDiurneDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="cb937992-4074-ef3e-1bcd-b8180ddd3fa0">
+                    <SHORT-NAME>SR_SEC_FSEAutoDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.02911.04880</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_FSEAutoDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="50c0a6a5-080f-b1ac-b535-197ebae8e689">
+                    <SHORT-NAME>SR_SEC_GAV_AMLADeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19556.27449</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_GAV_AMLADeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="c6ef3b87-5e8f-a947-ce9c-119293f51624">
+                    <SHORT-NAME>SR_SEC_ILVDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04355.91976</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ILVDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="a75a23b2-ae57-f4e0-d1fc-70ec8c1ed02d">
+                    <SHORT-NAME>SR_SEC_ILV_ETSRDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01286.33256</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ILV_ETSRDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6b02f97a-f95c-0453-3bbb-9bd06ee5ac28">
+                    <SHORT-NAME>SR_SEC_IMADeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.39905.75723</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_IMADeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="7e035018-dab7-db69-58c8-f9e6b881804f">
+                    <SHORT-NAME>SR_SEC_InhibitionAASDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01476.86861</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_InhibitionAASDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="63b71623-8e9d-af46-7e6c-5abf7747377f">
+                    <SHORT-NAME>SR_SEC_InhibitionSAMDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11951.22546</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_InhibitionSAMDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="6b7be150-197e-e415-9654-b5fa4e7824fc">
+                    <SHORT-NAME>SR_SEC_INV_ADSDDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.34896.23979</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_INV_ADSDDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="385cbf81-0ffc-bf48-e74a-c651daf098f4">
+                    <SHORT-NAME>SR_SEC_LangueVehicule</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10986.44446</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_LangueVehicule</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="5c363ea7-9ed1-e58a-24b5-57ef6cfedb30">
+                    <SHORT-NAME>SR_SEC_MotoVolArDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31899.56639</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_MotoVolArDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="872b7cc4-e59c-375a-2a3d-b1984533083b">
+                    <SHORT-NAME>SR_SEC_PrgPemDiDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31120.05261</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemDiDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4231a77b-c1e7-2366-ca40-895d42c659df">
+                    <SHORT-NAME>SR_SEC_PrgPemJeDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30157.36339</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemJeDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="64c55c57-1df6-3511-18e1-3752ffc4985b">
+                    <SHORT-NAME>SR_SEC_PrgPemLuDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08927.11938</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemLuDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="5ac3da99-5dca-d089-53f1-18b9596a7106">
+                    <SHORT-NAME>SR_SEC_PrgPemMaDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31593.35167</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemMaDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="1b05bf1c-092c-289c-eedf-3ef1ba2f996a">
+                    <SHORT-NAME>SR_SEC_PrgPemMeDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28508.84537</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemMeDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="80d118f6-abe1-0ea4-7bb8-847275b725c6">
+                    <SHORT-NAME>SR_SEC_PrgPemSaDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26035.72560</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemSaDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="227032b3-965f-5c45-7e67-6f5b51185c4f">
+                    <SHORT-NAME>SR_SEC_PrgPemVeDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.36819.19675</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PrgPemVeDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="9a83ce36-eeb8-501c-8bb2-c7e4fca99f22">
+                    <SHORT-NAME>SR_SEC_PRV_MODEDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32250.16004</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_PRV_MODEDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bcbd3b35-2b9f-81d6-6de6-eb2a1b79f03c">
+                    <SHORT-NAME>SR_SEC_ReserveZEVDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41613.24986</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ReserveZEVDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="87bd85af-8e39-fc03-27a6-f8bac1584979">
+                    <SHORT-NAME>SR_SEC_RTABDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25408.04512</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_RTABDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="af9a1a92-59d4-a5fc-c44c-bd3932c888f6">
+                    <SHORT-NAME>SR_SEC_RTAB_EnergyRecDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28244.12171</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_RTAB_EnergyRecDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4f3ec303-f924-39e7-5caf-1fb4bfaa09ad">
+                    <SHORT-NAME>SR_SEC_RTAB_RecHDebDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.35999.41859</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_RTAB_RecHDebDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="60158e7e-699a-b058-6e9c-773800c5f207">
+                    <SHORT-NAME>SR_SEC_SelectOuvARDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.09189.75237</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_SelectOuvARDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="44d77d26-4b23-ff3c-ec19-aa968429bb0a">
+                    <SHORT-NAME>SR_SEC_SelReserveZEVDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04598.12108</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_SelReserveZEVDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="86a07d8e-c600-e02a-4fe8-f4aa7f8b758a">
+                    <SHORT-NAME>SR_SEC_SensibiliteARCDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.02065.94220</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_SensibiliteARCDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tQUARTET</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="889bdfc0-72bc-6c31-47d7-df1f4a74c966">
+                    <SHORT-NAME>SR_SEC_SonPolyphDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.36232.64357</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_SonPolyphDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBILOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="30bc1af4-c6c7-1c87-c1b8-9ac5331de782">
+                    <SHORT-NAME>SR_SEC_UniteConso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25403.43420</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_UniteConso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="fa324bc9-4fc6-ce42-2134-4e786e0caac5">
+                    <SHORT-NAME>SR_SEC_UniteDistance</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21824.93803</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_UniteDistance</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="29a2d07a-de43-e6f5-7605-eb88703b1a29">
+                    <SHORT-NAME>SR_SEC_UniteTemperature</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25245.56474</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_UniteTemperature</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="9dae2a50-953c-789d-d398-dc1ce8b2150d">
+                    <SHORT-NAME>SR_SEC_UniteVolume</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23100.25703</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_UniteVolume</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="da4c918d-cc99-fc89-f5fa-ea427c9ff7c5">
+                    <SHORT-NAME>SR_SEC_VAM_ECS_MODEDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18584.85380</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VAM_ECS_MODEDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="080fdf64-49dc-1d73-eb98-934372851e1b">
+                    <SHORT-NAME>SR_SEC_Vitesse1XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30934.53039</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_Vitesse1XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f51db0fa-44ee-a203-38d1-d45230c6498c">
+                    <SHORT-NAME>SR_SEC_Vitesse2XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18584.92702</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_Vitesse2XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="747689bd-6dda-847a-450a-49142153bd30">
+                    <SHORT-NAME>SR_SEC_Vitesse3XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05931.23761</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_Vitesse3XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="d5d2a4b2-58fa-1374-f68b-93252df43888">
+                    <SHORT-NAME>SR_SEC_Vitesse4XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04193.88605</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_Vitesse4XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="16826aea-eba5-6c7f-55d9-0b5f01572b0c">
+                    <SHORT-NAME>SR_SEC_Vitesse5XVV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14325.74994</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_Vitesse5XVV</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="fc0b986c-f2b7-770e-9cb9-3f1e5c6ced21">
+                    <SHORT-NAME>SR_SEC_VitLvv1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30532.20141</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="c50f3cc0-579e-a5d1-04a0-38e82758c5ec">
+                    <SHORT-NAME>SR_SEC_VitLvv1MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14063.29431</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv1MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="1a549223-c505-4fd9-d212-15ba45dfa1d0">
+                    <SHORT-NAME>SR_SEC_VitLvv2DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33610.10753</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv2DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="b1029aa2-f9e3-0d55-4933-2ebaea45e457">
+                    <SHORT-NAME>SR_SEC_VitLvv2MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32883.39729</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv2MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ad4ce47d-2568-8e03-bacc-f42167e8cf37">
+                    <SHORT-NAME>SR_SEC_VitLvv3DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.38118.00933</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv3DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="3901c6de-7aae-4005-b344-d942dc80a16e">
+                    <SHORT-NAME>SR_SEC_VitLvv3MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.00063.74892</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv3MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ff0f672a-9a5a-3022-491f-f10bf7d1d135">
+                    <SHORT-NAME>SR_SEC_VitLvv4DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08560.30873</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv4DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4237288c-699f-4346-7627-341927d1a333">
+                    <SHORT-NAME>SR_SEC_VitLvv4MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08192.64988</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv4MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="1852023c-ece8-eb0c-1d53-04974b1c81ce">
+                    <SHORT-NAME>SR_SEC_VitLvv5DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04091.07901</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv5DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="4699a75b-87b9-0dd8-b1c9-af32598c2712">
+                    <SHORT-NAME>SR_SEC_VitLvv5MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41055.47041</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv5MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="7b3329d6-a0fc-e4f2-e5e3-e7c64196ed53">
+                    <SHORT-NAME>SR_SEC_VitLvv6DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.17078.00785</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv6DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ba3b07bc-f329-38fd-a30a-e24e9c848ad8">
+                    <SHORT-NAME>SR_SEC_VitLvv6MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.16677.17735</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitLvv6MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="17cecc16-ff0e-03f1-65bc-bd99e78b5030">
+                    <SHORT-NAME>SR_SEC_VitRvv1DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26835.14011</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv1DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="b08a1152-7054-ec59-8418-20ddc6f70a84">
+                    <SHORT-NAME>SR_SEC_VitRvv1MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23083.19586</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv1MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="26998b4d-b128-238f-e618-cce97c80b5a1">
+                    <SHORT-NAME>SR_SEC_VitRvv2DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37976.58103</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv2DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bfa9124b-9689-44c3-854f-c716d0727682">
+                    <SHORT-NAME>SR_SEC_VitRvv2MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05078.29796</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv2MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="07424a0b-5aba-65a9-f2c5-c8cdf20ab51a">
+                    <SHORT-NAME>SR_SEC_VitRvv3DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33761.63539</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv3DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="b70ffb8b-1a1c-1783-668c-18710b3a0dde">
+                    <SHORT-NAME>SR_SEC_VitRvv3MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.36598.94489</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv3MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="433fb327-9cfa-52bf-092f-82193bdc4995">
+                    <SHORT-NAME>SR_SEC_VitRvv4DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04201.27535</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv4DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bb3823bc-eb20-43ec-794b-88fecd2f886b">
+                    <SHORT-NAME>SR_SEC_VitRvv4MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.39353.19785</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv4MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="57c12a4a-afc2-d10f-e0e9-fbd7cda49a11">
+                    <SHORT-NAME>SR_SEC_VitRvv5DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08460.12427</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv5DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="da03a8df-040b-a73a-ae5e-702091ae1f89">
+                    <SHORT-NAME>SR_SEC_VitRvv5MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07875.72244</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv5MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ada5a6cb-da59-9afd-2763-97bd65a81698">
+                    <SHORT-NAME>SR_SEC_VitRvv6DeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.13383.52999</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv6DeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="699346c9-f0ac-5867-034e-635909f402e9">
+                    <SHORT-NAME>SR_SEC_VitRvv6MilesDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31061.15922</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VitRvv6MilesDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="bd6cd365-9dc5-6a79-c446-ac420e80685f">
+                    <SHORT-NAME>SR_SEC_VTOR_IRVDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05835.81032</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_VTOR_IRVDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="15c65c32-ce50-225e-3d0f-55bf717a9ed0">
+                    <SHORT-NAME>SR_SEC_ZCSelectDeMenuPerso</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14588.43293</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SEC_ZCSelectDeMenuPerso</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f969161e-6648-8d4b-21db-682032834927">
+                    <SHORT-NAME>SR_ToggleNewFrame15B</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08866.73480</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A28</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ToggleNewFrame15B</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

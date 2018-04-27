@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_NV_Data</SHORT-NAME>
+            <ELEMENTS>
+                <!-- 16 Interfaces de type NV Data -->
+                <NV-DATA-INTERFACE UUID="82572791-92ab-d1bf-248e-37b9ac1a3aa8">
+                    <SHORT-NAME>SR_ConsoAutonomieGM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10236.29748</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoAutonomieGM</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f7c17778-cdc1-a97e-6e13-2fc645a644a3">
+                    <SHORT-NAME>SR_ConsoMoyenneHY1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.42853.93152</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY1</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ad5ed005-01c0-a075-72fc-c0b2b9c96b1f">
+                    <SHORT-NAME>SR_ConsoMoyenneHY2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29598.07421</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY2</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="2aea2eba-43e8-d3f3-519f-4f5dc8c2f428">
+                    <SHORT-NAME>SR_ConsoMoyenneHY3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10112.38889</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY3</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="1c71c7d1-6699-7a79-0c2c-e1b7e1a00357">
+                    <SHORT-NAME>SR_ConsoMoyenneHY4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07784.95687</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY4</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="e97f6f7c-5434-d4d5-5283-1540dfa19233">
+                    <SHORT-NAME>SR_ConsoMoyenneHY5</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27228.69907</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY5</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="cf4abd00-f63a-1c78-f676-6a7c7cbda454">
+                    <SHORT-NAME>SR_ConsoMoyenneHY6</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.39812.64942</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>ConsoMoyenneHY6</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="f3d34c87-881e-c081-b2e0-56e87004e929">
+                    <SHORT-NAME>SR_Conso_WH_Gain1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20484.45874</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain1</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="a6ff17d2-530e-069d-dd72-a85fff85bbcd">
+                    <SHORT-NAME>SR_Conso_WH_Gain2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04195.20402</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain2</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="d4d1854f-da11-f324-a285-93fbb57a2a5f">
+                    <SHORT-NAME>SR_Conso_WH_Gain3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23965.97325</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain3</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ab06dea0-477f-233e-0df4-b5b6d183e010">
+                    <SHORT-NAME>SR_Conso_WH_Gain4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37446.27666</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain4</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="ebde164c-b596-95ae-6941-d23dbded3a75">
+                    <SHORT-NAME>SR_Conso_WH_Gain5</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.12232.97037</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain5</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="036daad5-8fc3-d760-f784-519ed69932b1">
+                    <SHORT-NAME>SR_Conso_WH_Gain6</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07373.85005</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>Conso_WH_Gain6</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="43849459-4368-a903-2dbf-24d827b031ca">
+                    <SHORT-NAME>SR_DistAutonomieGM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32863.37743</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>DistAutonomieGM</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="41abbd50-edc9-10bd-fc28-2e1d48fa4ff2">
+                    <SHORT-NAME>SR_SAV_ConsoGPLLisse</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40410.05781</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SAV_ConsoGPLLisse</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+                <NV-DATA-INTERFACE UUID="c75c435d-97ed-00db-1780-583ce68ed2cf">
+                    <SHORT-NAME>SR_SAV_ConsoLisse</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21807.17732</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <NV-DATAS>
+                        <VARIABLE-DATA-PROTOTYPE>
+                            <SHORT-NAME>SAV_ConsoLisse</SHORT-NAME>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL />
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </NV-DATAS>
+                </NV-DATA-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

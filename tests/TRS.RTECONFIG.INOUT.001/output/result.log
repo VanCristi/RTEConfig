@@ -1,0 +1,14 @@
+2018-04-27 15:31:35,942 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-04-27 15:31:36,506 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-04-27 15:31:36,552 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A27\arxml\ASWC_A27.aswc.arxml is well-formed
+2018-04-27 15:31:37,098 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A27\arxml\ASWC_A27.aswc.arxml is valid with the provided xsd schema
+2018-04-27 15:31:37,176 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A28\arxml\ASWC_A28.aswc.arxml is well-formed
+2018-04-27 15:31:37,770 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\input\ASWC_A28\arxml\ASWC_A28.aswc.arxml is valid with the provided xsd schema
+2018-04-27 15:31:37,848 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-04-27 15:31:37,848 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:37,864 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-04-27 15:31:37,864 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:37,864 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-04-27 15:31:37,864 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-04-27 15:31:37,864 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-04-27 15:31:37,879 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.INOUT.001\rte_config\ExempleSwcAllocation.xml is valid with the provided xsd schema

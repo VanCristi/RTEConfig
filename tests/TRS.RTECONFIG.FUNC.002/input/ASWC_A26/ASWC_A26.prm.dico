@@ -1,0 +1,2982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_SR_Param</SHORT-NAME>
+            <ELEMENTS>
+                <!-- 94 Interfaces de type Sender Receiver -->
+                <SENDER-RECEIVER-INTERFACE UUID="1c5d82c5-67c2-14f4-053d-5c002c5b8304">
+                    <SHORT-NAME>SR_C26_ALT_FR_DISTANCE_SEED</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.09536.77935</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="350a08c5-5ada-2236-87ff-adf713920871">
+                            <SHORT-NAME>C26_ALT_FR_DISTANCE_SEED</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+GEN-VHL-DCINT-CONSO.0104(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_ALT_FR_DISTANCE_SEED</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_ALT_FR_DISTANCE_SEED_240</SHORT-LABEL>
+                                        <VALUE>240</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cc57ca3d-a087-4029-189a-bd48455717a2">
+                    <SHORT-NAME>SR_C26_ALT_FR_FUEL_USED_SEED</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27730.39670</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="9f4a2a44-737b-edaa-b837-e68f14a1673b">
+                            <SHORT-NAME>C26_ALT_FR_FUEL_USED_SEED</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+GEN-VHL-DCINT-CONSO.0105(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_ALT_FR_FUEL_USED_SEED</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_ALT_FR_FUEL_USED_SEED_20</SHORT-LABEL>
+                                        <VALUE>20</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="968b8cde-fbe3-2f8f-f7b6-8585be05391c">
+                    <SHORT-NAME>SR_C26_AUTONOMIE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37972.61793</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="9bdd6e7c-229b-e3d2-589c-179426fc95d9">
+                            <SHORT-NAME>C26_AUTONOMIE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour l&#039;autonomie
+.AUTONCONSO.PAR.26(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_1280</SHORT-LABEL>
+                                        <VALUE>1280</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ea489658-0faf-84fc-ef07-cce6add777fb">
+                    <SHORT-NAME>SR_C26_AUTONOMIE_MAX_GM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31759.09790</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="69c3a6e9-2530-d24b-32c8-733b2ed54772">
+                            <SHORT-NAME>C26_AUTONOMIE_MAX_GM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour l&#039;autonomie
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2000</SHORT-LABEL>
+                                        <VALUE>2000</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f0f8946f-c70a-774a-32b0-2a530b999fda">
+                    <SHORT-NAME>SR_C26_AUTONOMIE_MAX_PSA</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.17732.70960</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="30d9af89-96c9-5c08-12fb-055da862b905">
+                            <SHORT-NAME>C26_AUTONOMIE_MAX_PSA</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour l&#039;autonomie
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_1280</SHORT-LABEL>
+                                        <VALUE>1280</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="99e41b37-b3aa-c281-7451-0627be77a846">
+                    <SHORT-NAME>SR_C26_BORNE_AUTONOMIE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15208.14842</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ae344bf4-d3e8-2754-62b9-5176440f3bc9">
+                            <SHORT-NAME>C26_BORNE_AUTONOMIE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Borne inférieure de l&#039;autonomie calculée corrigée.
+(Res: 10 Kms)
+.AUTONCONSO.PAR.21(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_200</SHORT-LABEL>
+                                        <VALUE>200</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e222115f-b2c7-1056-06f4-b95c1e918ad0">
+                    <SHORT-NAME>SR_C26_BORNE_AUTONOMIE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20113.92442</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ea478637-2b84-97df-0d25-842c5a7b907b">
+                            <SHORT-NAME>C26_BORNE_AUTONOMIE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Borne supérieure de l&#039;autonomie calculée corrigée.
+(Res: 10 Kms)
+.AUTONCONSO.PAR.22(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_500</SHORT-LABEL>
+                                        <VALUE>500</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="942c0664-7617-d4be-b26f-211c89e798ac">
+                    <SHORT-NAME>SR_C26_COEF_HYST_MOINS</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40454.56660</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d58a43c2-5942-419b-bed3-574390869f0a">
+                            <SHORT-NAME>C26_COEF_HYST_MOINS</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de Autonomie_Hyst. Coefficient qui définit un seuil bas de l&#039;hystérésis pour une évolution dynamique de ce seuil.
+(Res: 0,1)
+.AUTONCONSO.PAR.20(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5ee8d031-0d51-c108-040f-850560cc4f99">
+                    <SHORT-NAME>SR_C26_COEF_HYST_PLUS</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18758.00790</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d2088fa4-82f7-f64e-a617-9f61b9af1dc5">
+                            <SHORT-NAME>C26_COEF_HYST_PLUS</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de Autonomie_Hyst. Coefficient qui définit un seuil haut de l&#039;hystérésis pour une évolution dynamique de ce seuil.
+(Res: 0.1)
+.AUTONCONSO.PAR.19(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_15</SHORT-LABEL>
+                                        <VALUE>15</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4e409239-99d7-ff6c-4455-d62b5e2b8a74">
+                    <SHORT-NAME>SR_C26_CONSO_INST_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28225.37178</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="22e6b983-e7af-674c-1ce2-37a05fb43874">
+                            <SHORT-NAME>C26_CONSO_INST_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour la consommation instantanée pendant un trajet.
+(Res: 0.1 l/100Km)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="61ed03d0-c117-d649-24c9-ef2676ff2002">
+                    <SHORT-NAME>SR_C26_CONSO_MOY_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30547.31468</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7fa98e50-d4b5-19f7-132e-d757d7fe4fb8">
+                            <SHORT-NAME>C26_CONSO_MOY_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour la consommation moyenne pendant un trajet.
+(Res: 0.1l/100Km)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6df3130a-e5eb-aed7-bea9-04e81d1dcf1f">
+                    <SHORT-NAME>SR_C26_DISTANCE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11968.57463</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="620c2b45-4290-c22f-5495-045faec4e029">
+                            <SHORT-NAME>C26_DISTANCE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Distance maximale depuis dernière RAZ.
+(Res: Km)
+.AUTONCONSO.PAR.30(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_9999</SHORT-LABEL>
+                                        <VALUE>9999</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4fa02461-6867-07f9-1f69-a78309bb4ca7">
+                    <SHORT-NAME>SR_C26_DISTANCE_MINI</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14656.46278</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="9bd17afd-9625-408b-3043-ee283f999a16">
+                            <SHORT-NAME>C26_DISTANCE_MINI</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Distance minimum pour qu&#039;un trajet soit VALIDE.
+(Res: 10cm (0.1m))
+.AUTONCONSO.PAR.01(2)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_400</SHORT-LABEL>
+                                        <VALUE>400</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2748959c-9216-15ae-4909-c9aa90bb5a00">
+                    <SHORT-NAME>SR_C26_DISTANCE_MINI_HY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26582.17517</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ae214dbf-c0c9-e740-aae5-af0b8b5fbf12">
+                            <SHORT-NAME>C26_DISTANCE_MINI_HY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Distance minimum à prendre en compte
+pour avoir une valeur cohérente dans le calcul
+de consommation moyenne HY .AUTONCONSO.PAR.39(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_DISTANCE_MINI_HY</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_DISTANCE_MINI_HY_250</SHORT-LABEL>
+                                        <VALUE>250</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="745ce9ad-7650-c924-e4e3-062bdc5b8a37">
+                    <SHORT-NAME>SR_C26_FILTER_GM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.00151.60133</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="fbe2b8f6-31d8-2bde-dd75-2ac1dc35d221">
+                            <SHORT-NAME>C26_FILTER_GM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Coefficient 0,351
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_FILTER_GM</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_FILTER_GM_351</SHORT-LABEL>
+                                        <VALUE>351</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="31f522ae-503f-ee4c-059a-be095762f92f">
+                    <SHORT-NAME>SR_C26_HYST_AUTONOMIE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21630.67349</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a294c851-8a33-e43d-6be2-67578d574eb2">
+                            <SHORT-NAME>C26_HYST_AUTONOMIE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Seuil pour sortie de l&#039;état invalide de l&#039;autonomie
+.AUTONCONSO.PAR.37(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5eada706-f7b6-fa3b-a244-34f6b04d083f">
+                    <SHORT-NAME>SR_C26_IDLING_TIMEGPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.13545.03371</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7fc27134-f38d-0dd9-9d4c-ed3e68b680ff">
+                            <SHORT-NAME>C26_IDLING_TIMEGPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Temps minimin pour arreter le calcul de l&#039;autonomie GPL
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_40</SHORT-LABEL>
+                                        <VALUE>40</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ce0d4be0-b54d-4a48-5b70-485f91d74aa3">
+                    <SHORT-NAME>SR_C26_LIMITE_DETECTION_PIED_LEVE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28044.75320</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ace0800a-0f23-a4db-a64e-42109529340f">
+                            <SHORT-NAME>C26_LIMITE_DETECTION_PIED_LEVE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Seuil de quantité de carburant consommé pendant T24_DELTA_MES_CONSO_CARB permettant de détecter un pied levé.
+(Res : 80 mm3)
+.AUTONCONSO.PAR.09(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3742d603-d741-ce90-2fac-56c048603829">
+                    <SHORT-NAME>SR_C26_LIMITE_DETECTION_PIED_LEVE_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40246.10337</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="6f6de15f-599b-3579-8b30-eb7d40f46e43">
+                            <SHORT-NAME>C26_LIMITE_DETECTION_PIED_LEVE_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Seuil de quantité de carburant consommé pendant T24_DELTA_MES_CONSO_CARB permettant de détecter un pied levé.
+(Res : 80 mm3)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="678efc83-d96a-f2c3-ecc0-1384ee00448d">
+                    <SHORT-NAME>SR_C26_MAXDIST_GM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08751.52360</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="9e5d75bb-01d2-9274-1438-2cb8ec625369">
+                            <SHORT-NAME>C26_MAXDIST_GM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+240 km
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_MAXDIST_GM</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_MAXDIST_GM_240</SHORT-LABEL>
+                                        <VALUE>240</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="84c488b8-7812-1b32-e480-94c75a79c796">
+                    <SHORT-NAME>SR_C26_MAXFUEL_GM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32039.95319</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1b576db7-a3b9-4e2c-e537-b00def387ff6">
+                            <SHORT-NAME>C26_MAXFUEL_GM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+20 litres
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_MAXFUEL_GM</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_MAXFUEL_GM_20</SHORT-LABEL>
+                                        <VALUE>20</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="84f0a1bc-0334-e77f-82fe-e3c66d75b656">
+                    <SHORT-NAME>SR_C26_MAX_WORD_VALUE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33629.71765</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ae120f3f-9ff6-af1f-4785-6ba1364efea7">
+                            <SHORT-NAME>C26_MAX_WORD_VALUE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante correspondant à la valeur max d&#039;un word = 0xffff
+.AUTONCONSO.PAR.38(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_65535</SHORT-LABEL>
+                                        <VALUE>65535</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2e346ea6-b001-572f-7d49-0076437f3845">
+                    <SHORT-NAME>SR_C26_MOTEUR_MIN</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23856.84056</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dc570be9-06ee-4bd3-e5ef-e1f6c83bf26a">
+                            <SHORT-NAME>C26_MOTEUR_MIN</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Regime moteur au dessus duquel le diagnostique des informations \Pseudo consommation carburant\ et \Consommation carburant reelle\ est effectué.
+(Res:tr/min)
+.AUTONCONSO.PAR.02(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5a7c2874-4046-7f97-16c6-192902331e2e">
+                    <SHORT-NAME>SR_C26_OFFSET_GM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41083.86438</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8d0c7ac3-4cf9-5f12-5391-9b3e6ce85dab">
+                            <SHORT-NAME>C26_OFFSET_GM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Offset à modifier, init zero
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e1e19535-00cb-690b-721b-20cbab5e3782">
+                    <SHORT-NAME>SR_C26_PAS_AUTONOMIE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20358.45740</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0a308aa6-cc7a-1283-bce2-0502c7135a9d">
+                            <SHORT-NAME>C26_PAS_AUTONOMIE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est inférieur ou égale à C26_BORNE_AUTONOMIE_1.
+(Res : 1 Km)
+.AUTONCONSO.PAR.23(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="fa791538-62f0-7d42-3ddf-d2f40a9e1cda">
+                    <SHORT-NAME>SR_C26_PAS_AUTONOMIE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33803.47551</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b11e569e-9907-5e6a-536a-a93a89e7eb81">
+                            <SHORT-NAME>C26_PAS_AUTONOMIE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est strictement supérieure à C26_BORNE_AUTONOMIE_1 et inférieure ou égale à C26_BORNE_AUTONOMIE_2.
+(Res: 1 Km)
+.AUTONCONSO.PAR.24(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a278639e-5a44-31ce-b1aa-dd0c247e71e9">
+                    <SHORT-NAME>SR_C26_PAS_AUTONOMIE_3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21136.66956</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ea4a5a55-0773-fb82-20cf-21b27bb00ff9">
+                            <SHORT-NAME>C26_PAS_AUTONOMIE_3</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est strictement supérieure à C26_BORNE_AUTONOMIE_2.
+(Res: 1 Km)
+.AUTONCONSO.PAR.25(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_20</SHORT-LABEL>
+                                        <VALUE>20</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9f4d91a1-5a59-011f-724f-5c1daae373c1">
+                    <SHORT-NAME>SR_C26_RANGE_SCALEGPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25711.20531</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c5826227-9ba0-0039-4f18-3ee870157dab">
+                            <SHORT-NAME>C26_RANGE_SCALEGPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Coefficient 0,875
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_C26_RANGE_SCALEGPL</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_C26_RANGE_SCALEGPL_875</SHORT-LABEL>
+                                        <VALUE>875</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="efc02e79-3ffe-8791-696c-2fa2c18021d1">
+                    <SHORT-NAME>SR_C26_SECUR_AUTONOMIE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08649.90003</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5798b4ae-4e36-f062-6d4d-aff1dd294d58">
+                            <SHORT-NAME>C26_SECUR_AUTONOMIE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Marge de sécurité sur l&#039;autonomie afin d&#039;éviter des pannes sèches.
+(Res: litre)
+.AUTONCONSO.PAR.18(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="630c80ac-4432-c0c4-fc43-58df63a8d29d">
+                    <SHORT-NAME>SR_C26_SECUR_AUTONOMIE_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.38152.14114</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e202f8e8-53f9-bcf6-80de-353a00d719f5">
+                            <SHORT-NAME>C26_SECUR_AUTONOMIE_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Marge de sécurité sur l&#039;autonomie afin d&#039;éviter des pannes sèches.
+(Res: litre)
+.AUTONCONSO.PAR.18(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2fa116a1-4fa9-5784-fdea-4aa21508bc98">
+                    <SHORT-NAME>SR_C26_SEUIL_AUTONOMIE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11684.68981</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="da5b4f18-9ea1-a1dc-5fe6-d56baed60761">
+                            <SHORT-NAME>C26_SEUIL_AUTONOMIE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil d&#039;autonomie pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km)
+.AUTONCONSO.PAR.13(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="13252971-5a57-e393-6ee5-e44b601973a3">
+                    <SHORT-NAME>SR_C26_SEUIL_AUTONOMIE_INVALIDE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07015.39775</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="444e5362-94ea-a25e-5912-b94ac58a483b">
+                            <SHORT-NAME>C26_SEUIL_AUTONOMIE_INVALIDE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur de seuil sous laquelle l&#039;autonomie devient invalide.
+(Res: Km)
+.AUTONCONSO.PAR.36(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3f204e16-4eea-ffce-7621-43e5b50518ec">
+                    <SHORT-NAME>SR_C26_SEUIL_VITESSE_CONSO_MOY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01598.21000</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a3ceba0b-59ab-e8e1-27ec-139fb8df9ab6">
+                            <SHORT-NAME>C26_SEUIL_VITESSE_CONSO_MOY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse véhicule pour figer le calcul de la conso moy (pour autonomie).
+(Res:Km/h)
+.AUTONCONSO.PAR.12(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="401604f7-d294-0718-a03a-3b5d892e2df7">
+                    <SHORT-NAME>SR_C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37750.61004</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="125d4f49-f4b8-4feb-9942-c8c3b6d76f63">
+                            <SHORT-NAME>C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse faible véhicule pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km/h)
+.AUTONCONSO.PAR.11(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c1a1a3d1-ee18-e254-d9c7-40ec9d2fefa3">
+                    <SHORT-NAME>SR_C26_SEUIL_VIT_FIGEAGE_CONSO_INST</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03314.61952</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e80d5600-c252-e42b-ad6c-4d81a9b29d83">
+                            <SHORT-NAME>C26_SEUIL_VIT_FIGEAGE_CONSO_INST</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse véhicule pour figer le calcul de la conso instantanée.
+(Res: Km/h)
+.AUTONCONSO.PAR.10(3)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="308a26fd-4c90-f8d3-f591-bb08b8cb4d76">
+                    <SHORT-NAME>SR_C26_SEUIL_VIT_TRES_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40264.22599</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dde358a6-d7a2-74ae-5393-4391c59fd42b">
+                            <SHORT-NAME>C26_SEUIL_VIT_TRES_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse très faible véhicule pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km/h)
+.AUTONCONSO.PAR.04(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c1a698de-1832-4a02-c715-c14ba8082382">
+                    <SHORT-NAME>SR_C26_VAL_MAX_CONSO_MOYENNE_HY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18787.04406</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d7c4b091-8b53-651f-c168-0c34b8fed3f3">
+                            <SHORT-NAME>C26_VAL_MAX_CONSO_MOYENNE_HY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale de l&#039;historique des consommations en HY 
+.AUTONCONSO.PAR.35(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_250</SHORT-LABEL>
+                                        <VALUE>250</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="be2d8968-9441-b0d0-cb1a-23eb53c8aabb">
+                    <SHORT-NAME>SR_C_CONSO_AUTONOMIE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11168.84577</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b5031b95-6a5c-6f99-2347-69d7ab83b94a">
+                            <SHORT-NAME>C_CONSO_AUTONOMIE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur maximale pour l&#039;autonomie
+.AUTONCONSO.PAR.26(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_1280</SHORT-LABEL>
+                                        <VALUE>1280</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="673e0d7e-96e3-6653-77bc-917b65381f3e">
+                    <SHORT-NAME>SR_C_CONSO_BORNE_AUTONOMIE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03442.64725</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="96ce7a6e-f137-c55d-6e91-ff76dd8c2da5">
+                            <SHORT-NAME>C_CONSO_BORNE_AUTONOMIE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Borne inférieure de l&#039;autonomie calculée corrigée.
+(Res: 10 Kms)
+.AUTONCONSO.PAR.21(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_200</SHORT-LABEL>
+                                        <VALUE>200</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="836a3aaa-132d-fec6-edb3-3a6ef338f7f9">
+                    <SHORT-NAME>SR_C_CONSO_BORNE_AUTONOMIE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.09691.26741</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="171e633c-848e-febe-cd82-beefe77009e5">
+                            <SHORT-NAME>C_CONSO_BORNE_AUTONOMIE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Borne supérieure de l&#039;autonomie calculée corrigée.
+(Res: 10 Kms)
+.AUTONCONSO.PAR.22(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_500</SHORT-LABEL>
+                                        <VALUE>500</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3e9bf627-2031-4f01-802a-74affd808d8a">
+                    <SHORT-NAME>SR_C_CONSO_COEF_HYST_MOINS</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18129.35003</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="21815f20-722d-0b74-a315-f171507ef24a">
+                            <SHORT-NAME>C_CONSO_COEF_HYST_MOINS</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de Autonomie_Hyst. Coefficient qui définit un seuil bas de l&#039;hystérésis pour une évolution dynamique de ce seuil.
+(Res: 0,1)
+.AUTONCONSO.PAR.20(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5260d951-49d2-a661-1d89-e12b13c7db99">
+                    <SHORT-NAME>SR_C_CONSO_COEF_HYST_PLUS</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.24545.57267</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="77906751-ea4f-e195-7589-401173b1fc4d">
+                            <SHORT-NAME>C_CONSO_COEF_HYST_PLUS</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de Autonomie_Hyst. Coefficient qui définit un seuil haut de l&#039;hystérésis pour une évolution dynamique de ce seuil.
+(Res: 0.1)
+.AUTONCONSO.PAR.19(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_15</SHORT-LABEL>
+                                        <VALUE>15</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="944b216d-90a3-a902-158c-6273d7743976">
+                    <SHORT-NAME>SR_C_CONSO_DISTANCE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23220.30743</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="bab993f5-c518-7ccc-fdba-d6647bc56541">
+                            <SHORT-NAME>C_CONSO_DISTANCE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Distance maximale depuis dernière RAZ.
+(Res: Km)
+.AUTONCONSO.PAR.30(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_9999</SHORT-LABEL>
+                                        <VALUE>9999</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5edad702-fe42-8172-a2bd-d203e80f424f">
+                    <SHORT-NAME>SR_C_CONSO_DISTANCE_MINI</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25906.39142</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4ccfbf69-e51e-0bea-def8-24d11525e2c9">
+                            <SHORT-NAME>C_CONSO_DISTANCE_MINI</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Distance minimum pour qu&#039;un trajet soit VALIDE.
+(Res: 10cm (0.1m))
+.AUTONCONSO.PAR.01(2)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_400</SHORT-LABEL>
+                                        <VALUE>400</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4d15d127-233f-7119-cd85-2cde06089fc3">
+                    <SHORT-NAME>SR_C_CONSO_HYST_AUTONOMIE_MAX</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18448.08998</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5d845f27-0962-fdcb-d5ec-981be18d6f71">
+                            <SHORT-NAME>C_CONSO_HYST_AUTONOMIE_MAX</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Seuil pour sortie de l&#039;état invalide de l&#039;autonomie
+.AUTONCONSO.PAR.37(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="002e6bf0-d283-5830-d068-e079db29e521">
+                    <SHORT-NAME>SR_C_CONSO_LIMITE_DETECTION_PIED_LEVE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29157.16101</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="6f423b8d-ea4a-b531-d6a6-551a412878c5">
+                            <SHORT-NAME>C_CONSO_LIMITE_DETECTION_PIED_LEVE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Seuil de quantité de carburant consommé pendant T24_DELTA_MES_CONSO_CARB permettant de détecter un pied levé.
+(Res : 80 mm3)
+.AUTONCONSO.PAR.09(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c8c05044-1637-d57f-ca3f-e6dd6c33c9ac">
+                    <SHORT-NAME>SR_C_CONSO_MOTEUR_MIN</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19409.97853</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4bccc40f-1e8d-0e5d-c8df-c2c3428ebbce">
+                            <SHORT-NAME>C_CONSO_MOTEUR_MIN</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Regime moteur au dessus duquel le diagnostique des informations \Pseudo consommation carburant\ et \Consommation carburant reelle\ est effectué.
+(Res:tr/min)
+.AUTONCONSO.PAR.02(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9a93b7f8-8541-1d24-d715-af6a9fda977b">
+                    <SHORT-NAME>SR_C_CONSO_PAS_AUTONOMIE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.22289.72265</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="66b5980f-d212-2617-bab9-8ab665a1d305">
+                            <SHORT-NAME>C_CONSO_PAS_AUTONOMIE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est inférieur ou égale à C26_BORNE_AUTONOMIE_1.
+(Res : 1 Km)
+.AUTONCONSO.PAR.23(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ebc7628c-d527-5d05-accf-7467188a70b8">
+                    <SHORT-NAME>SR_C_CONSO_PAS_AUTONOMIE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14147.88816</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1fbfbce6-7e2f-7003-8e43-cf061215e174">
+                            <SHORT-NAME>C_CONSO_PAS_AUTONOMIE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est strictement supérieure à C26_BORNE_AUTONOMIE_1 et inférieure ou égale à C26_BORNE_AUTONOMIE_2.
+(Res: 1 Km)
+.AUTONCONSO.PAR.24(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3d65537e-62e1-80d7-e260-a278bd2a3be7">
+                    <SHORT-NAME>SR_C_CONSO_PAS_AUTONOMIE_3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37719.93027</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e3186d68-1f09-40a4-ea5f-e70e4484f2fd">
+                            <SHORT-NAME>C_CONSO_PAS_AUTONOMIE_3</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donnée entrant dans le calcul de l&#039;hystérésis d&#039;affichage qui évite les bagotements intempestifs. Pas d&#039;affichage si l&#039;autonomie calculée corrigée est strictement supérieure à C26_BORNE_AUTONOMIE_2.
+(Res: 1 Km)
+.AUTONCONSO.PAR.25(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_20</SHORT-LABEL>
+                                        <VALUE>20</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="30b28553-59c6-cfea-bd58-eeabc493ef70">
+                    <SHORT-NAME>SR_C_CONSO_SECUR_AUTONOMIE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.34569.79894</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f3728328-14d0-4c22-59f8-9ece01c26bbf">
+                            <SHORT-NAME>C_CONSO_SECUR_AUTONOMIE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Marge de sécurité sur l&#039;autonomie afin d&#039;éviter des pannes sèches.
+(Res: litre)
+.AUTONCONSO.PAR.18(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d06c5c74-f8ff-0ff9-891b-9756e62af8b7">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_AUTONOMIE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27406.56128</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="da716f59-e492-d5ca-3a1d-99265b60be11">
+                            <SHORT-NAME>C_CONSO_SEUIL_AUTONOMIE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil d&#039;autonomie pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km)
+.AUTONCONSO.PAR.13(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2c5edecf-3de4-38ea-39f5-260f39adee0a">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_AUTONOMIE_INVALIDE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.34198.81265</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f9eba1fd-defd-13eb-2a46-94f3190d2234">
+                            <SHORT-NAME>C_CONSO_SEUIL_AUTONOMIE_INVALIDE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur de seuil sous laquelle l&#039;autonomie devient invalide.
+(Res: Km)
+.AUTONCONSO.PAR.36(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="19bc6dad-90ce-3e6e-e7a8-d9444a220803">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_VITESSE_CONSO_MOY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30601.51809</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7da05d0a-62da-18d2-3dcb-f9ca78639fc1">
+                            <SHORT-NAME>C_CONSO_SEUIL_VITESSE_CONSO_MOY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse véhicule pour figer le calcul de la conso moy (pour autonomie).
+(Res:Km/h)
+.AUTONCONSO.PAR.12(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c8477075-3f95-6332-0365-ca7dff814c40">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_VIT_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14123.22516</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d13412bd-a8ae-a5f8-875f-a1d71edbaae7">
+                            <SHORT-NAME>C_CONSO_SEUIL_VIT_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse faible véhicule pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km/h)
+.AUTONCONSO.PAR.11(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="09d6e2a9-6e00-43c0-8820-f645497dfd42">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_VIT_FIGEAGE_CONSO_INST</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40185.60253</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a0f1575f-f107-88f4-1378-fc409b28aed6">
+                            <SHORT-NAME>C_CONSO_SEUIL_VIT_FIGEAGE_CONSO_INST</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse véhicule pour figer le calcul de la conso instantanée.
+(Res: Km/h)
+.AUTONCONSO.PAR.10(3)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="97948cfe-f8d2-0c77-6336-17a004d60617">
+                    <SHORT-NAME>SR_C_CONSO_SEUIL_VIT_TRES_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.35978.67634</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="fbe9dfcb-2afc-9a83-60a4-d0b184baed58">
+                            <SHORT-NAME>C_CONSO_SEUIL_VIT_TRES_FAIBLE_CONSO_LISSEE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur seuil de vitesse très faible véhicule pour choisir la constante de temps de filtrage pour la conso lissée.
+(Res: Km/h)
+.AUTONCONSO.PAR.04(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3eb96c41-6664-dc98-6dc7-1f02553e69c4">
+                    <SHORT-NAME>SR_CFG_CAPACITE_RESERVOIR</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18062.61352</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="60e4d634-6bab-5b82-6122-e499c6f4f1ff">
+                            <SHORT-NAME>CFG_CAPACITE_RESERVOIR</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Donne la capacité maximum du réservoir
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_50</SHORT-LABEL>
+                                        <VALUE>50</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3bef60cd-be96-75eb-bdc1-9addaf04f769">
+                    <SHORT-NAME>SR_CFG_DISPO_PSEUDO_CONSO_CARB</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10680.97993</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c0f4bc76-2744-8554-7dae-2a1ead1f6d5b">
+                            <SHORT-NAME>CFG_DISPO_PSEUDO_CONSO_CARB</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Présence de la gestion de la pseudo-consommation de carburant
+
+ENUM 0 &quot;Pas de gestion de la pseudo-consommation&quot;
+ENUM 1 &quot;Gestion de la pseudo-consommation présente&quot;
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0888bfab-2b60-21f7-b169-1c0bbbfcbe43">
+                    <SHORT-NAME>SR_CFG_PRESENCE_GAZ</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.17657.49031</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dc4f7b47-808e-6faf-7e22-d1dcd4cdc3e8">
+                            <SHORT-NAME>CFG_PRESENCE_GAZ</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Indique la présence d&#039;un équipement GAZ
+
+ENUM 0 &quot;équipement GAZ absent&quot;
+ENUM 1 &quot;équipement GAZ présent&quot;
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="152ded7c-85dc-3a97-f113-93139b92abc0">
+                    <SHORT-NAME>SR_CFG_PRESENCE_ODB</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.34775.05517</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c34b3ba3-6fa5-8021-1253-427a550c7a1f">
+                            <SHORT-NAME>CFG_PRESENCE_ODB</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Présence d&#039;un Ordinateur De Bord (ODB)
+
+ENUM 0 &quot;ODB absent&quot;
+ENUM 1 &quot;ODB présent&quot;
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="429763d9-0401-c8c8-cdb2-50d6e1a3a6ce">
+                    <SHORT-NAME>SR_CFG_TYPE_CHAINE_TRACTION</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21094.61477</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="55b1d57a-bb74-9e3a-8aad-d4c1ce5cf9a2">
+                            <SHORT-NAME>CFG_TYPE_CHAINE_TRACTION</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Type de la chaine de traction
+
+ENUM 0 &quot;Chaine de traction classique moteur thermique cTCT_MTH&quot;
+ENUM 1 &quot;Chaine de traction hybride HY cTCT_HY&quot;
+ENUM 2 &quot;Chaine de traction électrique cTCT_ELEC&quot;
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cTCT</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cTCT_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="27cf48d2-5d94-3702-15b2-242313388b37">
+                    <SHORT-NAME>SR_CFG_TYPE_GPL_IHM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01334.50421</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ead25f4d-90b7-8109-b51f-39ef4605e995">
+                            <SHORT-NAME>CFG_TYPE_GPL_IHM</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Indiquer le type d&#039;IHM pour GPL
+
+ENUM 0 &quot;without&quot; cIHM_without
+ENUM 1 &quot;current&quot; cIHM_currentAutonomy
+ENUM 2 &quot;TOTAL&quot; cIHM_totalAutonomy
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cIHM</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cIHM_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3d77e8c4-54da-9c98-0d68-6c7e85ae8917">
+                    <SHORT-NAME>SR_CFG_TYPE_HY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15287.72482</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="17f73792-5bea-335a-e616-41dcb936093c">
+                            <SHORT-NAME>CFG_TYPE_HY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Indique le type d&#039;hybride équipant le véhicule
+
+ENUM 0 &quot;HY PHASE 1&quot;
+ENUM 1 &quot;HY PHASE 2&quot;
+ENUM 2 &quot;HY E35&quot;
+ENUM 3 &quot;HY4PREMIUM&quot;
+ENUM 4 &quot;PHEV&quot;
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_H</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_H_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="28730493-290a-401a-c22b-3dbd71a16eb7">
+                    <SHORT-NAME>SR_CONSO_DELTA_MES_CONSO_CARB</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15244.72730</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c5012845-42e3-4da6-0462-5dd5c13f5d1a">
+                            <SHORT-NAME>CONSO_DELTA_MES_CONSO_CARB</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Intervalle de temps permettant de définir la variation de la quantité de carburant consommé pour le choix de T26_FILTR_CONSO_INST_1 ou T26_FILTR_CONSO_INST_2.
+(Res: 0.1s)
+.AUTONCONSO.PAR.08(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b01213e4-46f2-edda-991a-aa7054e85a68">
+                    <SHORT-NAME>SR_T26_DELTA_MES_CONSO_CARB</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26702.68027</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8883c832-9ade-b762-7017-9cecd01c1ead">
+                            <SHORT-NAME>T26_DELTA_MES_CONSO_CARB</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Intervalle de temps permettant de définir la variation de la quantité de carburant consommé pour le choix de T26_FILTR_CONSO_INST_1 ou T26_FILTR_CONSO_INST_2.
+(Res: 0.1s)
+.AUTONCONSO.PAR.08(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="84a6ab7c-9486-91c3-0d68-d4ec6b80783a">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_INST_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.24947.87454</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="20668b33-8297-41ab-fd57-575822329ad5">
+                            <SHORT-NAME>T26_FILTR_CONSO_INST_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps 1 de filtrage pour la conso instantannée (pied non levé).
+(Res: s)
+.AUTONCONSO.PAR.06(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b5c9bd88-0346-36f3-44a1-571aae51be00">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_INST_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19702.47082</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e5444c3c-deb6-d48d-919e-a1f42c1a42b0">
+                            <SHORT-NAME>T26_FILTR_CONSO_INST_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps 2 de filtrage pour la conso instantannée (pied levé).
+(Res: s)
+.AUTONCONSO.PAR.05(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_1</SHORT-LABEL>
+                                        <VALUE>1</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f4a48e87-ecd1-f2b2-6e4e-6497e3a1c475">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_INST_GPL_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05122.78795</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f0028176-bbc3-3f41-0637-9fb0d51ae012">
+                            <SHORT-NAME>T26_FILTR_CONSO_INST_GPL_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps 1 de filtrage pour la conso instantannée (pied non levé).
+(Res: s)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9510eded-58f6-0c75-bb0f-5daca0ac84c4">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_INST_GPL_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.42837.10431</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b12168fc-a1cd-c3ab-28db-80af826851eb">
+                            <SHORT-NAME>T26_FILTR_CONSO_INST_GPL_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps utilisée en nominal pour le calcul de la conso instantanée de GPL 
+unité: s
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_1</SHORT-LABEL>
+                                        <VALUE>1</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8da5df9b-948a-d352-63a9-35d57dc19075">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26732.34979</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d25d74f6-6223-a68a-1b61-3f14c8db2ce9">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+.AUTONCONSO.PAR.15(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_900</SHORT-LABEL>
+                                        <VALUE>900</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d9e945bb-7b17-96c5-7377-32c395b52074">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_1_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06677.37136</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b21b65cb-138b-5639-ded0-9a77df859705">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_1_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_900</SHORT-LABEL>
+                                        <VALUE>900</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c1469d49-7376-0eb2-e831-00b9b7ecf424">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.22332.03374</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7722a764-65bb-1dca-6940-b62e0d9d24b4">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+.AUTONCONSO.PAR.14(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_200</SHORT-LABEL>
+                                        <VALUE>200</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6d5bc11f-8b30-ba68-823c-ff4f3346f42f">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_2_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03464.65535</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="87416476-28e0-4a3d-6f8c-ea0c94e78989">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_2_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_200</SHORT-LABEL>
+                                        <VALUE>200</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="90c3fc3e-86ff-635c-84c6-6b2a37a866b0">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40965.59974</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="df8470ba-6518-34d0-4d05-5f8e08bfbbcc">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_3</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res : s)
+.AUTONCONSO.PAR.16(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2000</SHORT-LABEL>
+                                        <VALUE>2000</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cee909c0-b0e4-568a-addf-e82ed6e93cc3">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_LISSEE_3_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06989.18979</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="d25da0e9-9e68-f4fd-0a42-cbd2a049ac16">
+                            <SHORT-NAME>T26_FILTR_CONSO_LISSEE_3_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res : s)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2000</SHORT-LABEL>
+                                        <VALUE>2000</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="65f5577f-efa4-6f74-c2f6-3f28d2f037d2">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_MOY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37904.48805</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a14ea8ad-013e-3c14-7873-827cd5e6175b">
+                            <SHORT-NAME>T26_FILTR_CONSO_MOY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso moy dans le cas : VitesseVehicule &gt; C26_SEUIL_VITESSE_CONSO_MOY.
+(Res: s)
+.AUTONCONSO.PAR.17(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2700</SHORT-LABEL>
+                                        <VALUE>2700</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="480b0391-512b-556c-d5ff-96f01e716214">
+                    <SHORT-NAME>SR_T26_FILTR_CONSO_MOY_GPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18759.29350</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f357d0fd-e476-cca3-56da-c2eb07916bb4">
+                            <SHORT-NAME>T26_FILTR_CONSO_MOY_GPL</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso moy dans le cas : VitesseVehicule &gt; C26_SEUIL_VITESSE_CONSO_MOY.
+(Res: s)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2700</SHORT-LABEL>
+                                        <VALUE>2700</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="96ed4999-2a3b-de57-e55c-5b925e2652a6">
+                    <SHORT-NAME>SR_T26_TEMPO_CONFIRMATION_DEFAUT</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37444.89591</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="69fa03f8-9f14-39f5-fa61-6b89f9b36b80">
+                            <SHORT-NAME>T26_TEMPO_CONFIRMATION_DEFAUT</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Tempo à partir de laquelle on a confirmation du defaut jauge carbu et donc passage en autonomie INVALIDE.
+(Res: sec)
+.AUTONCONSO.PAR.07(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6311b845-88b2-02a2-56b7-c13da2c5ef7f">
+                    <SHORT-NAME>SR_T26_TEMPO_CONSO_INVALIDE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.33123.82020</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4eecde64-27f7-6e08-a1f4-7ee7bbdc64c9">
+                            <SHORT-NAME>T26_TEMPO_CONSO_INVALIDE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Tempo entrant dans le test de la validite des consommations de carburant.
+(Res: 1 s)
+.AUTONCONSO.PAR.03(2)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_600</SHORT-LABEL>
+                                        <VALUE>600</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d111fcf0-40ec-a307-ad6b-05a81df57e4b">
+                    <SHORT-NAME>SR_T26_TEMPO_HISTO_HY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23240.43278</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="502e064c-c623-363e-2bfd-1528d0bf2c01">
+                            <SHORT-NAME>T26_TEMPO_HISTO_HY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Durée de chaque barre de l&#039;histogramme
+.AUTONCONSO.PAR.34(0)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_T26_TEMPO_HISTO_HY</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_T26_TEMPO_HISTO_HY_300</SHORT-LABEL>
+                                        <VALUE>300</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="00ba161c-9f6c-9ea6-d628-f24527a2e223">
+                    <SHORT-NAME>SR_T26_TEMPO_HISTO_ZOOM1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04351.40250</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="026c2667-ac40-0a24-5549-10e3266466b3">
+                            <SHORT-NAME>T26_TEMPO_HISTO_ZOOM1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Durée de chaque barre de l&#039;histogramme
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_T26_TEMPO_HISTO_ZOOM1</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_T26_TEMPO_HISTO_ZOOM1_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="31947086-8226-216c-964b-d42b369e2ed1">
+                    <SHORT-NAME>SR_T26_TEMPO_HISTO_ZOOM2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32793.85704</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ab090cc8-8b57-0117-ac74-7909b1e32f71">
+                            <SHORT-NAME>T26_TEMPO_HISTO_ZOOM2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Durée de chaque barre de l&#039;histogramme
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_T26_TEMPO_HISTO_ZOOM2</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_T26_TEMPO_HISTO_ZOOM2_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="79c14629-7cc3-0813-39fd-de072e14d22a">
+                    <SHORT-NAME>SR_T26_TEMPO_HISTO_ZOOM3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05810.61569</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1d45a773-1b7b-6ad8-a94a-798627fde11c">
+                            <SHORT-NAME>T26_TEMPO_HISTO_ZOOM3</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Durée de chaque barre de l&#039;histogramme
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_T26_TEMPO_HISTO_ZOOM3</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_T26_TEMPO_HISTO_ZOOM3_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5d7d3960-0ebc-f1e2-3ba8-026f5271a5d2">
+                    <SHORT-NAME>SR_T26_TEMPO_HISTO_ZOOM4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20300.11382</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="193fe49b-82b1-bf7a-3319-020b03a10f3d">
+                            <SHORT-NAME>T26_TEMPO_HISTO_ZOOM4</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Durée de chaque barre de l&#039;histogramme
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_T26_TEMPO_HISTO_ZOOM4</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_T26_TEMPO_HISTO_ZOOM4_60</SHORT-LABEL>
+                                        <VALUE>60</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8d3a6762-9618-c792-61c5-463ac9188929">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_INST_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.17539.39994</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="da3b09b4-8f3a-509e-6094-1c4a0afe4318">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_INST_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps 1 de filtrage pour la conso instantannée (pied non levé).
+(Res: s)
+.AUTONCONSO.PAR.06(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                        <VALUE>5</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a1cfa48d-d41b-57be-90d4-52802cf4354c">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_INST_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23042.44430</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c2b209dd-640c-880e-1d0b-d0499a6f9ced">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_INST_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps 2 de filtrage pour la conso instantannée (pied levé).
+(Res: s)
+.AUTONCONSO.PAR.05(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_1</SHORT-LABEL>
+                                        <VALUE>1</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="faf55809-5ad0-eb93-c960-8355b8b246e8">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_LISSEE_1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11563.73250</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5137a36a-de1b-f1e3-a195-00571417c9f2">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_LISSEE_1</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+.AUTONCONSO.PAR.15(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_900</SHORT-LABEL>
+                                        <VALUE>900</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8c589eac-9e01-4020-8308-aebc0dcc3192">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_LISSEE_2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.15876.39695</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7dbff12e-add8-7c00-f80a-7466675c4c2d">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_LISSEE_2</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : Autonomie &gt; C26_SEUIL_AUTONOMIE et VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res: s)
+.AUTONCONSO.PAR.14(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_200</SHORT-LABEL>
+                                        <VALUE>200</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="dd520ef3-8c0b-28a3-231d-fb140f67d8ca">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_LISSEE_3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30973.71063</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1fc6d770-7eab-4ccb-43cb-fc4a5b295ea6">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_LISSEE_3</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso lissée dans le cas : VitesseVehicule &gt; C26_SEUIL_VIT_FAIBLE_CONSO_LISSEE.
+(Res : s)
+.AUTONCONSO.PAR.16(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2000</SHORT-LABEL>
+                                        <VALUE>2000</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5dde6485-5f23-64b5-db73-abe3be2cf855">
+                    <SHORT-NAME>SR_T_CONSO_FILTR_CONSO_MOY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.16832.27731</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="498f44f2-bd3a-1481-019f-6ffef5927e71">
+                            <SHORT-NAME>T_CONSO_FILTR_CONSO_MOY</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Constante de temps de filtrage pour la conso moy dans le cas : VitesseVehicule &gt; C26_SEUIL_VITESSE_CONSO_MOY.
+(Res: s)
+.AUTONCONSO.PAR.17(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_2700</SHORT-LABEL>
+                                        <VALUE>2700</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3eff79e5-7eae-ab7d-e619-d3e67b454676">
+                    <SHORT-NAME>SR_T_CONSO_TEMPO_CONFIRMATION_DEFAUT</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.24748.22310</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dd8a62ec-f04c-c760-3245-3718589bdfa2">
+                            <SHORT-NAME>T_CONSO_TEMPO_CONFIRMATION_DEFAUT</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Tempo à partir de laquelle on a confirmation du defaut jauge carbu et donc passage en autonomie INVALIDE.
+(Res: sec)
+.AUTONCONSO.PAR.07(1)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_10</SHORT-LABEL>
+                                        <VALUE>10</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1d1367d2-695a-22db-cfab-9f41776968b7">
+                    <SHORT-NAME>SR_T_CONSO_TEMPO_CONSO_INVALIDE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.05172.42725</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ec282ca9-9499-6f42-e3c7-56e5c1b9da6b">
+                            <SHORT-NAME>T_CONSO_TEMPO_CONSO_INVALIDE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Tempo entrant dans le test de la validite des consommations de carburant.
+(Res: 1 s)
+.AUTONCONSO.PAR.03(2)
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_600</SHORT-LABEL>
+                                        <VALUE>600</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="274eb44b-8a65-a634-c99f-34996f2c1579">
+                    <SHORT-NAME>SR_VAL_MEDAILLE</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26281.51997</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f709c4ea-aa30-a08d-7257-e3dd4c64bb32">
+                            <SHORT-NAME>VAL_MEDAILLE</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Valeur en Wh d&#039;une demi-médaille présentée sur l&#039;historique de conso
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_VAL_MEDAILLE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_VAL_MEDAILLE_30</SHORT-LABEL>
+                                        <VALUE>30</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
