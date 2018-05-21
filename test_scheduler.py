@@ -1,8 +1,8 @@
-import unittest
+import ntpath
 import os
 import os.path
-import ntpath
-import HtmlTestRunner
+import unittest
+
 from lxml import etree
 
 
@@ -418,6 +418,12 @@ class ConnectorDescriptor(unittest.TestCase):
     #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.4\\ExempleConfigRteConfigurator.xml')
     #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.4\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.4\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "PER"))
     #
+    def test_TRS_RTECONFIG_FUNC_004_5(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.5\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.5\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.5\output\\RTE_Config.xml', "RUNI_A28_EXIT", "RteMappedToTaskRef", "PER"))
+    #
     # def test_TRS_RTECONFIG_FUNC_005_1(self):
     #     current_path = os.path.realpath(__file__)
     #     head, tail = ntpath.split(current_path)
@@ -430,11 +436,11 @@ class ConnectorDescriptor(unittest.TestCase):
     #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.2\\ExempleConfigRteConfigurator.xml')
     #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.2\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.2\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
 
-    def test_TRS_RTECONFIG_FUNC_005_3(self):
-        current_path = os.path.realpath(__file__)
-        head, tail = ntpath.split(current_path)
-        os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.3\\ExempleConfigRteConfigurator.xml')
-        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.3\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.3\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+    # def test_TRS_RTECONFIG_FUNC_005_3(self):
+    #     current_path = os.path.realpath(__file__)
+    #     head, tail = ntpath.split(current_path)
+    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.3\\ExempleConfigRteConfigurator.xml')
+    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.3\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.3\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
 
     # def test_TRS_RTECONFIG_FUNC_006(self):
     #     current_path = os.path.realpath(__file__)
