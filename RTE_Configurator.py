@@ -1,6 +1,8 @@
 import argparse
 import logging
 import os
+# import profile
+import time
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from decimal import Decimal
@@ -8,6 +10,7 @@ from xml.dom import minidom
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 
+import psutil
 from lxml import etree
 
 
@@ -147,6 +150,13 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
     events_aswc = []
     swc_allocation = []
     compos = []
+    # parse al xsd schemas
+    xmlschema_xsd_arxml = etree.parse(xsd_arxml)
+    xmlschema_arxml = etree.XMLSchema(xmlschema_xsd_arxml)
+    xmlschema_xsd_event = etree.parse(xsd_event)
+    xmlschema_event = etree.XMLSchema(xmlschema_xsd_event)
+    xmlschema_xsd_swc = etree.parse(xsd_swc)
+    xmlschema_swc = etree.XMLSchema(xmlschema_xsd_swc)
     # parse all arxml files and get events data
     for each_path in recursive_arxml:
         for directory, directories, files in os.walk(each_path):
@@ -159,8 +169,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
-                    validate_xml_with_xsd(xsd_arxml, fullname, logger)
+                    # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                     tree = etree.parse(fullname)
+                    if xmlschema_arxml.validate(tree) is not True:
+                        logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                    else:
+                        logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                     root = tree.getroot()
                     ascre_event = root.findall(".//{http://autosar.org/schema/r4.0}ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT")
                     for elem in ascre_event:
@@ -502,7 +516,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in smse_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
-                        obj_event['TYPE'] = "EVT"
+                        obj_event['TYPE'] = "PER"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
                         obj_event['BEFORE-EVENT'] = []
@@ -599,8 +613,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 except Exception as e:
                     logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
                     return
-                validate_xml_with_xsd(xsd_arxml, fullname, logger)
+                # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                 tree = etree.parse(fullname)
+                if xmlschema_arxml.validate(tree) is not True:
+                    logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                else:
+                    logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                 root = tree.getroot()
                 ascre_event = root.findall(".//{http://autosar.org/schema/r4.0}ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT")
                 for elem in ascre_event:
@@ -942,7 +960,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 for elem in smse_event:
                     obj_event = {}
                     obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
-                    obj_event['TYPE'] = "EVT"
+                    obj_event['TYPE'] = "PER"
                     obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                     obj_event['DURATION'] = "0.01"
                     obj_event['BEFORE-EVENT'] = []
@@ -1042,8 +1060,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
-                    validate_xml_with_xsd(xsd_event, fullname, logger)
+                    # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                     tree = etree.parse(fullname)
+                    if xmlschema_event.validate(tree) is not True:
+                        logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                    else:
+                        logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                     root = tree.getroot()
                     event = root.findall(".//EVENT")
                     for element in event:
@@ -1086,8 +1108,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 except Exception as e:
                     logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
                     return
-                validate_xml_with_xsd(xsd_event, fullname, logger)
+                # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                 tree = etree.parse(fullname)
+                if xmlschema_event.validate(tree) is not True:
+                    logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                else:
+                    logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                 root = tree.getroot()
                 event = root.findall(".//EVENT")
                 for element in event:
@@ -1132,8 +1158,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     except Exception as e:
                         logger.error('The file: ' + fullname + ' is not well-formed: ' + str(e))
                         return
-                    validate_xml_with_xsd(xsd_swc, fullname, logger)
+                    # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                     tree = etree.parse(fullname)
+                    if xmlschema_swc.validate(tree) is not True:
+                        logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                    else:
+                        logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                     root = tree.getroot()
                     swc = root.findall(".//SWC-ALLOCATION")
                     for element in swc:
@@ -1152,8 +1182,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 except Exception as e:
                     logger.error(' The file ' + fullname + ' is not well-formed: ' + str(e))
                     return
-                validate_xml_with_xsd(xsd_swc, fullname, logger)
+                # validate_xml_with_xsd(xsd_arxml, fullname, logger)
                 tree = etree.parse(fullname)
+                if xmlschema_swc.validate(tree) is not True:
+                    logger.warning('The file: ' + fullname + ' is NOT valid with the provided xsd schema')
+                else:
+                    logger.info('The file: ' + fullname + ' is valid with the provided xsd schema')
                 root = tree.getroot()
                 swc = root.findall(".//SWC-ALLOCATION")
                 for element in swc:
@@ -1383,18 +1417,6 @@ def create_script(events, aswcs, output_path, logger):
     tree.write(output_path + "/RTE_Config.xml", encoding="UTF-8", xml_declaration=True, method="xml")
 
 
-def validate_xml_with_xsd(path_xsd, path_xml, logger):
-    # load xsd file
-    xmlschema_xsd = etree.parse(path_xsd)
-    xmlschema = etree.XMLSchema(xmlschema_xsd)
-    # validate xml file
-    xmldoc = etree.parse(path_xml)
-    if xmlschema.validate(xmldoc) is not True:
-        logger.warning('The file: ' + path_xml + ' is NOT valid with the provided xsd schema')
-    else:
-        logger.info('The file: ' + path_xml + ' is valid with the provided xsd schema')
-
-
 def unique_items(list_to_check):
     found = set()
     for item in list_to_check:
@@ -1417,4 +1439,8 @@ def check_if_xml_is_wellformed(file):
 
 
 if __name__ == "__main__":
-        main()
+    process = psutil.Process(os.getpid())
+    start_time = time.clock()
+    main()
+    print(str(time.clock() - start_time) + " seconds")
+    print(str(process.memory_info()[0]/float(2**20)) + " MB")
