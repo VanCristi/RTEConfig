@@ -3,21 +3,21 @@
 <CONFIG-RTE-CONFIGURATOR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigRTEConfigurator.xsd">
 	<INPUTS>
 		<CONFIG-EVENT-CONSTR>
-			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\rte_config\ConfigEventsConstraints.xsd</XSD>
-			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\rte_config</DIR>
+			<XSD>./tests\TRS.RTECONFIG.FUNC.002\rte_config\ConfigEventsConstraints.xsd</XSD>
+			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.FUNC.002\rte_config</DIR>
 		</CONFIG-EVENT-CONSTR>
 		<CONFIG-SWC-ALLOC>
-			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\rte_config\ConfigSwcAllocation.xsd</XSD>
-			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\rte_config</DIR>
+			<XSD>./tests\TRS.RTECONFIG.FUNC.002\rte_config\ConfigSwcAllocation.xsd</XSD>
+			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.FUNC.002\rte_config</DIR>
 		</CONFIG-SWC-ALLOC>
 		<ARXML>
-			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\AUTOSAR_4-2-2_STRICT.xsd</XSD>
-			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\input</DIR>
+			<XSD>./AUTOSAR_4-2-2_STRICT.xsd</XSD>
+			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.FUNC.002\input</DIR>
 		</ARXML>
 	</INPUTS>
 	<OUTPUTS>
-		<SCRIPT>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\output</SCRIPT>
-		<REPORT>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.002\output</REPORT>
+		<SCRIPT>./tests\TRS.RTECONFIG.FUNC.002\output</SCRIPT>
+		<REPORT>./tests\TRS.RTECONFIG.FUNC.002\output</REPORT>
 	</OUTPUTS>
 </CONFIG-RTE-CONFIGURATOR>
 

@@ -279,192 +279,182 @@ class FileCompare():
             return True
         else:
             return False
-
-
-
-
-######################################################################################################
-
-
-######################################################################################################
-
-
-
+        
 
 class ConnectorDescriptor(unittest.TestCase):
 
-    # def test_TRS_RTECONFIG_INOUT_001(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.001\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkParsing(head + '\\tests\\TRS.RTECONFIG.INOUT.001\\input', head + '\\tests\\TRS.RTECONFIG.INOUT.001\\output\\result.log', '.arxml', 'is well-formed'))
-    #
-    # def test_TRS_RTECONFIG_INOUT_002(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.002\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkParsing(head + '\\tests\\TRS.RTECONFIG.INOUT.002\\rte_config', head + '\\tests\\TRS.RTECONFIG.INOUT.002\\output\\result.log', '.xml', 'is well-formed'))
-    #
-    # def test_TRS_RTECONFIG_INOUT_100(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.100\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.INOUT.100\output\RTE_Config.xml'))
-    #
-    # def test_TRS_RTECONFIG_CHECK_001(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.001\\ExempleConfigRteConfigurator.xml')
-    #     # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.001\output\RTE_Config.xml'))
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.001\output\\result.log', "ERROR", ["cycle"]))
-    #
-    # def test_TRS_RTECONFIG_CHECK_002_1(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.1\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.CHECK.002.1\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.CHECK.002.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
-    #
-    # def test_TRS_RTECONFIG_CHECK_002_2(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.2\\ExempleConfigRteConfigurator.xml')
-    #     # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.2\output\RTE_Config.xml'))
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.2\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
-    #
-    # def test_TRS_RTECONFIG_CHECK_002_3(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.3\\ExempleConfigRteConfigurator.xml')
-    #     # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.3\output\RTE_Config.xml'))
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.3\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
-    #
-    # def test_TRS_RTECONFIG_CHECK_002_4(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.4\\ExempleConfigRteConfigurator.xml')
-    #     # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.4\output\RTE_Config.xml'))
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.4\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
-    #
-    # def test_TRS_RTECONFIG_CHECK_003(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.003\\ExempleConfigRteConfigurator.xml')
-    #     # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.003\output\RTE_Config.xml'))
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.003\output\\result.log', "ERROR", ["RUNI_A26_EXIT has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_001(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.001\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.001\output\\RTE_Config.xml', "Instance_ASWC_A26", ["MappedToOsApplicationRef"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_002(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.002\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.setParam(head + '\\tests\TRS.RTECONFIG.FUNC.002\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.002\output\\RTE_Config.xml', "Instance_ASWC_A26", "MappedToOsApplicationRef"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_003_1(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.1\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_003_2(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.2\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.2\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_003_3(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.3\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.3\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_003_4(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.4\\ExempleConfigRteConfigurator.xml')
-    #     self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.4\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_003_5(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.5\\ExempleConfigRteConfigurator.xml')
-    #     self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.5\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_004_1(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.1\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.1\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_004_2(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.2\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.2\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.2\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "EVT"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_004_3(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.3\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.3\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.3\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_004_4(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.4\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.4\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.4\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "PER"))
-    #
+    def test_TRS_RTECONFIG_INOUT_001(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.001\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkParsing(head + '\\tests\\TRS.RTECONFIG.INOUT.001\\input', head + '\\tests\\TRS.RTECONFIG.INOUT.001\\output\\result.log', '.arxml', 'is well-formed'))
+
+    def test_TRS_RTECONFIG_INOUT_002(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.002\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkParsing(head + '\\tests\\TRS.RTECONFIG.INOUT.002\\rte_config', head + '\\tests\\TRS.RTECONFIG.INOUT.002\\output\\result.log', '.xml', 'is well-formed'))
+
+    def test_TRS_RTECONFIG_INOUT_100(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.INOUT.100\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.INOUT.100\output\RTE_Config.xml'))
+
+    def test_TRS_RTECONFIG_CHECK_001(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.001\\ExempleConfigRteConfigurator.xml')
+        # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.001\output\RTE_Config.xml'))
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.001\output\\result.log', "ERROR", ["cycle"]))
+
+    def test_TRS_RTECONFIG_CHECK_002_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.CHECK.002.1\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.CHECK.002.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
+
+    def test_TRS_RTECONFIG_CHECK_002_2(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.2\\ExempleConfigRteConfigurator.xml')
+        # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.2\output\RTE_Config.xml'))
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.2\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
+
+    def test_TRS_RTECONFIG_CHECK_002_3(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.3\\ExempleConfigRteConfigurator.xml')
+        # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.3\output\RTE_Config.xml'))
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.3\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
+
+    def test_TRS_RTECONFIG_CHECK_002_4(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.002.4\\ExempleConfigRteConfigurator.xml')
+        # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.002.4\output\RTE_Config.xml'))
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.002.4\output\\result.log', "ERROR", ["CORE or PARTITION not set"]))
+
+    def test_TRS_RTECONFIG_CHECK_003(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.CHECK.003\\ExempleConfigRteConfigurator.xml')
+        # self.assertFalse(FileCompare.isOutput(head + '\\tests\\TRS.RTECONFIG.CHECK.003\output\RTE_Config.xml'))
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.CHECK.003\output\\result.log', "ERROR", ["RUNI_A26_EXIT has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event"]))
+
+    def test_TRS_RTECONFIG_FUNC_001(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.001\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.001\output\\RTE_Config.xml', "Instance_ASWC_A26", ["MappedToOsApplicationRef"]))
+
+    def test_TRS_RTECONFIG_FUNC_002(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.002\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.setParam(head + '\\tests\TRS.RTECONFIG.FUNC.002\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.002\output\\RTE_Config.xml', "Instance_ASWC_A26", "MappedToOsApplicationRef"))
+
+    def test_TRS_RTECONFIG_FUNC_003_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+
+    def test_TRS_RTECONFIG_FUNC_003_2(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.2\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.2\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+
+    def test_TRS_RTECONFIG_FUNC_003_3(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.3\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.3\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+
+    def test_TRS_RTECONFIG_FUNC_003_4(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.4\\ExempleConfigRteConfigurator.xml')
+        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.4\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+
+    def test_TRS_RTECONFIG_FUNC_003_5(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.003.5\\ExempleConfigRteConfigurator.xml')
+        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.FUNC.003.5\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+
+    def test_TRS_RTECONFIG_FUNC_004_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.1\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.1\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
+
+    def test_TRS_RTECONFIG_FUNC_004_2(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.2\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.2\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.2\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "EVT"))
+
+    def test_TRS_RTECONFIG_FUNC_004_3(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.3\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.3\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.3\output\\RTE_Config.xml', "RUNA_GererAutomonieConso_Cyclic", "RteMappedToTaskRef", "PER"))
+
+    def test_TRS_RTECONFIG_FUNC_004_4(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.4\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.4\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.4\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "PER"))
+
     def test_TRS_RTECONFIG_FUNC_004_5(self):
         current_path = os.path.realpath(__file__)
         head, tail = ntpath.split(current_path)
         os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.004.5\\ExempleConfigRteConfigurator.xml')
         self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.FUNC.004.5\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.FUNC.004.5\output\\RTE_Config.xml', "RUNI_A28_EXIT", "RteMappedToTaskRef", "PER"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_005_1(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.1\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.1\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.1\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_005_2(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.2\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.2\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.2\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
 
-    # def test_TRS_RTECONFIG_FUNC_005_3(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.3\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.3\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.3\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+    def test_TRS_RTECONFIG_FUNC_005_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.1\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.1\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
 
-    # def test_TRS_RTECONFIG_FUNC_006(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.006\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.006\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.006\output\\RTE_Config.xml', [['RUNPI_ASWC_A26_ENTRY', 'RUNI_A26_EXIT', 'DataReceivedEvent'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
-    #
-    # def test_TRS_RTECONFIG_FUNC_007(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.007\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkRteActivation(head + '\\tests\TRS.RTECONFIG.FUNC.007\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.007\output\\RTE_Config.xml', "0"))
-    #
-    # def test_TRS_RTECONFIG_FUNC_008(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.008\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.008\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.008\output\\RTE_Config.xml', [['RUNPI_ASWC_A26_ENTRY', 'RUNI_A26_EXIT', 'DataReceivedEvent'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
-    #
-    # def test_RTECONFIG_1(self):
-    #     current_path = os.path.realpath(__file__)
-    #     head, tail = ntpath.split(current_path)
-    #     os.system('scheduler.py -config ' + head + '\\tests\\RTECONFIG.1\\ExempleConfigRteConfigurator.xml')
-    #     self.assertTrue(FileCompare.checkLog(head + '\\tests\RTECONFIG.1\output\\result.log', "ERROR", "mismatched tag"))
+    def test_TRS_RTECONFIG_FUNC_005_2(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.2\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.2\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.2\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+
+    def test_TRS_RTECONFIG_FUNC_005_3(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.005.3\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.005.3\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.005.3\output\\RTE_Config.xml', [['DataReceivedEvent', 'RUNI_A26_EXIT', 'RUNPI_ASWC_A26_ENTRY'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+
+    def test_TRS_RTECONFIG_FUNC_006(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.006\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.006\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.006\output\\RTE_Config.xml', [['RUNPI_ASWC_A26_ENTRY', 'RUNI_A26_EXIT', 'DataReceivedEvent'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+
+    def test_TRS_RTECONFIG_FUNC_007(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.007\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkRteActivation(head + '\\tests\TRS.RTECONFIG.FUNC.007\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.007\output\\RTE_Config.xml', "0"))
+
+    def test_TRS_RTECONFIG_FUNC_008(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.FUNC.008\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.eventOrder(head + '\\tests\TRS.RTECONFIG.FUNC.008\\rte_config\\ExempleEventsConstraints.xml' ,head + '\\tests\TRS.RTECONFIG.FUNC.008\output\\RTE_Config.xml', [['RUNPI_ASWC_A26_ENTRY', 'RUNI_A26_EXIT', 'DataReceivedEvent'], ['RUNI_A26_EXIT', 'DataReceivedEvent', 'RUNPI_ASWC_A26_ENTRY']], [['num:i(1)', 'num:i(2)', 'num:i(3)'], ['num:i(1)', 'num:i(1)', 'num:i(2)']]))
+
+    def test_RTECONFIG_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\RTECONFIG.1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.checkLog(head + '\\tests\RTECONFIG.1\output\\result.log', "ERROR", "mismatched tag"))
 
 
 suite = unittest.TestLoader().loadTestsFromTestCase(ConnectorDescriptor)

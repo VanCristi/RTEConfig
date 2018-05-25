@@ -1,1 +1,1 @@
-2018-04-27 15:31:15,412 ERROR The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\RTECONFIG.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is not well-formed: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\RTECONFIG.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml:32:26: mismatched tag
+2018-05-25 09:58:32,027 ERROR The file: ./tests\RTECONFIG.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is not well-formed: ./tests\RTECONFIG.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml:32:26: mismatched tag

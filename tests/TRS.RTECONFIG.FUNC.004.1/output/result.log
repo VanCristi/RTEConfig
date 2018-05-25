@@ -1,10 +1,10 @@
-2018-04-27 15:31:27,943 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
-2018-04-27 15:31:28,489 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
-2018-04-27 15:31:28,536 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-04-27 15:31:28,552 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is valid with the provided xsd schema
-2018-04-27 15:31:28,552 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-04-27 15:31:28,552 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-04-27 15:31:28,552 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-04-27 15:31:28,552 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-04-27 15:31:28,552 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-04-27 15:31:28,552 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-05-25 09:58:48,774 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-05-25 09:58:48,797 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-05-25 09:58:48,802 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-05-25 09:58:48,803 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is valid with the provided xsd schema
+2018-05-25 09:58:48,804 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-05-25 09:58:48,805 WARNING The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-05-25 09:58:48,806 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-05-25 09:58:48,807 WARNING The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-05-25 09:58:48,807 INFO The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-05-25 09:58:48,808 WARNING The file: ./tests\TRS.RTECONFIG.FUNC.004.1\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema

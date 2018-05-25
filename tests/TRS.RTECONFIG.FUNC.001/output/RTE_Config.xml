@@ -33,7 +33,7 @@
                     <Expression>boolean(1)</Expression>
                 </Operation>
                 <Operation Type="SetValue">
-                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_EVT"</Expression>
+                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_PER"</Expression>
                 </Operation>
             </Operations>
         </Operation>
@@ -52,7 +52,7 @@
                     <Expression>boolean(1)</Expression>
                 </Operation>
                 <Operation Type="SetValue">
-                    <Expression>num:i(1)</Expression>
+                    <Expression>num:i(2)</Expression>
                 </Operation>
             </Operations>
         </Operation>
