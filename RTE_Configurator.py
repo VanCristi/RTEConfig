@@ -194,6 +194,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -222,6 +223,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -250,6 +252,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -278,6 +281,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -306,6 +310,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -334,6 +339,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -362,6 +368,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -390,6 +397,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -418,6 +426,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -446,6 +455,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -474,6 +484,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -502,6 +513,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -530,6 +542,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -558,6 +571,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                             obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
@@ -586,6 +600,8 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             obj_event['BEFORE-EVENT'] = []
                             obj_event['AFTER-EVENT'] = []
                             obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                            obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
+                            obj_event['UNMAPPED'] = ""
                             obj_event['CORE'] = ""
                             obj_event['PARTITION'] = ""
                             obj_event['EVENTS-CALLED'] = None
@@ -641,6 +657,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -669,6 +686,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -697,6 +715,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -725,6 +744,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -753,6 +773,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -781,6 +802,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -809,6 +831,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -837,6 +860,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -865,6 +889,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -893,6 +918,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -921,6 +947,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -949,6 +976,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -977,6 +1005,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -1005,6 +1034,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -1033,6 +1063,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         obj_event['BEFORE-EVENT'] = []
                         obj_event['AFTER-EVENT'] = []
                         obj_event['REF'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
+                        obj_event['CONTAIN-IMPLICIT-ACCESS'] = ""
                         obj_event['UNMAPPED'] = ""
                         obj_event['CORE'] = ""
                         obj_event['PARTITION'] = ""
@@ -1087,6 +1118,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             after_list = []
                             before_list = []
                             duration = None
+                            cia = None
                             unmap = None
                             name = None
                             event_called = None
@@ -1101,12 +1133,15 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                     after_list.append(child.text.split('/')[-1])
                                 if child.tag == 'BEFORE-EVENT-REF':
                                     before_list.append(child.text.split('/')[-1])
+                                if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
+                                    cia = child.text
                                 if child.tag == 'UNMAPPED':
                                     unmap = child.text
                                 if child.tag == 'EVENTS-CALLED':
                                     event_called = child.text
                             obj_event['NAME'] = name
                             obj_event['DURATION'] = duration
+                            obj_event['CIA'] = cia
                             obj_event['UNMAP'] = unmap
                             obj_event['EVENT-CALLED'] = event_called
                             obj_event['AFTER-EVENT'] = after_list
@@ -1138,6 +1173,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         after_list = []
                         before_list = []
                         duration = None
+                        cia = None
                         unmap = None
                         name = None
                         event_called = None
@@ -1152,12 +1188,15 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 after_list.append(child.text.split('/')[-1])
                             if child.tag == 'BEFORE-EVENT-REF':
                                 before_list.append(child.text.split('/')[-1])
+                            if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
+                                cia = child.text
                             if child.tag == 'UNMAPPED':
                                 unmap = child.text
                             if child.tag == 'EVENTS-CALLED':
                                 event_called = child.text
                         obj_event['NAME'] = name
                         obj_event['DURATION'] = duration
+                        obj_event['CIA'] = cia
                         obj_event['UNMAP'] = unmap
                         obj_event['EVENT-CALLED'] = event_called
                         obj_event['AFTER-EVENT'] = after_list
@@ -1234,6 +1273,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                 if elem_rte['NAME'] == elem_aswc['NAME']:
                     elem_aswc['BEFORE-EVENT'] = elem_rte['BEFORE-EVENT']
                     elem_aswc['AFTER-EVENT'] = elem_rte['AFTER-EVENT']
+                    elem_aswc['CONTAIN-IMPLICIT-ACCESS'] = elem_rte['CIA']
                     elem_aswc['UNMAPPED'] = elem_rte['UNMAP']
                     elem_aswc['EVENTS-CALLED'] = elem_rte['EVENT-CALLED']
                     if elem_rte['DURATION'] is not None:
@@ -1259,6 +1299,20 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
         for elem in events_aswc[:]:
             if elem['UNMAPPED'] == "false" or elem['UNMAPPED'] == "0":
                 events_aswc.remove(elem)
+        # for elem in events_aswc:
+        #     if elem['CONTAIN-IMPLICIT-ACCESS'] == "true" or elem['CONTAIN-IMPLICIT-ACCESS'] == "1":
+        #         pass
+        #     else:
+        #         for elem2 in events_aswc:
+        #             if elem2['EVENTS-CALLED'] is None:
+        #                 if elem2['UNMAPPED'] == "false" or elem2['UNMAPPED'] == "0":
+        #                     events_aswc.remove(elem2)
+        #             else:
+        #                 if elem['CORE'] == elem2['CORE'] and elem['PARTITION'] == elem2['PARTITION']:
+        #                     if elem2['UNMAPPED'] == "true" or elem2['UNMAPPED'] == "1" and elem['UNMAPPED'] == "true" or elem['UNMAPPED'] == "1":
+        #                         pass
+        #                     else:
+        #                         events_aswc.remove(elem2)
 
         # TRS.RTECONFIG.FUNC.006
         for elem in events_aswc:
@@ -1348,8 +1402,11 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
             for event in events:
                 if event['ACTIVATION'] == "ON-EXIT":
                     events.insert(0, events.pop(events.index(event)))
-                elif event['ACTIVATION'] == "ON-ENTRY":
-                    events.append(events.pop(events.index(event)))
+            reverse_events = list(reversed(events))
+            for event in reverse_events:
+                if event['ACTIVATION'] == "ON-ENTRY":
+                    reverse_events.insert(0, reverse_events.pop(reverse_events.index(event)))
+            events = list(reversed(reverse_events))
             events = sorted(events, key=lambda x: x['MAPPED-TO-TASK'])
             # setting the PositionInTask parameter
             tasks = []
