@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_ASWC_M415</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE>
+                    <SHORT-NAME>ASWC_M415</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <SDGS>
+                            <SDG GID="MBD_TRUE"/>
+                        </SDGS>
+                    </ADMIN-DATA>
+                    <PORTS>
+                        <!-- 3 Provided Ports sur des interfaces de type Sender Receiver -->
+                        <PR-PORT-PROTOTYPE UUID="1c0b73a4-4699-0841-6380-5f797cc92707">
+                            <SHORT-NAME>PRP_SR_EtatClignotant</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatClignotant/EtatClignotant</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_EtatClignotant_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_EtatClignotant</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="5b49543c-0522-ee05-e78b-145029c417b1">
+                            <SHORT-NAME>PRP_SR_EtatFeuxDettresse</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatFeuxDettresse/EtatFeuxDetresse</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_EtatFeuxDettresse</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="e28f61ec-c6dc-8d4f-444d-1534ed45b803">
+                            <SHORT-NAME>PRP_SR_TypeCmdID</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_TypeCmdID/TypeCmdID</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_TypeCmdID_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_TypeCmdID</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <!-- 3 Required Ports sur des interfaces de type Sender Receiver -->
+                        <R-PORT-PROTOTYPE UUID="4860c59a-fae5-a293-9cba-5b2e9f3bf842">
+                            <SHORT-NAME>RP_SR_InfoStateID</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InfoStateID/FlagImpulsEnd</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InfoStateID/StateID</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_InfoStateID</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="47155100-2928-ef4b-95c5-bf06d8411e2d">
+                            <SHORT-NAME>RP_SR_ManTurnIDReq</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ManTurnIDReq/ManTurnIDReq</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_IndicatorDirection_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ManTurnIDReq</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="6d36a8c6-5013-69e7-bb6a-deebe6817258">
+                            <SHORT-NAME>RP_SR_ManWarningReq</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ManWarningReq/ManWarningReq</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ManWarningReq</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <!-- Required Port Mode Switch Event -->
+                        <R-PORT-PROTOTYPE UUID="a526ba45-bc7b-7e70-25d6-d4cbb42c99af">
+                            <SHORT-NAME>ASWC_M415_MSI</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/RootP_Mode/AppModeInterface</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="4210d8e6-bfdb-e5cf-839d-674c113d3a0b">
+                            <SHORT-NAME>IB_ASWC_M415</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/RootP_Mode/ApplicationModeMapping</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <AR-TYPED-PER-INSTANCE-MEMORYS>
+                                <!-- 3 Per Instance Memory -->
+                                <VARIABLE-DATA-PROTOTYPE UUID="da272b41-7bce-0ba5-205d-9907dbce7d99">
+                                    <SHORT-NAME>PIM_M415_ManTurnIDReq_Prec</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_IndicatorDirection</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_PIM_M415_ManTurnIDReq_Prec_t_IndicatorDirection_cNoID</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="5d3bf17b-edbf-265e-053b-3cf172de4be4">
+                                    <SHORT-NAME>PIM_M415_ManWarningReq_Prec</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="2c5e8c73-0616-26e7-3eb9-91027932b813">
+                                    <SHORT-NAME>PIM_M415_WarningMem</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </AR-TYPED-PER-INSTANCE-MEMORYS>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="e041d1e3-a66d-d2d4-b417-bc24bed643e2">
+                                    <SHORT-NAME>RUNA_M415_Cyclic</SHORT-NAME>
+                                    <DISABLED-MODE-IREFS>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/ASWC_M415_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/ASWC_M415_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/ASWC_M415_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/ASWC_M415_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                    </DISABLED-MODE-IREFS>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNA_M415</START-ON-EVENT-REF>
+                                    <PERIOD>0.05</PERIOD>
+                                </TIMING-EVENT>
+                                <SWC-MODE-SWITCH-EVENT UUID="13a49905-4922-e1d0-d639-cb9a8f3578bc">
+                                    <SHORT-NAME>RUNPI_ASWC_M415_ENTRY</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNPI_ASWC_M415</START-ON-EVENT-REF>
+                                    <ACTIVATION>ON-ENTRY</ACTIVATION>
+                                    <MODE-IREFS>
+                                        <MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/ASWC_M415_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </MODE-IREF>
+                                    </MODE-IREFS>
+                                </SWC-MODE-SWITCH-EVENT>
+                            </EVENTS>
+                            <EXPLICIT-INTER-RUNNABLE-VARIABLES />
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <IMPLICIT-INTER-RUNNABLE-VARIABLES />
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="a33f1e7b-c4b7-fa39-43eb-66f1d91d28d9">
+                                    <SHORT-NAME>RUNA_M415</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <!-- 4 data-element externes lecture -->
+                                        <VARIABLE-ACCESS UUID="e009c0cd-a4ac-3fdd-9be1-8bf048416749">
+                                            <SHORT-NAME>dra_RP_SR_InfoStateID_FlagImpulsEnd</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/RP_SR_InfoStateID</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InfoStateID/FlagImpulsEnd</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="48b7b150-2138-e240-4f81-382f949b59aa">
+                                            <SHORT-NAME>dra_RP_SR_ManTurnIDReq_ManTurnIDReq</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/RP_SR_ManTurnIDReq</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ManTurnIDReq/ManTurnIDReq</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="1ccedca2-7801-b390-c582-e4f903582766">
+                                            <SHORT-NAME>dra_RP_SR_ManWarningReq_ManWarningReq</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/RP_SR_ManWarningReq</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ManWarningReq/ManWarningReq</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="82896a5b-2e76-9307-fb21-5ed63dad24b4">
+                                            <SHORT-NAME>dra_RP_SR_InfoStateID_StateID</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/RP_SR_InfoStateID</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InfoStateID/StateID</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 3 data-element rebouclages -->
+                                        <VARIABLE-ACCESS UUID="99c663f5-0522-133b-d9ed-6203ffa2106b">
+                                            <SHORT-NAME>dra_PRP_SR_EtatClignotant_EtatClignotant</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_EtatClignotant</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatClignotant/EtatClignotant</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="f8d37cb5-53d3-4ac7-8e0c-40377fae4890">
+                                            <SHORT-NAME>dra_PRP_SR_EtatFeuxDettresse_EtatFeuxDetresse</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_EtatFeuxDettresse</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatFeuxDettresse/EtatFeuxDetresse</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="6913467a-853f-8d87-4ca5-e146dee188fc">
+                                            <SHORT-NAME>dra_PRP_SR_TypeCmdID_TypeCmdID</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_TypeCmdID</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_TypeCmdID/TypeCmdID</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS />
+                                    <DATA-RECEIVE-POINT-BY-VALUES />
+                                    <DATA-SEND-POINTS />
+                                    <DATA-WRITE-ACCESSS>
+                                        <!-- 3 data-element produits -->
+                                        <VARIABLE-ACCESS UUID="8589a154-7470-76b4-4d5c-5faadcbb4b17">
+                                            <SHORT-NAME>dwa_PRP_SR_EtatClignotant_EtatClignotant</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_EtatClignotant</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatClignotant/EtatClignotant</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2cb85f38-79a3-8285-7aa6-2805c99f1a2c">
+                                            <SHORT-NAME>dwa_PRP_SR_EtatFeuxDettresse_EtatFeuxDetresse</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_EtatFeuxDettresse</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatFeuxDettresse/EtatFeuxDetresse</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="cab35a3f-3e6a-a4bf-1083-08bfb6cd59f6">
+                                            <SHORT-NAME>dwa_PRP_SR_TypeCmdID_TypeCmdID</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_M415/ASWC_M415/PRP_SR_TypeCmdID</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_TypeCmdID/TypeCmdID</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                <PARAMETER-ACCESSS />
+                                    <READ-LOCAL-VARIABLES />
+                                    <SERVER-CALL-POINTS />
+                                    <SYMBOL>RUNA_M415</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES />
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="39a340e0-913b-8168-9b47-43ea8bce4fce">
+                                    <SHORT-NAME>RUNPI_ASWC_M415</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SYMBOL>RUNPI_ASWC_M415</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_Implementatation</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-IMPLEMENTATION>
+                    <SHORT-NAME>Implementatation_ASWC_M415</SHORT-NAME>
+                    <CODE-DESCRIPTORS>
+                        <CODE>
+                            <SHORT-NAME>SRC</SHORT-NAME>
+                            <ARTIFACT-DESCRIPTORS>
+                                <AUTOSAR-ENGINEERING-OBJECT>
+                                    <SHORT-LABEL>EngObject</SHORT-LABEL>
+                                    <CATEGORY>SWSRC</CATEGORY>
+                                </AUTOSAR-ENGINEERING-OBJECT>
+                            </ARTIFACT-DESCRIPTORS>
+                        </CODE>
+                    </CODE-DESCRIPTORS>
+                    <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                    <RESOURCE-CONSUMPTION>
+                        <SHORT-NAME>Resources</SHORT-NAME>
+                    </RESOURCE-CONSUMPTION>
+                    <SW-VERSION>1.0.0</SW-VERSION>
+                    <USED-CODE-GENERATOR/>
+                    <VENDOR-ID>1</VENDOR-ID>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

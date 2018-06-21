@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_SR_Data</SHORT-NAME>
+            <ELEMENTS>
+                <!-- 37 Interfaces de type Sender Receiver -->
+                <SENDER-RECEIVER-INTERFACE UUID="3fb93080-6032-a5c6-d1a7-4d30721a909e">
+                    <SHORT-NAME>SR_Autonomie</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.39116.17899</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ed4ca76e-ab52-3403-aa29-201549259edf">
+                            <SHORT-NAME>Autonomie</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0xFFFF</SHORT-LABEL>
+                                        <VALUE>65535</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="257d972d-5c85-aed5-7379-799ff67d0c59">
+                    <SHORT-NAME>SR_AutonomieGPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19592.13928</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f41b50a5-0b42-5b22-aaba-4ae689720606">
+                            <SHORT-NAME>AutonomieGPL</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0x7FF</SHORT-LABEL>
+                                        <VALUE>2047</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cb899a5c-d4e1-8872-3c82-958bab20d43b">
+                    <SHORT-NAME>SR_AutonomieInvalide</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27500.27080</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c07ef1ed-2a2e-f377-41ee-8dda6e62afae">
+                            <SHORT-NAME>AutonomieInvalide</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6e4c2bef-59d0-6941-fa59-303e76094ca4">
+                    <SHORT-NAME>SR_AutonomieTOTAL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25914.76010</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a926e8f7-797c-367f-8ccf-40f5b895bbcb">
+                            <SHORT-NAME>AutonomieTOTAL</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0x7FF</SHORT-LABEL>
+                                        <VALUE>2047</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="98afe2a5-40be-78f2-f9ba-77d0c2f8b3f6">
+                    <SHORT-NAME>SR_ConsoAutonomieGM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10236.29748</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="19d66750-def9-309f-20a2-438afd462eb7">
+                            <SHORT-NAME>ConsoAutonomieGM</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tDWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="592adf80-a377-22d3-5765-520867fec455">
+                    <SHORT-NAME>SR_ConsoGPLInvalide</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28883.98729</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b0455d96-a098-043c-c1ce-c53d9a8ea553">
+                            <SHORT-NAME>ConsoGPLInvalide</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="57480f39-c2e2-d769-5567-2856fbeb675d">
+                    <SHORT-NAME>SR_ConsoInst</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31780.24967</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="10eedd11-70c3-4262-5021-ef9e11421811">
+                            <SHORT-NAME>ConsoInst</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0xFFFF</SHORT-LABEL>
+                                        <VALUE>65535</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ba309763-baf5-d1d1-a234-f93ba874dd50">
+                    <SHORT-NAME>SR_ConsoInstGPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32624.96311</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="1e05cf5b-1cb1-48b5-c448-1c7e2f78cae9">
+                            <SHORT-NAME>ConsoInstGPL</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0x1FF</SHORT-LABEL>
+                                        <VALUE>511</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="bee585e3-2c06-bae9-2b34-efe44ace4c93">
+                    <SHORT-NAME>SR_ConsoLissee</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18675.95958</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b72094f9-3c05-2391-77ec-6380f8554231">
+                            <SHORT-NAME>ConsoLissee</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c12e5f2a-1be3-6f3c-1d7a-38b432aa4c66">
+                    <SHORT-NAME>SR_ConsoMoyenneGPLT1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06929.17536</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ba035218-8faa-2e3d-ace6-d89a9d92486d">
+                            <SHORT-NAME>ConsoMoyenneGPLT1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a206f21e-b635-ae15-4fb8-a10f7d755e72">
+                    <SHORT-NAME>SR_ConsoMoyenneGPLT2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.35832.93566</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="eea0c4ea-02fb-e2c0-941d-7ae9db7347fb">
+                            <SHORT-NAME>ConsoMoyenneGPLT2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="b9965495-53b0-9354-bd7a-4c49e4a9b775">
+                    <SHORT-NAME>SR_ConsoMoyenneHY1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.42853.93152</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="21dc7063-a896-c7c9-4abc-fd316387f179">
+                            <SHORT-NAME>ConsoMoyenneHY1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0720c5bc-b673-34d3-d07b-351cfc8e4500">
+                    <SHORT-NAME>SR_ConsoMoyenneHY2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29598.07421</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="4cf6a346-5512-8482-c38f-9e385dbaf318">
+                            <SHORT-NAME>ConsoMoyenneHY2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="bf0ac394-24c1-7ff1-6f2f-3037d1fc7124">
+                    <SHORT-NAME>SR_ConsoMoyenneHY3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10112.38889</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a5a1afa5-c57f-eb48-b764-7f9b17480538">
+                            <SHORT-NAME>ConsoMoyenneHY3</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="fc787fe1-391b-2b35-b7da-4c8782ca93c7">
+                    <SHORT-NAME>SR_ConsoMoyenneHY4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07784.95687</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c20c19db-ce2d-9002-0ecb-357e6552e677">
+                            <SHORT-NAME>ConsoMoyenneHY4</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="89cac7d9-d2a3-9f20-a843-fc1f4b62043d">
+                    <SHORT-NAME>SR_ConsoMoyenneHY5</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27228.69907</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ae5c992d-d171-e24f-62b0-9cff67147ef9">
+                            <SHORT-NAME>ConsoMoyenneHY5</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2dc9335c-9a3c-2fec-7773-87154d0b992a">
+                    <SHORT-NAME>SR_ConsoMoyenneHY6</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.39812.64942</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="2b36659a-cfe0-2193-60d3-267665156006">
+                            <SHORT-NAME>ConsoMoyenneHY6</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="667dd3c7-830b-af9c-3deb-47733a7c9668">
+                    <SHORT-NAME>SR_ConsoMoyenneT1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41127.71442</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7f7b92e5-5834-a9e7-1b19-73354dedc81b">
+                            <SHORT-NAME>ConsoMoyenneT1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="655df80a-cc56-b86a-6fec-6abcffc0c62e">
+                    <SHORT-NAME>SR_ConsoMoyenneT2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.08192.92841</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dd576b74-7a55-e480-d302-17810fcf5cdd">
+                            <SHORT-NAME>ConsoMoyenneT2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="55509e3c-eeff-8f61-7a3e-4fa8156e97a7">
+                    <SHORT-NAME>SR_ConsoReelleInvalide</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03748.54050</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="60624b2f-fa95-09fa-656b-9a458ec49b7d">
+                            <SHORT-NAME>ConsoReelleInvalide</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0a432af4-01cb-5181-927f-a0b9842b853a">
+                    <SHORT-NAME>SR_Conso_WH_Gain1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20484.45874</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a0b2cce0-f6da-7b0a-7351-4913b385e6cd">
+                            <SHORT-NAME>Conso_WH_Gain1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="95a23d9d-e7c7-02e2-be5f-38b257d2fdf8">
+                    <SHORT-NAME>SR_Conso_WH_Gain2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04195.20402</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f5ef1be5-2151-6a6e-dce6-537338f38913">
+                            <SHORT-NAME>Conso_WH_Gain2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="adadda23-40b6-60fb-af51-eebf4694205e">
+                    <SHORT-NAME>SR_Conso_WH_Gain3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23965.97325</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="af4adbcd-2814-72ee-f68a-0d16f3094d86">
+                            <SHORT-NAME>Conso_WH_Gain3</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="43ad184f-e263-69b6-5bb8-69eb9862953e">
+                    <SHORT-NAME>SR_Conso_WH_Gain4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37446.27666</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="dc6e7c8b-b787-cc76-624b-de9153f4ec44">
+                            <SHORT-NAME>Conso_WH_Gain4</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ec066859-680c-e06d-4281-315cba06beaf">
+                    <SHORT-NAME>SR_Conso_WH_Gain5</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.12232.97037</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="5a7151d0-ed27-1480-deef-3fe5ef8dc40f">
+                            <SHORT-NAME>Conso_WH_Gain5</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="4fe5029d-0627-38ca-e128-9588ce0f730c">
+                    <SHORT-NAME>SR_Conso_WH_Gain6</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07373.85005</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="f474238d-f8b5-451e-fac5-fe71da0d5bca">
+                            <SHORT-NAME>Conso_WH_Gain6</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f15d245c-e7cd-9bf3-9ab1-0adc79c5abbc">
+                    <SHORT-NAME>SR_DistAutonomieGM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32863.37743</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="48cc6b33-f7c8-112a-107f-d2deb4c4bc79">
+                            <SHORT-NAME>DistAutonomieGM</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tDWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d950b468-fbb1-0f27-7f3f-a9c97a6c3e82">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.42369.78145</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="00f1fb6a-50b1-4eba-f956-6f27b55e6910">
+                            <SHORT-NAME>NbDemiMedaillesBarre1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d0fb2fbb-03ec-8d51-939b-a8c4776ed105">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19281.70525</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="ba525b7f-64e9-6c64-6f89-6dee2de5857e">
+                            <SHORT-NAME>NbDemiMedaillesBarre2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="02f3b039-a1ee-956c-0854-116c08669107">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31897.08662</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="44d46b9d-2445-9ee6-04b6-805776fd9de4">
+                            <SHORT-NAME>NbDemiMedaillesBarre3</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5f95f717-cebd-287b-5019-bb61a1ac4d60">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre4</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30420.41252</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e19a4b7f-d1e0-7863-e8ab-3be55fcacfd9">
+                            <SHORT-NAME>NbDemiMedaillesBarre4</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="5cdf4570-ffba-0ea1-c473-4206b2a8bf07">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre5</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.20407.43631</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="964dc794-9774-04e3-b915-822ddf1020b3">
+                            <SHORT-NAME>NbDemiMedaillesBarre5</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="9fb4dfa3-ac09-a859-5864-045b784be656">
+                    <SHORT-NAME>SR_NbDemiMedaillesBarre6</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41569.43667</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="cde5ec42-794b-dcb3-5897-fb72d695d268">
+                            <SHORT-NAME>NbDemiMedaillesBarre6</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a1f6ee69-c15a-a682-5881-b66fc231e8b3">
+                    <SHORT-NAME>SR_PseudoConsoInvalide</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.30115.39906</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="19c7c14f-f629-f760-7347-3ef28da34952">
+                            <SHORT-NAME>PseudoConsoInvalide</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="aa75b679-a96a-4fca-a84b-2705ab70b18b">
+                    <SHORT-NAME>SR_RazOkDeAuCoVersOdo</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11830.64473</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="057a6888-23ef-b027-1e8a-ec2c00bf1444">
+                            <SHORT-NAME>RazOkDeAuCoVersOdo</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="33c3c1a8-0124-8fea-79c1-0a75d7ce7440">
+                    <SHORT-NAME>SR_SAV_ConsoGPLLisse</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.40410.05781</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="46ea6fe4-7913-85e3-2526-54700b490ac6">
+                            <SHORT-NAME>SAV_ConsoGPLLisse</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="f9365313-1b7d-774b-d9eb-77375327340d">
+                    <SHORT-NAME>SR_SAV_ConsoLisse</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.21807.17732</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="748d4412-8a0c-ca6c-76f3-33c3872e6c7f">
+                            <SHORT-NAME>SAV_ConsoLisse</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_100</SHORT-LABEL>
+                                        <VALUE>100</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <!-- 34 Interfaces de type Sender Receiver -->
+                <SENDER-RECEIVER-INTERFACE UUID="9ba0e127-efc2-1a98-b4c4-ef6879d0bb6c">
+                    <SHORT-NAME>SR_ApportCarbDetecte</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06950.81830</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="262d2945-7058-40d8-b227-08426f6278d0">
+                            <SHORT-NAME>ApportCarbDetecte</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="a9dbc299-eeb1-4d3f-b694-db50c172632a">
+                    <SHORT-NAME>SR_CMMMuet_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.23688.15803</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="a0b2e702-c7f9-18e1-ec3e-ae75632509ca">
+                            <SHORT-NAME>CMMMuet_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tFLOAT</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tFLOAT_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8ccf736a-c3f5-ab0a-e2bf-c746fd2e3f2e">
+                    <SHORT-NAME>SR_ConsommationCarbReelle_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.18530.59357</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="31afb408-048e-f7b0-dfe5-d1b9f6453ca0">
+                            <SHORT-NAME>ConsommationCarbReelle_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="059ba27d-cd68-2eb9-decf-41acf4b73b03">
+                    <SHORT-NAME>SR_ConsommationGPL</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.14694.77017</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="693b3e9d-317b-6111-5b56-8e40f8d62504">
+                            <SHORT-NAME>ConsommationGPL</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="36167c12-2c17-4801-ab37-842ac7854fc5">
+                    <SHORT-NAME>SR_DdeRazDeOdometre</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03753.86417</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0519d56c-1cd5-dcda-8228-859bce9d9797">
+                            <SHORT-NAME>DdeRazDeOdometre</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="50d3d88b-5ed7-a6ee-428e-2b1da482249a">
+                    <SHORT-NAME>SR_DdeRazT1_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.02001.65240</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="b4587821-eef1-ebf2-0525-e24d570994a3">
+                            <SHORT-NAME>DdeRazT1_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0d12a73e-b8f3-279e-081a-919991c0afa8">
+                    <SHORT-NAME>SR_DdeRazT2_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.19448.42572</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="92d2327d-91dd-6e2c-4839-d996b41e05b5">
+                            <SHORT-NAME>DdeRazT2_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="69bfb60f-ac07-65d6-f68e-4fa4dfc24f21">
+                    <SHORT-NAME>SR_DefautJaugeCarbConfirme</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.10069.57430</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="bb6f44ee-b897-d204-52a2-333d56e1b622">
+                            <SHORT-NAME>DefautJaugeCarbConfirme</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cSDF_Defaut</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_DefautJaugeCarbConfirme_t_cSDF_Defaut_cSDF_DefautAbsent</SHORT-LABEL>
+                                        <VALUE>105</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="71890d43-83e2-9864-393a-8b41af5cbcfb">
+                    <SHORT-NAME>SR_DistanceParcourue</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32261.12177</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="e6320693-4f83-409f-292e-c28beedca103">
+                            <SHORT-NAME>DistanceParcourue</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="3fb3167e-5535-6926-3550-bfa14a2ddffb">
+                    <SHORT-NAME>SR_DistanceParcourueFigee</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26294.38558</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7c03ab58-7fe2-db44-cd92-8d26613ae061">
+                            <SHORT-NAME>DistanceParcourueFigee</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="99666d5b-3276-2df6-4807-1649e33bb3c5">
+                    <SHORT-NAME>SR_DistanceParcourueValide</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28987.63797</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="57c091d0-d0fb-8ed0-8eac-59f21b818c9d">
+                            <SHORT-NAME>DistanceParcourueValide</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_1</SHORT-LABEL>
+                                        <VALUE>1</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="8bbf4f4f-5feb-fa83-5260-a0fa680059e6">
+                    <SHORT-NAME>SR_DistanceT1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.26517.22905</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="366d5565-e0ad-d741-5d5b-b6ed9f49aa32">
+                            <SHORT-NAME>DistanceT1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2210c3ff-394e-13bc-91f4-5c49cd0d95c8">
+                    <SHORT-NAME>SR_DistanceT2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.34731.35924</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="bba91a1d-911f-fc9c-4770-23af0deb4bae">
+                            <SHORT-NAME>DistanceT2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="0331f03b-1b4d-c567-f306-20ddc40dbe50">
+                    <SHORT-NAME>SR_DysfVitesseVehicule</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>4.02466.87442</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="099c46f2-50c7-50cf-eee2-eb0343684252">
+                            <SHORT-NAME>DysfVitesseVehicule</SHORT-NAME>
+                              <DESC>
+                                <L-2 L="FOR-ALL">
+Vitesse utilisée pour décrire l&#039;état de la vitesse vehicule
+                                </L-2>
+                            </DESC>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cVitv</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cVitv_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2036fd17-32e3-c24a-a1fc-bbda96606f02">
+                    <SHORT-NAME>SR_EtatGMP</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.04435.07543</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="49e73e73-06e1-c9b6-2ce0-4135602cb095">
+                            <SHORT-NAME>EtatGMP</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_GM_GMP</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_GM_GMP_1</SHORT-LABEL>
+                                        <VALUE>1</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="14dc8f1f-b4cd-6d9c-1f46-2c59ace9a0e2">
+                    <SHORT-NAME>SR_EtatGMPDeHY</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.06900.52111</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="c6126a63-e745-110b-6a07-825618a47666">
+                            <SHORT-NAME>EtatGMPDeHY</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cGM_HY</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cGM_HY_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="94ef589d-470d-215c-55a0-be9726251c65">
+                    <SHORT-NAME>SR_EtatModeGaz</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.25431.95929</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="67e75704-b7e5-5b92-8a6f-c6ac2c9940e4">
+                            <SHORT-NAME>EtatModeGaz</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_7</SHORT-LABEL>
+                                        <VALUE>7</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="7fd0182a-cc35-4473-592a-a037370d7e63">
+                    <SHORT-NAME>SR_EtatPrincipalSEV</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.12788.76800</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="56ab54e8-dde8-f02f-e23c-45f38a11e324">
+                            <SHORT-NAME>EtatPrincipalSEV</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_SEV</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_SEV_0x69</SHORT-LABEL>
+                                        <VALUE>105</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="d3361fbe-f787-8cf4-2187-8d7f91d38cd1">
+                    <SHORT-NAME>SR_GAZMuet_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.31546.87642</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="44ee248f-6a25-09c8-7920-9564b5a56cff">
+                            <SHORT-NAME>GAZMuet_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e1601d72-8386-a75e-f6b7-41299442feba">
+                    <SHORT-NAME>SR_GPLModeINFO</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11026.76557</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="6ee5e644-49a4-c802-97b6-1c9ecbf78fd1">
+                            <SHORT-NAME>GPLModeINFO</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_e_0</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_e_0_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="ff6e2136-fa21-c0e4-aa36-52a6734aa6a2">
+                    <SHORT-NAME>SR_GPLtankCapacity</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.37397.66580</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="0cdcdf13-584f-eac8-6424-673986fb1fef">
+                            <SHORT-NAME>GPLtankCapacity</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="e11ded12-42ca-c1be-a6bf-47f67ae3ad78">
+                    <SHORT-NAME>SR_ModeFonctMotGAZ</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.28577.13544</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="12b41f55-8d8b-edf4-39db-8500f5ecec4e">
+                            <SHORT-NAME>ModeFonctMotGAZ</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cModeFonctMotGAZ</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cModeFonctMotGAZ_0x07</SHORT-LABEL>
+                                        <VALUE>7</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cdc206f5-80f5-e2c5-5420-12f8004ac089">
+                    <SHORT-NAME>SR_NivGPLAffiche</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.07994.46124</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="52c4e2d1-2d91-2b1c-6e29-855bd68bb408">
+                            <SHORT-NAME>NivGPLAffiche</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="c0f9cbc6-6093-7081-5659-0e0dc879f0db">
+                    <SHORT-NAME>SR_PhaseVieLS</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11446.20010</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="83911995-18fb-5fa2-98a0-c9ed3ab4cdb3">
+                            <SHORT-NAME>PhaseVieLS</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cCANLS</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cCANLS_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="728e3089-e3cc-14db-49e7-b4b8382cd4fb">
+                    <SHORT-NAME>SR_PremiereMesureJC_OK</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.16629.48996</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="9fba9a01-ba99-4288-ff7b-300eef834ebc">
+                            <SHORT-NAME>PremiereMesureJC_OK</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cSDF_Mesure</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_PremiereMesureJC_OK_t_cSDF_Mesure_cSDF_MesureNonRealisee</SHORT-LABEL>
+                                        <VALUE>105</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="6abfad0a-6c72-e958-2150-d59111a0e396">
+                    <SHORT-NAME>SR_PseudoConsommationCarb</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.41959.03821</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="05994a64-77dd-5334-401e-1f9c690df051">
+                            <SHORT-NAME>PseudoConsommationCarb</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="19e89887-a701-60a3-b418-23ee7187d0c5">
+                    <SHORT-NAME>SR_QteEnergieRecup</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.32330.65805</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="7868ac82-68ec-85cc-0728-b1fa37f286da">
+                            <SHORT-NAME>QteEnergieRecup</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="fdc40a19-28c3-7fd2-f48d-8280d557f54c">
+                    <SHORT-NAME>SR_RegimeMoteur_P26</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.29273.21262</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="374ff22f-606d-05d1-e528-ff3ce87bb98e">
+                            <SHORT-NAME>RegimeMoteur_P26</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="04d12c28-8cc1-afcd-d4fd-3b7a71e6239c">
+                    <SHORT-NAME>SR_SAV_DistancePreciseT1</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.11975.25187</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="57f56693-7ac9-4e11-90bb-a7a02c3ff93c">
+                            <SHORT-NAME>SAV_DistancePreciseT1</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tDWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="cf6f5b2e-2b9c-d425-65b0-84d2bb690448">
+                    <SHORT-NAME>SR_SAV_DistancePreciseT2</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.36092.72691</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="2debb418-a71a-02c0-295b-853a82c4515e">
+                            <SHORT-NAME>SAV_DistancePreciseT2</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tDWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tDWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="23b16b84-23e3-4a09-dc26-c3987f1f146b">
+                    <SHORT-NAME>SR_SAV_EtatReseauElectrique</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.01901.88571</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="09d6a73d-9196-58ca-5693-970d92544a0f">
+                            <SHORT-NAME>SAV_EtatReseauElectrique</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/t_cGEE_1</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_t_cGEE_1_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="1953829c-aa3d-5b55-587f-a37b07d5cb3f">
+                    <SHORT-NAME>SR_SAV_NivCarbAffiche</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.27160.36690</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="684c73eb-edfb-a227-560f-68125ecdb5d0">
+                            <SHORT-NAME>SAV_NivCarbAffiche</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0xFFFF</SHORT-LABEL>
+                                        <VALUE>65535</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="2f438c88-c6c3-d1a3-e853-b55a477f6362">
+                    <SHORT-NAME>SR_VitesseVehicule</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>3.33840.46588</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="90500460-f3fc-7a5f-e15c-75cd299f015b">
+                            <SHORT-NAME>VitesseVehicule</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE UUID="33a0187a-45b3-835f-01f9-c049273ddef9">
+                    <SHORT-NAME>SR_ZoomConsoIHM</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                            <DOC-REVISION>
+                                <REVISION-LABEL>1.03329.93702</REVISION-LABEL>
+                                <ISSUED-BY>ASWC_A26</ISSUED-BY>
+                                <DATE>2018-03-23</DATE>
+                            </DOC-REVISION>
+                        </DOC-REVISIONS>
+                    </ADMIN-DATA>
+                    <IS-SERVICE>false</IS-SERVICE>
+                    <DATA-ELEMENTS>
+                        <VARIABLE-DATA-PROTOTYPE UUID="3140aa37-29eb-8412-d9fe-cf203bb811f3">
+                            <SHORT-NAME>ZoomConsoIHM</SHORT-NAME>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBILOG</TYPE-TREF>
+                                <INIT-VALUE>
+                                    <NUMERICAL-VALUE-SPECIFICATION>
+                                        <SHORT-LABEL>CONST_tBILOG_0</SHORT-LABEL>
+                                        <VALUE>0</VALUE>
+                                    </NUMERICAL-VALUE-SPECIFICATION>
+                                </INIT-VALUE>
+                        </VARIABLE-DATA-PROTOTYPE>
+                    </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

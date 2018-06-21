@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_AlertesFAP_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_AlertesFAP_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNA_MajVolumeCarb_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_MajVolumeCarb_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNA_TransCMM_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_TransCMM_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

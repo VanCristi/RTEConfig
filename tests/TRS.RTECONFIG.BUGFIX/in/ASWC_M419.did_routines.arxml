@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_ASWC_M419</SHORT-NAME>
+            <ELEMENTS>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR_Dcm</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>PortInterfaces</SHORT-NAME>
+                    <ELEMENTS>
+                <!-- 2 Interfaces de type Client Server -->
+                <CLIENT-SERVER-INTERFACE UUID="2ff5eeaa-92fd-9d8b-cd36-dbb0012f0e27">
+                    <SHORT-NAME>DataServices_DcmDspData_DID_ActivAntiBrAR</SHORT-NAME>
+                    <IS-SERVICE>true</IS-SERVICE>
+                    <OPERATIONS>
+                        <CLIENT-SERVER-OPERATION UUID="64682d1b-338a-ad60-56bb-32b50ccd2422">
+                            <SHORT-NAME>ReadData</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="49d3c960-391b-e6ae-cb19-79770faaf9ad">
+                                    <SHORT-NAME>Data</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <DIRECTION>OUT</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                        </CLIENT-SERVER-OPERATION>
+                    </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                <CLIENT-SERVER-INTERFACE UUID="934d3f16-9806-043a-9f9c-286b3ea8e776">
+                    <SHORT-NAME>DataServices_DcmDspData_DID_ActivAntiBrAV</SHORT-NAME>
+                    <IS-SERVICE>true</IS-SERVICE>
+                    <OPERATIONS>
+                        <CLIENT-SERVER-OPERATION UUID="31806d69-f3b9-b7da-5498-128a1e39fb61">
+                            <SHORT-NAME>ReadData</SHORT-NAME>
+                            <ARGUMENTS>
+                                <ARGUMENT-DATA-PROTOTYPE UUID="d4927045-481f-c579-9afd-fa19983a9270">
+                                    <SHORT-NAME>Data</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <DIRECTION>OUT</DIRECTION>
+                                </ARGUMENT-DATA-PROTOTYPE>
+                            </ARGUMENTS>
+                        </CLIENT-SERVER-OPERATION>
+                    </OPERATIONS>
+                </CLIENT-SERVER-INTERFACE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

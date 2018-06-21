@@ -1,0 +1,2948 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Scriptor.xsd">
+    <Name>RTE_Config</Name>
+    <Decription>Set the RTE parameters</Decription>
+    <Expression>as:modconf('Rte')[1]</Expression>
+    <Operations>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNI_A28_EXIT"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(1)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNI_A28_EXIT"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNI_A28_EXIT"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNI_A7D1_EXIT"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(2)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNI_A7D1_EXIT"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNI_A7D1_EXIT"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_Det/SwComponentTypes/DevelopmentErrorTracer/InternalBehavior/EV_ReportError_SWC_CyclicCounter"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(1)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_Det/SwComponentTypes/DevelopmentErrorTracer/InternalBehavior/EV_ReportError_SWC_CyclicCounter"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_Det/SwComponentTypes/DevelopmentErrorTracer/InternalBehavior/EV_ReportError_SWC_CyclicCounter"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_ETH_DIAG_Channel"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(2)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_ETH_DIAG_Channel"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_ETH_DIAG_Channel"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_ETH_DIAG_Channel"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(3)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_ETH_DIAG_Channel"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_ETH_DIAG_Channel"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_ETH_DIAG_Channel"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(4)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_ETH_DIAG_Channel"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_ETH_DIAG_Channel"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_ETH_DIAG_Channel"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(5)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_ETH_DIAG_Channel"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_ETH_DIAG_Channel"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_DIAG"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(6)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_DIAG"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_DIAG"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_DIAG"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(7)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_DIAG"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_DIAG"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_DIAG"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(8)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_DIAG"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_DIAG"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_DIAG"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(9)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_DIAG"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_DIAG"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS7"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(10)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS7"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS7"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS7"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(11)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS7"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS7"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS7"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(12)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS7"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS7"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS7"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(13)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS7"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS7"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS6"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(14)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS6"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS6"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS6"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(15)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS6"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS6"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS6"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(16)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS6"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS6"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS6"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(17)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS6"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS6"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(18)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(19)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(20)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(21)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(22)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(23)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(24)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(25)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_FD3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(26)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_FD3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_FD3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_FD3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(27)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_FD3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_FD3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_FD3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(28)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_FD3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_FD3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_FD3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(29)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_FD3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_FD3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(30)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(31)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(32)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(33)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(34)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_HS1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(35)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_HS1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(36)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_HS1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(37)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_HS1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(38)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(39)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(40)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_5"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(41)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_5"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_5"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(42)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(43)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(44)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_4"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(45)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_4"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_4"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(46)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(47)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(48)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_3"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(49)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_3"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_3"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(50)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(51)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(52)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_2"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(53)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_2"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_2"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(54)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetRequestedComMode_ComMUser_LIN_VSM_1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(55)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetMaxComMode_ComMUser_LIN_VSM_1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(56)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_GetCurrentComMode_ComMUser_LIN_VSM_1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_1"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(57)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_1"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_ComM/SwComponentTypes/ComM/SwcInternalBehavior_0/EV_RequestComMode_ComMUser_LIN_VSM_1"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswMInternalBehavior/DRE_SwcMode_ReqPort"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(58)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswMInternalBehavior/DRE_SwcMode_ReqPort"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswMInternalBehavior/DRE_SwcMode_ReqPort"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/NvDM_MainWritingSequence_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(3)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/NvDM_MainWritingSequence_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/NvDM_MainWritingSequence_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_CFGVH_NvDM_WrCfgVh_Block_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(59)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_CFGVH_NvDM_WrCfgVh_Block_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_CFGVH_NvDM_WrCfgVh_Block_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_APP_NvDM_WrApp_Block_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(60)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_APP_NvDM_WrApp_Block_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_BSWC_NvDM/BSWC_NvDM/IB_BSWC_NvDM/CS_NVDM_WR_APP_NvDM_WrApp_Block_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/te_RUNF1_VIT_LVV"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(4)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/te_RUNF1_VIT_LVV"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/te_RUNF1_VIT_LVV"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/dre_IndexVIT_LVV"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(5)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/dre_IndexVIT_LVV"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_ParamServer/ASWC_ParamServer/IB_ParamServer/dre_IndexVIT_LVV"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNA_M41B_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(6)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNA_M41B_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNA_M41B_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNPI_ASWC_M41B_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(32)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNPI_ASWC_M41B_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNPI_ASWC_M41B_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNPI_ASWC_M419_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(31)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNPI_ASWC_M419_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNPI_ASWC_M419_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNA_M418_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(7)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNA_M418_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNA_M418_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNPI_ASWC_M418_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(30)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNPI_ASWC_M418_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M418/ASWC_M418/IB_ASWC_M418/RUNPI_ASWC_M418_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNA_M416_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(8)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNA_M416_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNA_M416_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNPI_ASWC_M416_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(29)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNPI_ASWC_M416_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M416/ASWC_M416/IB_ASWC_M416/RUNPI_ASWC_M416_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNA_M415_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(9)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNA_M415_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNA_M415_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNPI_ASWC_M415_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(28)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNPI_ASWC_M415_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M415/ASWC_M415/IB_ASWC_M415/RUNPI_ASWC_M415_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNPI_ASWC_M414_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(27)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNPI_ASWC_M414_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNPI_ASWC_M414_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNPI_ASWC_M413_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(26)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNPI_ASWC_M413_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNPI_ASWC_M413_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNA_M412_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(10)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNA_M412_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNA_M412_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNPI_ASWC_M412_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(25)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNPI_ASWC_M412_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M412/ASWC_M412/IB_ASWC_M412/RUNPI_ASWC_M412_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNA_ACQUISITION_COMODO_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(11)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNA_ACQUISITION_COMODO_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNA_ACQUISITION_COMODO_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNPI_ASWC_M410_ENTRY"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(24)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNPI_ASWC_M410_ENTRY"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNPI_ASWC_M410_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_TransCMM_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(12)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_TransCMM_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_TransCMM_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_MajVolumeCarb_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(13)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_MajVolumeCarb_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_MajVolumeCarb_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_AlertesFAP_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(14)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_AlertesFAP_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_AlertesFAP_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_RequestResults_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(61)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_RequestResults_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_RequestResults_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Stop_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(62)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Stop_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Stop_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Start_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(63)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Start_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RoutineServices_Routine_ReinitNivCarb_Start_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererAcquisImpedance_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(15)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererAcquisImpedance_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererAcquisImpedance_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_RequestResults_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(64)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_RequestResults_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_RequestResults_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Stop_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(65)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Stop_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Stop_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Start_OIE"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(66)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Start_OIE"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RoutineServices_Routine_RAZIndicDiagTNB_Start_OIE"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GererFonctionANBC_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(16)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GererFonctionANBC_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GererFonctionANBC_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNA_FOG_BEAM_MANAGEMENT_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(17)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNA_FOG_BEAM_MANAGEMENT_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNA_FOG_BEAM_MANAGEMENT_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNA_SYNTHESE_DMD_FEUX_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(18)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNA_SYNTHESE_DMD_FEUX_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M414/ASWC_M414/IB_ASWC_M414/RUNA_SYNTHESE_DMD_FEUX_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNA_LOW_HIGH_BEAM_MANAGEMENT_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(19)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNA_LOW_HIGH_BEAM_MANAGEMENT_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_M413/ASWC_M413/IB_ASWC_M413/RUNA_LOW_HIGH_BEAM_MANAGEMENT_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RUNA_GererIHMInfoCarburant_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(20)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RUNA_GererIHMInfoCarburant_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RUNA_GererIHMInfoCarburant_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererJaugeagCarburant_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(21)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererJaugeagCarburant_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererJaugeagCarburant_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GestionDiagANBC_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(22)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GestionDiagANBC_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GestionDiagANBC_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNA_GererMenuPerso_Cyclic"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(23)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNA_GererMenuPerso_Cyclic"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_CORE0_QM_PER"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNA_GererMenuPerso_Cyclic"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+    </Operations>
+</Script>

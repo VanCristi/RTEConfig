@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_GererAcquisImpedance_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererAcquisImpedance_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNA_GererJaugeagCarburant_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNA_GererJaugeagCarburant_Cyclic</EVENT-REF>
+        <AFTER-EVENT-REF>
+            <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_P7D/ASWC_P7D/IB_ASWC_P7D/RUNP_P7D_Cyclic</EVENT-REF>
+        </AFTER-EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNI_A7D1_EXIT</SHORT-NAME>
+        <EVENT-REF DEST="SWC-MODE-SWITCH-EVENT">/RootP_ASWC_A7D1/ASWC_A7D1/IB_ASWC_A7D1/RUNI_A7D1_EXIT</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

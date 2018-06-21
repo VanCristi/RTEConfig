@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-1.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_ASWC_A7D3</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE>
+                    <SHORT-NAME>ASWC_A7D3</SHORT-NAME>
+                    <ADMIN-DATA>
+                        <SDGS>
+                            <SDG GID="MBD_FALSE"/>
+                        </SDGS>
+                    </ADMIN-DATA>
+                    <PORTS>
+                        <!-- 11 Provided Ports sur des interfaces de type Sender Receiver -->
+                        <PR-PORT-PROTOTYPE UUID="04ec79fe-ace1-2c45-57d0-435d5f83a820">
+                            <SHORT-NAME>PRP_SR_ContexteDefCalcAdditif</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCalcAdditif/ContexteDefCalcAdditif</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefCalcAdditif</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="ec985bb4-e184-824d-1306-5fd9bced1dcd">
+                            <SHORT-NAME>PRP_SR_ContexteDefCapteurBouchon</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCapteurBouchon/ContexteDefCapteurBouchon</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefCapteurBouchon</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="6e765c78-1972-4fef-b41b-5d7f4aab0222">
+                            <SHORT-NAME>PRP_SR_ContexteDefInjecteur</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefInjecteur/ContexteDefInjecteur</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefInjecteur</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="1959f220-f20b-3fb9-c8b5-299019213d1b">
+                            <SHORT-NAME>PRP_SR_ContexteDefJaugeAdditif</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeAdditif/ContexteDefJaugeAdditif</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefJaugeAdditif</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="ebc1a1ca-7b11-dd63-798b-e4b0b19a6faa">
+                            <SHORT-NAME>PRP_SR_ContexteDefJaugeCarb</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeCarb/ContexteDefJaugeCarb</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefJaugeCarb</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="6f1d2044-7131-fc27-3297-c9d010507065">
+                            <SHORT-NAME>PRP_SR_ContexteDefPompe</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefPompe/ContexteDefPompe</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefPompe</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="e4364fed-fbd2-472e-d5d0-57f3b6abb7c4">
+                            <SHORT-NAME>PRP_SR_ContexteDefSondeTemp</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefSondeTemp/ContexteDefSondeTemp</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteDefSondeTemp</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="3fcc2822-c452-42ff-0798-311d2d9ce2b3">
+                            <SHORT-NAME>PRP_SR_ContexteEtatAdditivation</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteEtatAdditivation/ContexteEtatAdditivation</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_1</SHORT-LABEL>
+                                            <VALUE>1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ContexteEtatAdditivation</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="c0614a92-6e27-33ef-be8a-6cd2c06121cb">
+                            <SHORT-NAME>PRP_SR_SAV_CompteurEnvoiDeltaCarb</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_CompteurEnvoiDeltaCarb/SAV_CompteurEnvoiDeltaCarb</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_CompteurEnvoiDeltaCarb</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="dbb884ae-084e-f028-4f25-d26b4305d22f">
+                            <SHORT-NAME>PRP_SR_SAV_VolCarbAjoute</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_VolCarbAjoute/SAV_VolCarbAjoute</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0xFE</SHORT-LABEL>
+                                            <VALUE>254</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_VolCarbAjoute</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <PR-PORT-PROTOTYPE UUID="853f6d7f-ab90-cd50-f125-af108bf73370">
+                            <SHORT-NAME>PRP_SR_VoyRisqueColmatageFAP</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VoyRisqueColmatageFAP/VoyRisqueColmatageFAP</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <PROVIDED-REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_VoyRisqueColmatageFAP</PROVIDED-REQUIRED-INTERFACE-TREF>
+                        </PR-PORT-PROTOTYPE>
+                        <!-- 3 Required Ports sur des interfaces de type Client Server -->
+                        <R-PORT-PROTOTYPE UUID="d93cd5e1-dc1b-ce6c-0dd1-7704e3f96f2e">
+                            <SHORT-NAME>RP_CS_AlerteIHM</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/RootP_CS/CS_AlerteIHM</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="ab6f15b0-aa4f-1785-7d4c-3477d3a15344">
+                            <SHORT-NAME>RP_CS_GeneralDiagnosticMonitor</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/RootP_CS/CS_GeneralDiagnosticMonitor</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="429d97a8-51c5-f368-0813-ed40bce61ec7">
+                            <SHORT-NAME>RP_CS_VoyantService</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/RootP_CS/CS_VoyantService</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <!-- 25 Required Ports sur des interfaces de type Sender Receiver -->
+                        <R-PORT-PROTOTYPE UUID="9ee942ab-8193-3727-eb63-f73df57f1fe6">
+                            <SHORT-NAME>RP_SR_ApportCarbDetecte</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ApportCarbDetecte/ApportCarbDetecte</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ApportCarbDetecte</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="beac5709-cfff-a4e7-05c9-1aed0791f941">
+                            <SHORT-NAME>RP_SR_C7D3_VITESSE_SEUIL_ROULAGE</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_C7D3_VITESSE_SEUIL_ROULAGE/C7D3_VITESSE_SEUIL_ROULAGE</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_3</SHORT-LABEL>
+                                            <VALUE>3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Param/SR_C7D3_VITESSE_SEUIL_ROULAGE</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="bb6f502f-0cd8-f026-a383-c504bfbece98">
+                            <SHORT-NAME>RP_SR_CFG_DETECT_APPORT_PAR_MVT</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_DETECT_APPORT_PAR_MVT/CFG_DETECT_APPORT_PAR_MVT</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Param/SR_CFG_DETECT_APPORT_PAR_MVT</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b382c246-e14e-7336-bdcf-bf5f666f6888">
+                            <SHORT-NAME>RP_SR_CFG_TYPE_FAP</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_FAP/CFG_TYPE_FAP</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_cFAP_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Param/SR_CFG_TYPE_FAP</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="06af1211-1115-3615-a044-6bd8ea5af01f">
+                            <SHORT-NAME>RP_SR_CFG_TYPE_SC</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_SC/CFG_TYPE_SC</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_CFG_TYPE_SC_t_cTypeSC_Euro_cTypeSC_Euro6</SHORT-LABEL>
+                                            <VALUE>2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Param/SR_CFG_TYPE_SC</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="8d709e68-00d3-02f5-bf5d-cf29e4224ae1">
+                            <SHORT-NAME>RP_SR_DefautBouchonCarbConfirme</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautBouchonCarbConfirme/DefautBouchonCarbConfirme</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DefautBouchonCarbConfirme</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="43ab442c-d213-cb31-7b38-978e17737dab">
+                            <SHORT-NAME>RP_SR_DefautJaugeCarbConfirme</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautJaugeCarbConfirme/DefautJaugeCarbConfirme</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_DefautJaugeCarbConfirme_t_cSDF_Defaut_cSDF_DefautAbsent</SHORT-LABEL>
+                                            <VALUE>105</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DefautJaugeCarbConfirme</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="ddd1ede3-1318-2219-13db-95f822f9d5a3">
+                            <SHORT-NAME>RP_SR_DefautMvmtVhl</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautMvmtVhl/DefautMvmtVhl</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DefautMvmtVhl</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="2f4cee18-4d2f-3eda-f4ae-44a7d125e3c2">
+                            <SHORT-NAME>RP_SR_DefautPompeAdd</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautPompeAdd/DefautPompeAdd</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DefautPompeAdd</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="49fe31a5-aa86-a6e6-3f74-d2de40c0b135">
+                            <SHORT-NAME>RP_SR_DeltaCarb</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DeltaCarb/DeltaCarb</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DeltaCarb</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="44cba7dc-c2a2-dc66-8b35-1888ae3a2f7d">
+                            <SHORT-NAME>RP_SR_DysfVitesseVehicule</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DysfVitesseVehicule/DysfVitesseVehicule</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_cVitv_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_DysfVitesseVehicule</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="7809f29f-a62b-dd73-c107-6e9ff12daa06">
+                            <SHORT-NAME>RP_SR_EtatGMP</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatGMP/EtatGMP</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_EtatGMP_t_GM_GMP_GM_GMPCoupe</SHORT-LABEL>
+                                            <VALUE>1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_EtatGMP</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="8e9f9622-6899-6ede-fa06-c1dcda5ecfce">
+                            <SHORT-NAME>RP_SR_EtatPrincipalSEV</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatPrincipalSEV/EtatPrincipalSEV</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_EtatPrincipalSEV_t_SEV_SEV_Arret</SHORT-LABEL>
+                                            <VALUE>105</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_EtatPrincipalSEV</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="111156d1-f7cd-1297-4f14-c98777cfad42">
+                            <SHORT-NAME>RP_SR_ForcageTemoinsEnCours</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ForcageTemoinsEnCours/ForcageTemoinsEnCours</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ForcageTemoinsEnCours</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a6ed5e97-174d-7422-3077-9cda467f86b2">
+                            <SHORT-NAME>RP_SR_InterMemoDefauts</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InterMemoDefauts/InterMemoDefauts</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_InterMemoDefauts</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="178543b7-e1d4-d8b0-9d1a-7ea61c11fd80">
+                            <SHORT-NAME>RP_SR_ModeDegrDefVitesse</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ModeDegrDefVitesse/ModeDegrDefVitesse</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_ModeDegrDefVitesse</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="3ff53dc9-3f39-d746-4fd6-28dc90f3e8f5">
+                            <SHORT-NAME>RP_SR_MvmtVhl</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_MvmtVhl/MvmtVhl</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_MvmtVhl</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b381a933-45d8-1581-dc2a-f5586d51fc1e">
+                            <SHORT-NAME>RP_SR_NivMinAdditifGazole</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_NivMinAdditifGazole/NivMinAdditifGazole</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_NivMinAdditifGazole</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="fc99f843-636b-ff80-4797-0f165a99824d">
+                            <SHORT-NAME>RP_SR_PompeAddMuette</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PompeAddMuette/PompeAddMuette</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_PompeAddMuette</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="b219c909-2bd4-8231-4c15-6bb73aba0417">
+                            <SHORT-NAME>RP_SR_PresenceTemoinDefMot</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PresenceTemoinDefMot/PresenceTemoinDefMot</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_PresenceTemoinDefMot</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="c372752a-01bc-f207-c07a-6717c2a97040">
+                            <SHORT-NAME>RP_SR_PresenceTemoinFAPColm</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PresenceTemoinFAPColm/PresenceTemoinFAPColm</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_PresenceTemoinFAPColm</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="ee48fea8-8ada-ff23-0b71-cf6283bc6e24">
+                            <SHORT-NAME>RP_SR_RisquesColmatageFAP</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_RisquesColmatageFAP/RisquesColmatageFAP</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_RisquesColmatageFAP</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="d83d74e2-441a-7622-b3b6-cb21555d0e3e">
+                            <SHORT-NAME>RP_SR_SEC_ConfigSEV</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SEC_ConfigSEV/SEC_ConfigSEV</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_t_cCSEV_4</SHORT-LABEL>
+                                            <VALUE>4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SEC_ConfigSEV</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="a06b81da-f793-7528-29e2-a0ca727e8fc3">
+                            <SHORT-NAME>RP_SR_T7D3_TEMPO_SEUIL_VITESSE</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_T7D3_TEMPO_SEUIL_VITESSE/T7D3_TEMPO_SEUIL_VITESSE</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_5</SHORT-LABEL>
+                                            <VALUE>5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Param/SR_T7D3_TEMPO_SEUIL_VITESSE</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="52f4849e-f20c-0912-0159-3b9f68bc8980">
+                            <SHORT-NAME>RP_SR_VitesseVehicule</SHORT-NAME>
+                            <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VitesseVehicule/VitesseVehicule</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                    <ENABLE-UPDATE>0</ENABLE-UPDATE>
+                                    <HANDLE-DATA-STATUS>1</HANDLE-DATA-STATUS>
+                                    <HANDLE-NEVER-RECEIVED>0</HANDLE-NEVER-RECEIVED>
+                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                            </REQUIRED-COM-SPECS>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_VitesseVehicule</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                        <!-- Required Port Mode Switch Event -->
+                        <R-PORT-PROTOTYPE UUID="764617a1-cae3-582b-3296-aca4625247a7">
+                            <SHORT-NAME>ASWC_A7D3_MSI</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/RootP_Mode/AppModeInterface</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="dd3bf18d-a28d-5a80-5238-71c61adb020b">
+                            <SHORT-NAME>IB_ASWC_A7D3</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/RootP_Mode/ApplicationModeMapping</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <AR-TYPED-PER-INSTANCE-MEMORYS>
+                                <!-- 17 Per Instance Memory -->
+                                <VARIABLE-DATA-PROTOTYPE UUID="39a327d3-e179-8644-33ab-a470353a7716">
+                                    <SHORT-NAME>PA7D3_AlerteEnCoursDefautNivMiniAddGo</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="be06956e-7519-80b2-f87e-20b306728dc6">
+                                    <SHORT-NAME>PA7D3_AlerteEnCoursRisquesColmatageFAP</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ebaa1e03-3a10-9a28-0463-bd71dc61a928">
+                                    <SHORT-NAME>PA7D3_ApportCarbDetectePrec</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e96e29b6-1c84-8851-accc-06a714720f9b">
+                                    <SHORT-NAME>PA7D3_CptTempoAppa_DefautPompeADD</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="5ed31929-9783-71d3-7d1a-c9460a69f565">
+                                    <SHORT-NAME>PA7D3_CptTempoDisp_DefautPompeADD</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="86648700-fad1-ba27-2075-c12e8d3e7308">
+                                    <SHORT-NAME>PA7D3_DefautMvmtVhlPrec</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c3ba07f1-d689-7387-672f-4658d047d924">
+                                    <SHORT-NAME>PA7D3_DefautPrec_DefautPompeADD</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="84cb6101-fb32-fba0-b4ac-a325203041b5">
+                                    <SHORT-NAME>PA7D3_FiltreF3</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tWORD</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tWORD_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="d41ea9e2-40e4-eb57-cba3-0c0dd9d918fd">
+                                    <SHORT-NAME>PA7D3_FiltreGMP</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="4b480f47-1cc1-42f5-f702-b613e8cc1f52">
+                                    <SHORT-NAME>PA7D3_ModeDegrDefVitessePrec</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="963c1c92-b641-443d-953a-71f8c550d42b">
+                                    <SHORT-NAME>PA7D3_NivMinAdditifGazoleFiltre</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="914a594c-a544-153a-0737-e1c20d3fbae5">
+                                    <SHORT-NAME>PA7D3_OldStateDef2_DefautPompeADD</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="6484e8ff-347d-3221-6522-b5d889eb11ac">
+                                    <SHORT-NAME>PA7D3_SAV_FrontApportCarbDetecte</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="bdf3a544-435d-7e27-0cf0-4ce722812e91">
+                                    <SHORT-NAME>PA7D3_SAV_PremierPassageRealise</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tLOG</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tLOG_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f0e1c367-87ae-9cd7-a4fa-7710b1145ee0">
+                                    <SHORT-NAME>PA7D3_TempoGMPNonTournant</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="1f69ef32-bb55-fd5c-fc1d-e52508a15cac">
+                                    <SHORT-NAME>PA7D3_TempoMouvement</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ddecdd07-f93f-411a-55a6-980b05c557bf">
+                                    <SHORT-NAME>PA7D3_TempoVitesse</SHORT-NAME>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Pack_sw_Types/tBYTE</TYPE-TREF>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>CONST_tBYTE_0</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </AR-TYPED-PER-INSTANCE-MEMORYS>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="986ebef9-a7cf-5f84-83b1-80fe42869fef">
+                                    <SHORT-NAME>RUNA_AlertesFAP_Cyclic</SHORT-NAME>
+                                    <DISABLED-MODE-IREFS>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                    </DISABLED-MODE-IREFS>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_AlertesFAP</START-ON-EVENT-REF>
+                                    <PERIOD>0.1</PERIOD>
+                                </TIMING-EVENT>
+                                <TIMING-EVENT UUID="ce06900d-bdbf-87b3-6798-fb75094a2deb">
+                                    <SHORT-NAME>RUNA_MajVolumeCarb_Cyclic</SHORT-NAME>
+                                    <DISABLED-MODE-IREFS>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                    </DISABLED-MODE-IREFS>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_MajVolumeCarb</START-ON-EVENT-REF>
+                                    <PERIOD>0.5</PERIOD>
+                                </TIMING-EVENT>
+                                <TIMING-EVENT UUID="7c803ca9-087e-5e8f-c77c-1e2a989d0583">
+                                    <SHORT-NAME>RUNA_TransCMM_Cyclic</SHORT-NAME>
+                                    <DISABLED-MODE-IREFS>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/ASWC_A7D3_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                    </DISABLED-MODE-IREFS>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3/RUNA_TransCMM</START-ON-EVENT-REF>
+                                    <PERIOD>0.5</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <EXPLICIT-INTER-RUNNABLE-VARIABLES />
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <IMPLICIT-INTER-RUNNABLE-VARIABLES />
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="f01f786b-b2f0-6432-3a78-4c4ec990cdc3">
+                                    <SHORT-NAME>RUNA_AlertesFAP</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <!-- 8 data-element externes lecture -->
+                                        <VARIABLE-ACCESS UUID="9c995ee8-44eb-f9d3-4cc5-00f640e408d7">
+                                            <SHORT-NAME>dra_RP_SR_EtatGMP_EtatGMP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_EtatGMP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatGMP/EtatGMP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="33689663-fb13-2b90-e51b-5a24c156621b">
+                                            <SHORT-NAME>dra_RP_SR_EtatPrincipalSEV_EtatPrincipalSEV</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_EtatPrincipalSEV</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatPrincipalSEV/EtatPrincipalSEV</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="a618ce1e-4bd0-5aec-b835-1803d6f95db1">
+                                            <SHORT-NAME>dra_RP_SR_ForcageTemoinsEnCours_ForcageTemoinsEnCours</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_ForcageTemoinsEnCours</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ForcageTemoinsEnCours/ForcageTemoinsEnCours</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="588891e9-b226-3d4e-691c-b27764a2b85e">
+                                            <SHORT-NAME>dra_RP_SR_NivMinAdditifGazole_NivMinAdditifGazole</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_NivMinAdditifGazole</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_NivMinAdditifGazole/NivMinAdditifGazole</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="58e3c82f-7fd4-5b2c-7d77-bd3ea2ae5a64">
+                                            <SHORT-NAME>dra_RP_SR_PresenceTemoinDefMot_PresenceTemoinDefMot</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_PresenceTemoinDefMot</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PresenceTemoinDefMot/PresenceTemoinDefMot</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="b465c293-7a83-34f1-c8d6-a14932a3f7a7">
+                                            <SHORT-NAME>dra_RP_SR_PresenceTemoinFAPColm_PresenceTemoinFAPColm</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_PresenceTemoinFAPColm</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PresenceTemoinFAPColm/PresenceTemoinFAPColm</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="fceab689-6b02-345e-7346-aa52a1c16f44">
+                                            <SHORT-NAME>dra_RP_SR_RisquesColmatageFAP_RisquesColmatageFAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_RisquesColmatageFAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_RisquesColmatageFAP/RisquesColmatageFAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="5ed0c81d-9c70-c684-7764-96cb54f7678e">
+                                            <SHORT-NAME>dra_RP_SR_SEC_ConfigSEV_SEC_ConfigSEV</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_SEC_ConfigSEV</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SEC_ConfigSEV/SEC_ConfigSEV</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 2 parameter lecture -->
+                                        <VARIABLE-ACCESS UUID="c20d035c-1c9e-75e3-3f4c-3e13bc247293">
+                                            <SHORT-NAME>dra_RP_SR_CFG_TYPE_FAP_CFG_TYPE_FAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_CFG_TYPE_FAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_FAP/CFG_TYPE_FAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="efcb989b-0f2a-33fe-e605-dad6ecf547f1">
+                                            <SHORT-NAME>dra_RP_SR_CFG_TYPE_SC_CFG_TYPE_SC</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_CFG_TYPE_SC</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_SC/CFG_TYPE_SC</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 1 data-element rebouclages -->
+                                        <VARIABLE-ACCESS UUID="aee983f5-36d3-c539-1c20-795529b4ac3b">
+                                            <SHORT-NAME>dra_PRP_SR_VoyRisqueColmatageFAP_VoyRisqueColmatageFAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_VoyRisqueColmatageFAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VoyRisqueColmatageFAP/VoyRisqueColmatageFAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS />
+                                    <DATA-RECEIVE-POINT-BY-VALUES />
+                                    <DATA-SEND-POINTS />
+                                    <DATA-WRITE-ACCESSS>
+                                        <!-- 1 data-element produits -->
+                                        <VARIABLE-ACCESS UUID="56309d30-61dd-2a24-a812-bde865af8999">
+                                            <SHORT-NAME>dwa_PRP_SR_VoyRisqueColmatageFAP_VoyRisqueColmatageFAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_VoyRisqueColmatageFAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VoyRisqueColmatageFAP/VoyRisqueColmatageFAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                <PARAMETER-ACCESSS />
+                                    <READ-LOCAL-VARIABLES />
+                                    <SERVER-CALL-POINTS>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="ffcec395-64c7-1f9e-1335-6996d0e6781e">
+                                            <SHORT-NAME>sscp_RUNA_AlertesFAP_CS_AlerteIHM_Cmd</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_CS_AlerteIHM</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/RootP_CS/CS_AlerteIHM/Cmd</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>0</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="fa8e2f58-4318-0539-2fc6-54725c472681">
+                                            <SHORT-NAME>sscp_RUNA_AlertesFAP_CS_VoyantService_Piloter</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_CS_VoyantService</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/RootP_CS/CS_VoyantService/Piloter</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>0</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>RUNA_AlertesFAP</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES />
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="9fb47764-a390-8736-6d2f-e8a1cbe95288">
+                                    <SHORT-NAME>RUNA_MajVolumeCarb</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <!-- 11 data-element externes lecture -->
+                                        <VARIABLE-ACCESS UUID="bf4116a9-0d0e-ae46-64b8-94d2340fb7e7">
+                                            <SHORT-NAME>dra_RP_SR_ApportCarbDetecte_ApportCarbDetecte</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_ApportCarbDetecte</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ApportCarbDetecte/ApportCarbDetecte</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="dd075f9c-be51-78d8-5ff3-947d70a638a7">
+                                            <SHORT-NAME>dra_RP_SR_DefautJaugeCarbConfirme_DefautJaugeCarbConfirme</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautJaugeCarbConfirme</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautJaugeCarbConfirme/DefautJaugeCarbConfirme</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2bd9c163-9bfb-f225-183e-e680a55c0dd7">
+                                            <SHORT-NAME>dra_RP_SR_DefautMvmtVhl_DefautMvmtVhl</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautMvmtVhl</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautMvmtVhl/DefautMvmtVhl</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="672941fb-827b-b5b4-d9e6-66446f83340b">
+                                            <SHORT-NAME>dra_RP_SR_DefautPompeAdd_DefautPompeAdd</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautPompeAdd</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautPompeAdd/DefautPompeAdd</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="72377857-4fd8-1d0b-28e1-e01db1e08024">
+                                            <SHORT-NAME>dra_RP_SR_DeltaCarb_DeltaCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DeltaCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DeltaCarb/DeltaCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="11a81ab9-bd23-83a8-f261-87175f695aec">
+                                            <SHORT-NAME>dra_RP_SR_DysfVitesseVehicule_DysfVitesseVehicule</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DysfVitesseVehicule</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DysfVitesseVehicule/DysfVitesseVehicule</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="704944b9-07da-16a8-5518-71facd6c444a">
+                                            <SHORT-NAME>dra_RP_SR_EtatGMP_EtatGMP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_EtatGMP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatGMP/EtatGMP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="7a31a3b7-85c7-4f6a-17b3-9fdd62cf39a7">
+                                            <SHORT-NAME>dra_RP_SR_InterMemoDefauts_InterMemoDefauts</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_InterMemoDefauts</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_InterMemoDefauts/InterMemoDefauts</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="a21a3121-5f15-3418-b55c-982d2ce319f9">
+                                            <SHORT-NAME>dra_RP_SR_ModeDegrDefVitesse_ModeDegrDefVitesse</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_ModeDegrDefVitesse</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ModeDegrDefVitesse/ModeDegrDefVitesse</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2648bf4b-c026-e47c-bf5b-7da2fd63bc26">
+                                            <SHORT-NAME>dra_RP_SR_MvmtVhl_MvmtVhl</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_MvmtVhl</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_MvmtVhl/MvmtVhl</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="910f5c87-ae8a-731c-635a-2bc6b45753ec">
+                                            <SHORT-NAME>dra_RP_SR_VitesseVehicule_VitesseVehicule</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_VitesseVehicule</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VitesseVehicule/VitesseVehicule</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 4 parameter lecture -->
+                                        <VARIABLE-ACCESS UUID="720520b5-76fd-fc1e-a91e-e254ccbb7049">
+                                            <SHORT-NAME>dra_RP_SR_C7D3_VITESSE_SEUIL_ROULAGE_C7D3_VITESSE_SEUIL_ROULAGE</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_C7D3_VITESSE_SEUIL_ROULAGE</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_C7D3_VITESSE_SEUIL_ROULAGE/C7D3_VITESSE_SEUIL_ROULAGE</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="45559b07-9c80-6e85-8dd7-9e1b695c490c">
+                                            <SHORT-NAME>dra_RP_SR_CFG_DETECT_APPORT_PAR_MVT_CFG_DETECT_APPORT_PAR_MVT</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_CFG_DETECT_APPORT_PAR_MVT</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_DETECT_APPORT_PAR_MVT/CFG_DETECT_APPORT_PAR_MVT</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="cc28abbb-1751-37e2-a4ae-5e2006b6433b">
+                                            <SHORT-NAME>dra_RP_SR_CFG_TYPE_FAP_CFG_TYPE_FAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_CFG_TYPE_FAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_FAP/CFG_TYPE_FAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="4a3e6f3e-cf72-35e2-41c4-134b4db61e8a">
+                                            <SHORT-NAME>dra_RP_SR_T7D3_TEMPO_SEUIL_VITESSE_T7D3_TEMPO_SEUIL_VITESSE</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_T7D3_TEMPO_SEUIL_VITESSE</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_T7D3_TEMPO_SEUIL_VITESSE/T7D3_TEMPO_SEUIL_VITESSE</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 2 data-element rebouclages -->
+                                        <VARIABLE-ACCESS UUID="f9ea6e9e-eebc-8b1c-7bf9-3080a1ef78e8">
+                                            <SHORT-NAME>dra_PRP_SR_SAV_CompteurEnvoiDeltaCarb_SAV_CompteurEnvoiDeltaCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_SAV_CompteurEnvoiDeltaCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_CompteurEnvoiDeltaCarb/SAV_CompteurEnvoiDeltaCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="4c680520-9665-6017-ff86-6c6f68fda036">
+                                            <SHORT-NAME>dra_PRP_SR_SAV_VolCarbAjoute_SAV_VolCarbAjoute</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_SAV_VolCarbAjoute</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_VolCarbAjoute/SAV_VolCarbAjoute</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS />
+                                    <DATA-RECEIVE-POINT-BY-VALUES />
+                                    <DATA-SEND-POINTS />
+                                    <DATA-WRITE-ACCESSS>
+                                        <!-- 2 data-element produits -->
+                                        <VARIABLE-ACCESS UUID="88aca65d-4062-eae7-c5f2-3c5ab46cd6a1">
+                                            <SHORT-NAME>dwa_PRP_SR_SAV_CompteurEnvoiDeltaCarb_SAV_CompteurEnvoiDeltaCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_SAV_CompteurEnvoiDeltaCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_CompteurEnvoiDeltaCarb/SAV_CompteurEnvoiDeltaCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="84690ece-e324-cb72-11a6-669f678c5d09">
+                                            <SHORT-NAME>dwa_PRP_SR_SAV_VolCarbAjoute_SAV_VolCarbAjoute</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_SAV_VolCarbAjoute</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_SAV_VolCarbAjoute/SAV_VolCarbAjoute</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                <PARAMETER-ACCESSS />
+                                    <READ-LOCAL-VARIABLES />
+                                    <SERVER-CALL-POINTS>
+                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="348b196d-73a9-be5c-9202-b5fa20217773">
+                                            <SHORT-NAME>sscp_RUNA_MajVolumeCarb_CS_GeneralDiagnosticMonitor_SetEventStatus</SHORT-NAME>
+                                            <OPERATION-IREF>
+                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_CS_GeneralDiagnosticMonitor</CONTEXT-R-PORT-REF>
+                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/RootP_CS/CS_GeneralDiagnosticMonitor/SetEventStatus</TARGET-REQUIRED-OPERATION-REF>
+                                            </OPERATION-IREF>
+                                            <TIMEOUT>0</TIMEOUT>
+                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                    </SERVER-CALL-POINTS>
+                                    <SYMBOL>RUNA_MajVolumeCarb</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES />
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="b8bd7d3c-71d6-821c-6c99-15389b5c3f78">
+                                    <SHORT-NAME>RUNA_TransCMM</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-READ-ACCESSS>
+                                        <!-- 11 data-element externes lecture -->
+                                        <VARIABLE-ACCESS UUID="5da9d0fd-886b-05e4-f277-1740305c0ed2">
+                                            <SHORT-NAME>dra_RP_SR_ApportCarbDetecte_ApportCarbDetecte</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_ApportCarbDetecte</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ApportCarbDetecte/ApportCarbDetecte</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="3d550c6f-24b9-5c16-63a7-992848d52841">
+                                            <SHORT-NAME>dra_RP_SR_DefautBouchonCarbConfirme_DefautBouchonCarbConfirme</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautBouchonCarbConfirme</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautBouchonCarbConfirme/DefautBouchonCarbConfirme</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="af417d0f-a3f9-0e8a-9ae9-7b5897013590">
+                                            <SHORT-NAME>dra_RP_SR_DefautJaugeCarbConfirme_DefautJaugeCarbConfirme</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautJaugeCarbConfirme</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautJaugeCarbConfirme/DefautJaugeCarbConfirme</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="03e01101-1b25-e7d6-7d4a-2f707bc53089">
+                                            <SHORT-NAME>dra_RP_SR_DefautPompeAdd_DefautPompeAdd</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DefautPompeAdd</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DefautPompeAdd/DefautPompeAdd</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="59068855-cded-2491-1d58-07ff3afce0da">
+                                            <SHORT-NAME>dra_RP_SR_DeltaCarb_DeltaCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DeltaCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DeltaCarb/DeltaCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="2a70a9ce-4a91-d009-cf4e-63c2a77a2bf1">
+                                            <SHORT-NAME>dra_RP_SR_DysfVitesseVehicule_DysfVitesseVehicule</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_DysfVitesseVehicule</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_DysfVitesseVehicule/DysfVitesseVehicule</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="f9da2414-57ca-3a58-bb5d-3baa76e89ee3">
+                                            <SHORT-NAME>dra_RP_SR_EtatGMP_EtatGMP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_EtatGMP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatGMP/EtatGMP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="22cc7048-095b-9a56-506f-342c4a6587b4">
+                                            <SHORT-NAME>dra_RP_SR_EtatPrincipalSEV_EtatPrincipalSEV</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_EtatPrincipalSEV</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_EtatPrincipalSEV/EtatPrincipalSEV</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="8f2ae593-b919-0427-df23-9e20ed43a403">
+                                            <SHORT-NAME>dra_RP_SR_ModeDegrDefVitesse_ModeDegrDefVitesse</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_ModeDegrDefVitesse</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ModeDegrDefVitesse/ModeDegrDefVitesse</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="c6b63b55-43d3-6bbc-a5db-8110db493174">
+                                            <SHORT-NAME>dra_RP_SR_PompeAddMuette_PompeAddMuette</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_PompeAddMuette</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_PompeAddMuette/PompeAddMuette</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="108f0fb4-098f-59a6-9ce0-1055d0cc4bc5">
+                                            <SHORT-NAME>dra_RP_SR_VitesseVehicule_VitesseVehicule</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_VitesseVehicule</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_VitesseVehicule/VitesseVehicule</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 1 parameter lecture -->
+                                        <VARIABLE-ACCESS UUID="a9a35983-e1d1-bdb2-c18a-781921656f34">
+                                            <SHORT-NAME>dra_RP_SR_CFG_TYPE_FAP_CFG_TYPE_FAP</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/RP_SR_CFG_TYPE_FAP</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Param/SR_CFG_TYPE_FAP/CFG_TYPE_FAP</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <!-- 8 data-element rebouclages -->
+                                        <VARIABLE-ACCESS UUID="301eb760-ffec-3e47-4db5-d080016328d2">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefCalcAdditif_ContexteDefCalcAdditif</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefCalcAdditif</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCalcAdditif/ContexteDefCalcAdditif</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="a6826e82-6d23-9d0f-a2a1-7aa8ed7a0301">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefCapteurBouchon_ContexteDefCapteurBouchon</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefCapteurBouchon</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCapteurBouchon/ContexteDefCapteurBouchon</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="dd0b5531-3c3e-bea6-1ff8-0268b0ab20d3">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefInjecteur_ContexteDefInjecteur</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefInjecteur</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefInjecteur/ContexteDefInjecteur</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="d731f91c-773f-1b2f-18f9-c6597ebb6ba8">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefJaugeAdditif_ContexteDefJaugeAdditif</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefJaugeAdditif</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeAdditif/ContexteDefJaugeAdditif</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="d6753273-cab6-43f3-7309-4b825a6e2344">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefJaugeCarb_ContexteDefJaugeCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefJaugeCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeCarb/ContexteDefJaugeCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="f0ac2704-0c29-e147-d0c1-28d999fd1d4d">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefPompe_ContexteDefPompe</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefPompe</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefPompe/ContexteDefPompe</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="149ff92b-8a8b-23f6-78c5-44944fa1d34d">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteDefSondeTemp_ContexteDefSondeTemp</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefSondeTemp</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefSondeTemp/ContexteDefSondeTemp</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="3a773d79-b9b1-cf03-fc73-e5a5f9bff7de">
+                                            <SHORT-NAME>dra_PRP_SR_ContexteEtatAdditivation_ContexteEtatAdditivation</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteEtatAdditivation</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteEtatAdditivation/ContexteEtatAdditivation</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-READ-ACCESSS>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS />
+                                    <DATA-RECEIVE-POINT-BY-VALUES />
+                                    <DATA-SEND-POINTS />
+                                    <DATA-WRITE-ACCESSS>
+                                        <!-- 8 data-element produits -->
+                                        <VARIABLE-ACCESS UUID="5bee836c-6d95-7218-1068-76d45bebb144">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefCalcAdditif_ContexteDefCalcAdditif</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefCalcAdditif</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCalcAdditif/ContexteDefCalcAdditif</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="305ce5a6-cc63-5c2d-9606-c06cfa1ba0b0">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefCapteurBouchon_ContexteDefCapteurBouchon</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefCapteurBouchon</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefCapteurBouchon/ContexteDefCapteurBouchon</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="4ad551e2-b8bc-7a67-e2be-2a38c1ed36f8">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefInjecteur_ContexteDefInjecteur</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefInjecteur</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefInjecteur/ContexteDefInjecteur</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="4ad94923-084e-c029-d619-f79a291d4632">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefJaugeAdditif_ContexteDefJaugeAdditif</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefJaugeAdditif</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeAdditif/ContexteDefJaugeAdditif</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="a1b9bf98-ff55-8839-234d-410445d897d8">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefJaugeCarb_ContexteDefJaugeCarb</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefJaugeCarb</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefJaugeCarb/ContexteDefJaugeCarb</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="9885d71a-a51b-cdaf-1767-17a5d341f1ee">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefPompe_ContexteDefPompe</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefPompe</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefPompe/ContexteDefPompe</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="6ed908b3-9e3c-3911-be25-185b9c1e2e60">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteDefSondeTemp_ContexteDefSondeTemp</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteDefSondeTemp</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteDefSondeTemp/ContexteDefSondeTemp</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                        <VARIABLE-ACCESS UUID="0b6c0b2d-32c8-4aa6-c62d-e90ec314aff5">
+                                            <SHORT-NAME>dwa_PRP_SR_ContexteEtatAdditivation_ContexteEtatAdditivation</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="PR-PORT-PROTOTYPE">/RootP_ASWC_A7D3/ASWC_A7D3/PRP_SR_ContexteEtatAdditivation</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/SR_ContexteEtatAdditivation/ContexteEtatAdditivation</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                <PARAMETER-ACCESSS />
+                                    <READ-LOCAL-VARIABLES />
+                                    <SERVER-CALL-POINTS />
+                                    <SYMBOL>RUNA_TransCMM</SYMBOL>
+                                    <WRITTEN-LOCAL-VARIABLES />
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>RootP_Implementatation</SHORT-NAME>
+            <ELEMENTS>
+                <SWC-IMPLEMENTATION>
+                    <SHORT-NAME>Implementatation_ASWC_A7D3</SHORT-NAME>
+                    <CODE-DESCRIPTORS>
+                        <CODE>
+                            <SHORT-NAME>SRC</SHORT-NAME>
+                            <ARTIFACT-DESCRIPTORS>
+                                <AUTOSAR-ENGINEERING-OBJECT>
+                                    <SHORT-LABEL>EngObject</SHORT-LABEL>
+                                    <CATEGORY>SWSRC</CATEGORY>
+                                </AUTOSAR-ENGINEERING-OBJECT>
+                            </ARTIFACT-DESCRIPTORS>
+                        </CODE>
+                    </CODE-DESCRIPTORS>
+                    <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                    <RESOURCE-CONSUMPTION>
+                        <SHORT-NAME>Resources</SHORT-NAME>
+                    </RESOURCE-CONSUMPTION>
+                    <SW-VERSION>1.0.0</SW-VERSION>
+                    <USED-CODE-GENERATOR/>
+                    <VENDOR-ID>1</VENDOR-ID>
+                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/RootP_ASWC_A7D3/ASWC_A7D3/IB_ASWC_A7D3</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

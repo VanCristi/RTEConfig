@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG_PSA_NVM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ConfigPSA_NvM.xsd">
+<!--	<MAPPINGS>
+		<MAPPING>
+			<BLOCK-REF>String</BLOCK-REF>
+			<POSITION>0</POSITION>
+		</MAPPING>
+	</MAPPINGS> -->
+	<NVM_COMPILED_CONFIG_ID>5000</NVM_COMPILED_CONFIG_ID>
+</CONFIG_PSA_NVM>

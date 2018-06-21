@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3_STRICT_COMPACT.xsd ">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_BswM</SHORT-NAME>
+      <LONG-NAME>
+        <L-4 L="FOR-ALL">Basic Software Mode Manager</L-4>
+      </LONG-NAME>
+      <AR-PACKAGES>
+      <AR-PACKAGE>
+        <SHORT-NAME>PortInterfaces_OsApp_CORE0_QM</SHORT-NAME>
+        <ELEMENTS>
+        </ELEMENTS>
+      </AR-PACKAGE>
+      <AR-PACKAGE>
+        <SHORT-NAME>PortInterfaces_OsApp_CORE1_QM</SHORT-NAME>
+        <ELEMENTS>
+          <SENDER-RECEIVER-INTERFACE>
+            <SHORT-NAME>BswMGenInterface_SwcMode_ReqPort</SHORT-NAME>
+            <IS-SERVICE>true</IS-SERVICE>
+            <DATA-ELEMENTS>
+              <VARIABLE-DATA-PROTOTYPE>
+                <SHORT-NAME>AppMode</SHORT-NAME>
+                <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</TYPE-TREF>
+              </VARIABLE-DATA-PROTOTYPE>
+            </DATA-ELEMENTS>
+          </SENDER-RECEIVER-INTERFACE>
+        </ELEMENTS>
+      </AR-PACKAGE>
+      <AR-PACKAGE>
+        <SHORT-NAME>SwComponentTypes_OsApp_CORE0_QM</SHORT-NAME>
+        <ELEMENTS>
+          <SERVICE-SW-COMPONENT-TYPE>
+            <SHORT-NAME>BswM_OsApp_CORE0_QM</SHORT-NAME>
+            <PORTS>
+              <!-- Mode Switch Ports (if any) -->
+              <P-PORT-PROTOTYPE>
+                <SHORT-NAME>BswM_ModeSwitchPort_OsApp_CORE0_QM_BswMSwitchLocalPort_Rte</SHORT-NAME>
+                <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/BswMMode/PortInterfaces/BswMModeInterface</PROVIDED-INTERFACE-TREF>
+              </P-PORT-PROTOTYPE>
+              <P-PORT-PROTOTYPE>
+                <SHORT-NAME>BswM_ModeSwitchPort_OsApp_CORE0_QM_AppSwitchLocalPort_Rte</SHORT-NAME>
+                <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/RootP_Mode/AppModeInterface</PROVIDED-INTERFACE-TREF>
+              </P-PORT-PROTOTYPE>
+              <!-- Mode Request Ports (if any) -->
+              <!-- Mode Notification Ports (if any) -->
+            </PORTS>
+            <INTERNAL-BEHAVIORS>
+              <SWC-INTERNAL-BEHAVIOR>
+                <SHORT-NAME>BswMInternalBehavior</SHORT-NAME>
+                <DATA-TYPE-MAPPING-REFS>
+                  <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/RootP_Mode/ApplicationModeMapping</DATA-TYPE-MAPPING-REF>
+                  <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/BswMMode/DataTypeMappingSets/BswMModeMapping</DATA-TYPE-MAPPING-REF>
+                </DATA-TYPE-MAPPING-REFS>
+                <EVENTS>
+                </EVENTS>
+                <HANDLE-TERMINATION-AND-RESTART>CAN-BE-TERMINATED-AND-RESTARTED</HANDLE-TERMINATION-AND-RESTART>
+                <INCLUDED-MODE-DECLARATION-GROUP-SETS>
+                  <INCLUDED-MODE-DECLARATION-GROUP-SET>
+                    <MODE-DECLARATION-GROUP-REFS>
+                      <MODE-DECLARATION-GROUP-REF DEST="MODE-DECLARATION-GROUP">/BswMMode/ModeDeclarationGroups/BswMModeGroup</MODE-DECLARATION-GROUP-REF>
+                    </MODE-DECLARATION-GROUP-REFS>
+                    <PREFIX>BSWM_</PREFIX>
+                  </INCLUDED-MODE-DECLARATION-GROUP-SET>
+                  <INCLUDED-MODE-DECLARATION-GROUP-SET>
+                    <MODE-DECLARATION-GROUP-REFS>
+                      <MODE-DECLARATION-GROUP-REF DEST="MODE-DECLARATION-GROUP">/RootP_Mode/ApplicationModeGroup</MODE-DECLARATION-GROUP-REF>
+                    </MODE-DECLARATION-GROUP-REFS>
+                    <PREFIX>BSWM_</PREFIX>
+                  </INCLUDED-MODE-DECLARATION-GROUP-SET>
+                </INCLUDED-MODE-DECLARATION-GROUP-SETS>
+                <RUNNABLES>
+                  <RUNNABLE-ENTITY>
+                    <SHORT-NAME>RES_MainFunction</SHORT-NAME>
+                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                    <DATA-SEND-POINTS>
+                    </DATA-SEND-POINTS>
+                    <MODE-SWITCH-POINTS>
+                      <MODE-SWITCH-POINT>
+                        <SHORT-NAME>RES_MainFunction_to_BswMSwitchLocalPort_Rte</SHORT-NAME>
+                        <MODE-GROUP-IREF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE0_QM/BswM_OsApp_CORE0_QM/BswM_ModeSwitchPort_OsApp_CORE0_QM_BswMSwitchLocalPort_Rte</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/BswMMode/PortInterfaces/BswMModeInterface/BswMMode</TARGET-MODE-GROUP-REF>
+                        </MODE-GROUP-IREF>
+                      </MODE-SWITCH-POINT>
+                      <MODE-SWITCH-POINT>
+                        <SHORT-NAME>RES_MainFunction_to_AppSwitchLocalPort_Rte</SHORT-NAME>
+                        <MODE-GROUP-IREF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE0_QM/BswM_OsApp_CORE0_QM/BswM_ModeSwitchPort_OsApp_CORE0_QM_AppSwitchLocalPort_Rte</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</TARGET-MODE-GROUP-REF>
+                        </MODE-GROUP-IREF>
+                      </MODE-SWITCH-POINT>
+                    </MODE-SWITCH-POINTS>
+                    <SYMBOL>BswM_1_OsApp_CORE0_QM_MainFunction</SYMBOL>
+                  </RUNNABLE-ENTITY>
+                </RUNNABLES>
+                <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+              </SWC-INTERNAL-BEHAVIOR>
+            </INTERNAL-BEHAVIORS>
+           </SERVICE-SW-COMPONENT-TYPE>
+        </ELEMENTS>
+      </AR-PACKAGE>
+      <AR-PACKAGE>
+        <SHORT-NAME>SwComponentTypes_OsApp_CORE1_QM</SHORT-NAME>
+        <ELEMENTS>
+          <SERVICE-SW-COMPONENT-TYPE>
+            <SHORT-NAME>BswM_OsApp_CORE1_QM</SHORT-NAME>
+            <PORTS>
+              <!-- Mode Switch Ports (if any) -->
+              <P-PORT-PROTOTYPE>
+                <SHORT-NAME>BswM_ModeSwitchPort_OsApp_CORE1_QM_BswMSwitchLocalPort_SlaveCore_Rte</SHORT-NAME>
+                <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/BswMMode/PortInterfaces/BswMModeInterface</PROVIDED-INTERFACE-TREF>
+              </P-PORT-PROTOTYPE>
+              <P-PORT-PROTOTYPE>
+                <SHORT-NAME>BswM_ModeSwitchPort_OsApp_CORE1_QM_AppSwitchLocalPort_Rte</SHORT-NAME>
+                <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/RootP_Mode/AppModeInterface</PROVIDED-INTERFACE-TREF>
+              </P-PORT-PROTOTYPE>
+              <!-- Mode Request Ports (if any) -->
+              <R-PORT-PROTOTYPE>
+                <SHORT-NAME>ModeRequestPort_SwcMode_ReqPort</SHORT-NAME>
+                <REQUIRED-COM-SPECS>
+                  <NONQUEUED-RECEIVER-COM-SPEC>
+                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/AUTOSAR_BswM/PortInterfaces_OsApp_CORE1_QM/BswMGenInterface_SwcMode_ReqPort/AppMode</DATA-ELEMENT-REF>
+                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                    <INIT-VALUE>
+                      <NUMERICAL-VALUE-SPECIFICATION>
+                        <SHORT-LABEL>InitValue</SHORT-LABEL>
+                        <VALUE>4</VALUE>
+                      </NUMERICAL-VALUE-SPECIFICATION>
+                    </INIT-VALUE>
+                  </NONQUEUED-RECEIVER-COM-SPEC>
+                </REQUIRED-COM-SPECS>
+                <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/AUTOSAR_BswM/PortInterfaces_OsApp_CORE1_QM/BswMGenInterface_SwcMode_ReqPort</REQUIRED-INTERFACE-TREF>
+              </R-PORT-PROTOTYPE>
+              <!-- Mode Notification Ports (if any) -->
+            </PORTS>
+            <INTERNAL-BEHAVIORS>
+              <SWC-INTERNAL-BEHAVIOR>
+                <SHORT-NAME>BswMInternalBehavior</SHORT-NAME>
+                <DATA-TYPE-MAPPING-REFS>
+                  <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/RootP_Mode/ApplicationModeMapping</DATA-TYPE-MAPPING-REF>
+                  <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/BswMMode/DataTypeMappingSets/BswMModeMapping</DATA-TYPE-MAPPING-REF>
+                </DATA-TYPE-MAPPING-REFS>
+                <EVENTS>
+                  <DATA-RECEIVED-EVENT>
+                    <SHORT-NAME>DRE_SwcMode_ReqPort</SHORT-NAME>
+                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswMInternalBehavior/RE_SwcMode_ReqPort</START-ON-EVENT-REF>
+                    <DATA-IREF>
+                      <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/ModeRequestPort_SwcMode_ReqPort</CONTEXT-R-PORT-REF>
+                      <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/AUTOSAR_BswM/PortInterfaces_OsApp_CORE1_QM/BswMGenInterface_SwcMode_ReqPort/AppMode</TARGET-DATA-ELEMENT-REF>
+                    </DATA-IREF>
+                  </DATA-RECEIVED-EVENT>
+                </EVENTS>
+                <HANDLE-TERMINATION-AND-RESTART>CAN-BE-TERMINATED-AND-RESTARTED</HANDLE-TERMINATION-AND-RESTART>
+                <INCLUDED-MODE-DECLARATION-GROUP-SETS>
+                  <INCLUDED-MODE-DECLARATION-GROUP-SET>
+                    <MODE-DECLARATION-GROUP-REFS>
+                      <MODE-DECLARATION-GROUP-REF DEST="MODE-DECLARATION-GROUP">/BswMMode/ModeDeclarationGroups/BswMModeGroup</MODE-DECLARATION-GROUP-REF>
+                    </MODE-DECLARATION-GROUP-REFS>
+                    <PREFIX>BSWM_</PREFIX>
+                  </INCLUDED-MODE-DECLARATION-GROUP-SET>
+                  <INCLUDED-MODE-DECLARATION-GROUP-SET>
+                    <MODE-DECLARATION-GROUP-REFS>
+                      <MODE-DECLARATION-GROUP-REF DEST="MODE-DECLARATION-GROUP">/RootP_Mode/ApplicationModeGroup</MODE-DECLARATION-GROUP-REF>
+                    </MODE-DECLARATION-GROUP-REFS>
+                    <PREFIX>BSWM_</PREFIX>
+                  </INCLUDED-MODE-DECLARATION-GROUP-SET>
+                </INCLUDED-MODE-DECLARATION-GROUP-SETS>
+                <RUNNABLES>
+                  <RUNNABLE-ENTITY>
+                    <SHORT-NAME>RE_SwcMode_ReqPort</SHORT-NAME>
+                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                    <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                      <VARIABLE-ACCESS>
+                        <SHORT-NAME>RE_SwcMode_ReqPort_to_SwcMode_ReqPort</SHORT-NAME>
+                        <ACCESSED-VARIABLE>
+                          <AUTOSAR-VARIABLE-IREF>
+                            <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/ModeRequestPort_SwcMode_ReqPort</PORT-PROTOTYPE-REF>
+                            <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/AUTOSAR_BswM/PortInterfaces_OsApp_CORE1_QM/BswMGenInterface_SwcMode_ReqPort/AppMode</TARGET-DATA-PROTOTYPE-REF>
+                          </AUTOSAR-VARIABLE-IREF>
+                        </ACCESSED-VARIABLE>
+                      </VARIABLE-ACCESS>
+                    </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <SYMBOL>BswM_1_OsApp_CORE1_QM_MRPFunc_SwcMode_ReqPort</SYMBOL>
+                  </RUNNABLE-ENTITY>
+                  <RUNNABLE-ENTITY>
+                    <SHORT-NAME>RES_MainFunction</SHORT-NAME>
+                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                    <DATA-SEND-POINTS>
+                    </DATA-SEND-POINTS>
+                    <MODE-SWITCH-POINTS>
+                      <MODE-SWITCH-POINT>
+                        <SHORT-NAME>RES_MainFunction_to_BswMSwitchLocalPort_SlaveCore_Rte</SHORT-NAME>
+                        <MODE-GROUP-IREF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswM_ModeSwitchPort_OsApp_CORE1_QM_BswMSwitchLocalPort_SlaveCore_Rte</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/BswMMode/PortInterfaces/BswMModeInterface/BswMMode</TARGET-MODE-GROUP-REF>
+                        </MODE-GROUP-IREF>
+                      </MODE-SWITCH-POINT>
+                      <MODE-SWITCH-POINT>
+                        <SHORT-NAME>RES_MainFunction_to_AppSwitchLocalPort_Rte</SHORT-NAME>
+                        <MODE-GROUP-IREF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswM_ModeSwitchPort_OsApp_CORE1_QM_AppSwitchLocalPort_Rte</CONTEXT-P-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</TARGET-MODE-GROUP-REF>
+                        </MODE-GROUP-IREF>
+                      </MODE-SWITCH-POINT>
+                    </MODE-SWITCH-POINTS>
+                    <SYMBOL>BswM_1_OsApp_CORE1_QM_MainFunction</SYMBOL>
+                  </RUNNABLE-ENTITY>
+                </RUNNABLES>
+                <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+              </SWC-INTERNAL-BEHAVIOR>
+            </INTERNAL-BEHAVIORS>
+           </SERVICE-SW-COMPONENT-TYPE>
+        </ELEMENTS>
+      </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwcImplementations</SHORT-NAME>
+          <ELEMENTS>
+            <SWC-IMPLEMENTATION>
+              <SHORT-NAME>BswMImplementation_OsApp_CORE0_QM</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>BswMImplementationEB</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <SHORT-LABEL>BswMEngObject</SHORT-LABEL>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION>
+                <SHORT-NAME>Resources</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.1.1</SW-VERSION>
+              <VENDOR-ID>1</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE0_QM/BswM_OsApp_CORE0_QM/BswMInternalBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SWC-IMPLEMENTATION>
+              <SHORT-NAME>BswMImplementation_OsApp_CORE1_QM</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>BswMImplementationEB</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <SHORT-LABEL>BswMEngObject</SHORT-LABEL>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION>
+                <SHORT-NAME>Resources</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.1.1</SW-VERSION>
+              <VENDOR-ID>1</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/AUTOSAR_BswM/SwComponentTypes_OsApp_CORE1_QM/BswM_OsApp_CORE1_QM/BswMInternalBehavior</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

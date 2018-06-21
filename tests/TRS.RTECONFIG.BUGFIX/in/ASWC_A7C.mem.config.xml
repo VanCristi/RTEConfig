@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG_PSA_NVM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\APP\NEA\XSD\ConfigPSA_NvM.xsd">
+    <BLOCKS>
+        <BLOCK>
+            <SHORT-NAME>Default_App_Ram_Implicit_SAV</SHORT-NAME>
+            <TYPE>Default</TYPE>
+            <PROFIL-REF>App_Ram_Implicit</PROFIL-REF>
+            <WRITE-TIMEOUT>0</WRITE-TIMEOUT>
+            <RESPECT-MAPPING>false</RESPECT-MAPPING>
+            <!-- 9 interfaces -->
+            <SENDER-RECEIVER-INTERFACE-REFS>
+                <!-- #0 - SR_SAV_EtatCNBMemorisePar2c version 1.08419.75951 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePar2c</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #1 - SR_SAV_EtatCNBMemorisePar2d version 1.24647.10837 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePar2d</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #2 - SR_SAV_EtatCNBMemorisePar2g version 1.02702.17306 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePar2g</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #3 - SR_SAV_EtatCNBMemorisePar3d version 1.08752.02237 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePar3d</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #4 - SR_SAV_EtatCNBMemorisePar3g version 1.30676.88530 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePar3g</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #5 - SR_SAV_EtatCNBMemorisePavC version 1.13622.78518 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePavC</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #6 - SR_SAV_EtatCNBMemorisePavd version 1.37866.43044 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePavd</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #7 - SR_SAV_EtatCNBMemorisePavg version 1.14859.36529 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatCNBMemorisePavg</SENDER-RECEIVER-INTERFACE-REF>
+                <!-- #8 - SR_SAV_EtatPresenceMemorisePav version 1.07072.43712 -->
+                <SENDER-RECEIVER-INTERFACE-REF DEST="SENDER-RECEIVER-INTERFACE">/RootP_SR_Data/SR_SAV_EtatPresenceMemorisePav</SENDER-RECEIVER-INTERFACE-REF>
+            </SENDER-RECEIVER-INTERFACE-REFS>
+        </BLOCK>
+    </BLOCKS>
+</CONFIG_PSA_NVM>

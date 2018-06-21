@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 U (http://www.altova.com) by PSA (PSA / PCA PEUGEOT CITROEN) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="CONFIG-RTE-CONFIGURATOR">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="INPUTS">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="CONFIG-EVENT-CONSTR" type="ConfigInputType"/>
+							<xs:element name="CONFIG-SWC-ALLOC" type="ConfigInputType"/>
+							<xs:element name="ARXML" type="ConfigInputType"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="OUTPUTS">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="SCRIPT" type="PATH_FILE"/>
+							<xs:element name="REPORT" type="PATH_FILE"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DIR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="PATH_DIR">
+					<xs:attribute name="RECURSIVE" type="xs:boolean"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="PATH_DIR">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PATH_DIR--SIMPLE"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="PATH_DIR--SIMPLE">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z][a-zA-Z0-9_:.]{0,127}([\\/][a-zA-Z][a-zA-Z0-9_]{0,127})*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PATH_XSD_FILE">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PATH_XSD_FILE--SIMPLE"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="PATH_XSD_FILE--SIMPLE">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z][a-zA-Z0-9_:.]{0,127}([\\/][a-zA-Z][a-zA-Z0-9_]{0,127})*[\\/][a-zA-Z0-9_.-]{0,127}\.xsd"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PATH_FILE">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="PATH_FILE--SIMPLE"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="PATH_FILE--SIMPLE">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z][a-zA-Z0-9_:.]{0,127}([\\/][a-zA-Z][a-zA-Z0-9_]{0,127})*[\\/][a-zA-Z0-9_.-]{0,127}\.[a-zA-Z0-9]{0,127}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="REF">
+		<xs:annotation>
+			<xs:documentation/>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="REF--SIMPLE"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="REF--SIMPLE">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="/?[a-zA-Z][a-zA-Z0-9_]{0,127}(/[a-zA-Z][a-zA-Z0-9_]{0,127})*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="TOP-LEVEL-COMPOSITIONType">
+		<xs:all>
+			<xs:element name="ROOT" type="REF"/>
+			<xs:element name="NAME" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="ConfigInputType">
+		<xs:sequence>
+			<xs:element name="XSD" type="PATH_XSD_FILE"/>
+			<xs:element ref="DIR" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_GererFonctionANBC_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GererFonctionANBC_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNA_GestionDiagANBC_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GestionDiagANBC_Cyclic</EVENT-REF>
+        <AFTER-EVENT-REF>
+            <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7C/ASWC_A7C/IB_ASWC_A7C/RUNA_GererFonctionANBC_Cyclic</EVENT-REF>
+        </AFTER-EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

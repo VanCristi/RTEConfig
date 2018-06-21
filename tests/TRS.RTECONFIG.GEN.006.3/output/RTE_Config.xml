@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Scriptor.xsd">
+    <Name>RTE_Config</Name>
+    <Decription>Set the RTE parameters</Decription>
+    <Expression>as:modconf('Rte')[1]</Expression>
+    <Operations>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/Instance_ASWC_A26/MappedToOsApplicationRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/OsApp_APP_2_A"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived3Event"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(1)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived3Event"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived3Event"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived2Event"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(2)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived2Event"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived2Event"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived1Event"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(3)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived1Event"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/DataReceived1Event"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+    </Operations>
+</Script>

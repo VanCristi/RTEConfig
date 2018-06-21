@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-2.xsd" T="2018-01-15T16:33:56+01:00">
+  <AR-PACKAGES>
+    <AR-PACKAGE T="2018-02-16T12:15:44+01:00">
+      <SHORT-NAME>RootP_NetworkDesc</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>CONFIG</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-TP-CONFIG>
+              <SHORT-NAME>CanTpConfig</SHORT-NAME>
+              <COMMUNICATION-CLUSTER-REF DEST="CAN-CLUSTER">/RootP_NetworkDesc/CLUSTERS/DIAG</COMMUNICATION-CLUSTER-REF>
+              <TP-ADDRESSS>
+                <CAN-TP-ADDRESS>
+                  <SHORT-NAME>CanTpAddress_Dcm</SHORT-NAME>
+                  <TP-ADDRESS>0</TP-ADDRESS>
+                </CAN-TP-ADDRESS>
+                <CAN-TP-ADDRESS>
+                  <SHORT-NAME>CanTpAddress_Dcm_Dummy</SHORT-NAME>
+                  <TP-ADDRESS>0</TP-ADDRESS>
+                </CAN-TP-ADDRESS>
+              </TP-ADDRESSS>
+              <TP-CHANNELS>
+                <CAN-TP-CHANNEL>
+                  <SHORT-NAME>CanTpChannel_Dcm</SHORT-NAME>
+                  <CHANNEL-ID>1</CHANNEL-ID>
+                  <CHANNEL-MODE>FULL-DUPLEX-MODE</CHANNEL-MODE>
+                </CAN-TP-CHANNEL>
+              </TP-CHANNELS>
+              <TP-CONNECTIONS>
+                <CAN-TP-CONNECTION>
+                  <ADDRESSING-FORMAT>STANDARD</ADDRESSING-FORMAT>
+                  <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpChannel_Dcm</CAN-TP-CHANNEL-REF>
+                  <DATA-PDU-REF DEST="N-PDU">/RootP_NetworkDesc/PDUS/NPdu_RxNPduDcm</DATA-PDU-REF>
+                  <FLOW-CONTROL-PDU-REF DEST="N-PDU">/RootP_NetworkDesc/PDUS/NPdu_TxNPduDcm</FLOW-CONTROL-PDU-REF>
+                  <MAX-BLOCK-SIZE>255</MAX-BLOCK-SIZE>
+                  <PADDING-ACTIVATION>false</PADDING-ACTIVATION>
+                  <RECEIVER-REFS>
+                    <RECEIVER-REF DEST="CAN-TP-NODE">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpNode_Dcm</RECEIVER-REF>
+                  </RECEIVER-REFS>
+                  <TIMEOUT-BR>1.0</TIMEOUT-BR>
+                  <TIMEOUT-CR>1.0</TIMEOUT-CR>
+                  <TP-SDU-REF DEST="DCM-I-PDU">/RootP_NetworkDesc/PDUS/DcmIPdu_RxDcmIPduDcm</TP-SDU-REF>
+                  <TRANSMITTER-REF DEST="CAN-TP-NODE">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpNode_Dcm_Dummy</TRANSMITTER-REF>
+                </CAN-TP-CONNECTION>
+                <CAN-TP-CONNECTION>
+                  <ADDRESSING-FORMAT>STANDARD</ADDRESSING-FORMAT>
+                  <CAN-TP-CHANNEL-REF DEST="CAN-TP-CHANNEL">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpChannel_Dcm</CAN-TP-CHANNEL-REF>
+                  <DATA-PDU-REF DEST="N-PDU">/RootP_NetworkDesc/PDUS/NPdu_TxNPduDcm</DATA-PDU-REF>
+                  <FLOW-CONTROL-PDU-REF DEST="N-PDU">/RootP_NetworkDesc/PDUS/NPdu_RxNPduDcm</FLOW-CONTROL-PDU-REF>
+                  <MAX-BLOCK-SIZE>255</MAX-BLOCK-SIZE>
+                  <PADDING-ACTIVATION>false</PADDING-ACTIVATION>
+                  <RECEIVER-REFS>
+                    <RECEIVER-REF DEST="CAN-TP-NODE">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpNode_Dcm_Dummy</RECEIVER-REF>
+                  </RECEIVER-REFS>
+                  <TIMEOUT-BS>1.0</TIMEOUT-BS>
+                  <TIMEOUT-CS>1.0</TIMEOUT-CS>
+                  <TP-SDU-REF DEST="DCM-I-PDU">/RootP_NetworkDesc/PDUS/DcmIPdu_TxDcmIPduDcm</TP-SDU-REF>
+                  <TRANSMITTER-REF DEST="CAN-TP-NODE">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpNode_Dcm</TRANSMITTER-REF>
+                </CAN-TP-CONNECTION>
+              </TP-CONNECTIONS>
+              <TP-ECUS>
+                <CAN-TP-ECU>
+                  <CYCLE-TIME-MAIN-FUNCTION>0.005</CYCLE-TIME-MAIN-FUNCTION>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/RootP_NetworkDesc/ECUINSTANCES/VSM</ECU-INSTANCE-REF>
+                </CAN-TP-ECU>
+              </TP-ECUS>
+              <TP-NODES>
+                <CAN-TP-NODE>
+                  <SHORT-NAME>CanTpNode_Dcm</SHORT-NAME>
+                  <CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/RootP_NetworkDesc/ECUINSTANCES/VSM/cc_DIAG_REP_BSI_DIAG</CONNECTOR-REF>
+                  <MAX-FC-WAIT>255</MAX-FC-WAIT>
+                  <ST-MIN>0.005</ST-MIN>
+                  <TIMEOUT-AR>1.0</TIMEOUT-AR>
+                  <TIMEOUT-AS>1.0</TIMEOUT-AS>
+                  <TP-ADDRESS-REF DEST="CAN-TP-ADDRESS">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpAddress_Dcm</TP-ADDRESS-REF>
+                </CAN-TP-NODE>
+                <CAN-TP-NODE>
+                  <SHORT-NAME>CanTpNode_Dcm_Dummy</SHORT-NAME>
+                  <MAX-FC-WAIT>255</MAX-FC-WAIT>
+                  <ST-MIN>0.005</ST-MIN>
+                  <TIMEOUT-AR>1.0</TIMEOUT-AR>
+                  <TIMEOUT-AS>1.0</TIMEOUT-AS>
+                  <TP-ADDRESS-REF DEST="CAN-TP-ADDRESS">/RootP_NetworkDesc/CONFIG/CanTpConfig/CanTpAddress_Dcm_Dummy</TP-ADDRESS-REF>
+                </CAN-TP-NODE>
+              </TP-NODES>
+            </CAN-TP-CONFIG>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

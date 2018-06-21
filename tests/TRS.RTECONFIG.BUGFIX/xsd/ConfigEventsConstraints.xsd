@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 U (http://www.altova.com) by PSA (PSA / PCA PEUGEOT CITROEN) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="EVENT-Type">
+		<xs:sequence>
+			<xs:element name="SHORT-NAME" type="xs:string"/>
+			<xs:element name="EVENT-REF">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="REF">
+							<xs:attribute name="DEST" type="EVENT-REF-ENUM" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DURATION" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="UNMAPPED" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="EVENTS-CALLED" type="EVENTS-REFType" minOccurs="0"/>
+			<xs:element name="AFTER-EVENT-REF" type="EVENTS-REFType" minOccurs="0"/>
+			<xs:element name="BEFORE-EVENT-REF" type="EVENTS-REFType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="CONFIG-EVENTS-CONSTRAINTS">
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="EVENT" type="EVENT-Type" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="EVENT-REF-ENUM">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ABSTRACT-EVENT"/>
+			<xs:enumeration value="ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT"/>
+			<xs:enumeration value="BACKGROUND-EVENT"/>
+			<xs:enumeration value="BSW-ASYNCHRONOUS-SERVER-CALL-RETURNS-EVENT"/>
+			<xs:enumeration value="BSW-BACKGROUND-EVENT"/>
+			<xs:enumeration value="BSW-DATA-RECEIVED-EVENT"/>
+			<xs:enumeration value="BSW-EVENT"/>
+			<xs:enumeration value="BSW-EXTERNAL-TRIGGER-OCCURRED-EVENT"/>
+			<xs:enumeration value="BSW-INTERNAL-TRIGGER-OCCURRED-EVENT"/>
+			<xs:enumeration value="BSW-MODE-MANAGER-ERROR-EVENT"/>
+			<xs:enumeration value="BSW-MODE-SWITCH-EVENT"/>
+			<xs:enumeration value="BSW-MODE-SWITCHED-ACK-EVENT"/>
+			<xs:enumeration value="BSW-OPERATION-INVOKED-EVENT"/>
+			<xs:enumeration value="BSW-SCHEDULE-EVENT"/>
+			<xs:enumeration value="BSW-TIMING-EVENT"/>
+			<xs:enumeration value="DATA-RECEIVE-ERROR-EVENT"/>
+			<xs:enumeration value="DATA-RECEIVED-EVENT"/>
+			<xs:enumeration value="DATA-SEND-COMPLETED-EVENT"/>
+			<xs:enumeration value="DATA-WRITE-COMPLETED-EVENT"/>
+			<xs:enumeration value="EXTERNAL-TRIGGER-OCCURRED-EVENT"/>
+			<xs:enumeration value="INIT-EVENT"/>
+			<xs:enumeration value="INTERNAL-TRIGGER-OCCURRED-EVENT"/>
+			<xs:enumeration value="MODE-SWITCHED-ACK-EVENT"/>
+			<xs:enumeration value="OPERATION-INVOKED-EVENT"/>
+			<xs:enumeration value="RTE-EVENT"/>
+			<xs:enumeration value="SWC-MODE-MANAGER-ERROR-EVENT"/>
+			<xs:enumeration value="SWC-MODE-SWITCH-EVENT"/>
+			<xs:enumeration value="TIMING-EVENT"/>
+			<xs:enumeration value="TRANSFORMER-HARD-ERROR-EVENT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="REF">
+		<xs:annotation>
+			<xs:documentation/>
+			<xs:appinfo source="tags">mmt.qualifiedName="Ref";xml.xs.customType="REF";xml.xs.pattern="/?[a-zA-Z][a-zA-Z0-9_]{0,127}(/[a-zA-Z][a-zA-Z0-9_]{0,127})*";xml.xs.type="string"</xs:appinfo>
+			<xs:appinfo source="stereotypes">atpObject,primitive</xs:appinfo>
+			<xs:appinfo source="constraint_2552">Index attribute is only valid for arrays ⌈The index attribute in references is valid only if the reference target is an ApplicationArrayElement or if the reference target is an ImplementationDataTypeElement owned by an ImplementationDataType/ImplementationDataTypeElement of category ARRAY and has an attribute maxNumberOfElements/arraySize.⌋</xs:appinfo>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="REF--SIMPLE"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="REF--SIMPLE">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="/?[a-zA-Z][a-zA-Z0-9_]{0,127}(/[a-zA-Z][a-zA-Z0-9_]{0,127})*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="EVENT" type="EVENT-Type"/>
+	<xs:complexType name="EVENTS-REFType">
+		<xs:sequence>
+			<xs:element name="EVENT-REF" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="REF">
+							<xs:attribute name="DEST" type="EVENT-REF-ENUM" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

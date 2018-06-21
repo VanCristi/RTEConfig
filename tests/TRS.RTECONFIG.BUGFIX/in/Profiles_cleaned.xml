@@ -1,0 +1,177 @@
+<CONFIG_PSA_NVM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigPSA_NvM.xsd">
+	<PROFILS>
+		<PROFILE>
+			<SHORT-NAME>CfgVh_1</SHORT-NAME>
+			<MANAGEMENT>EXPLICIT</MANAGEMENT>
+			<DURABILITY>LONG_TERM</DURABILITY>
+			<BLOCK-SIZE-MAX>100</BLOCK-SIZE-MAX>
+			<SAFETY>true</SAFETY>
+			<DEVICE>FEE</DEVICE>
+			<WRITING-NUMBER>1500</WRITING-NUMBER>
+			<PARAMS>
+				<PARAM DEST="NvMBlockJobPriority">0</PARAM>
+				<PARAM DEST="NvMBlockCrcType">NVM_CRC16</PARAM>
+				<PARAM DEST="NvMBlockManagementType">NVM_BLOCK_REDUNDANT</PARAM>
+				<PARAM DEST="NvMRedundantRecovery">NVM_RECOVERY_ON_REQUEST</PARAM>
+				<PARAM DEST="NvMBlockUseAutoValidation">False</PARAM>
+				<PARAM DEST="NvMBlockUseCRCCompMechanism">False</PARAM>
+				<PARAM DEST="NvMBlockUseSetRamBlockStatus">True</PARAM>
+				<PARAM DEST="NvMBlockUseSyncMechanism">True</PARAM>
+				<PARAM DEST="NvMBlockWriteProt">False</PARAM>
+				<PARAM DEST="NvMBswMBlockStatusInformation">False</PARAM>
+				<PARAM DEST="NvMCalcRamBlockCrc">True</PARAM>
+				<PARAM DEST="NvMInitBlockCallback">False</PARAM>
+				<PARAM DEST="NvMMaxNumOfReadRetries">3</PARAM>
+				<PARAM DEST="NvMMaxNumOfWriteRetries">3</PARAM>
+				<PARAM DEST="NvMNvBlockNum">2</PARAM>
+				<PARAM DEST="NvMResistantToChangedSw">False</PARAM>
+				<PARAM DEST="NvMRomBlockNum">2</PARAM>
+				<PARAM DEST="NvMSelectBlockForReadAll">True</PARAM>
+				<PARAM DEST="NvMSelectBlockForWriteAll">False</PARAM>
+				<PARAM DEST="NvMStaticBlockIDCheck">True</PARAM>
+				<PARAM DEST="NvMWriteBlockOnce">False</PARAM>
+				<PARAM DEST="NvMWriteVerification">True</PARAM>
+				<PARAM DEST="NvMWriteVerificationDataSize">4</PARAM>	
+			</PARAMS>
+		</PROFILE>
+		<PROFILE>
+			<SHORT-NAME>CfgVh_2</SHORT-NAME>
+			<MANAGEMENT>EXPLICIT</MANAGEMENT>
+			<DURABILITY>LONG_TERM</DURABILITY>
+			<BLOCK-SIZE-MAX>100</BLOCK-SIZE-MAX>
+			<SAFETY>true</SAFETY>
+			<DEVICE>FEE</DEVICE>
+			<WRITING-NUMBER>1500</WRITING-NUMBER>
+			<PARAMS>
+				<PARAM DEST="NvMBlockJobPriority">0</PARAM>
+				<PARAM DEST="NvMBlockCrcType">NVM_CRC16</PARAM>
+				<PARAM DEST="NvMBlockManagementType">NVM_BLOCK_REDUNDANT</PARAM>
+				<PARAM DEST="NvMRedundantRecovery">NVM_RECOVERY_ON_REQUEST</PARAM>
+				<PARAM DEST="NvMBlockUseAutoValidation">False</PARAM>
+				<PARAM DEST="NvMBlockUseCRCCompMechanism">False</PARAM>
+				<PARAM DEST="NvMBlockUseCrc">True</PARAM>
+				<PARAM DEST="NvMBlockUseSetRamBlockStatus">False</PARAM>
+				<PARAM DEST="NvMBlockUseSyncMechanism">True</PARAM>
+				<PARAM DEST="NvMBlockWriteProt">False</PARAM>
+				<PARAM DEST="NvMBswMBlockStatusInformation">False</PARAM>
+				<PARAM DEST="NvMCalcRamBlockCrc">True</PARAM>
+				<PARAM DEST="NvMInitBlockCallback">False</PARAM>
+				<PARAM DEST="NvMMaxNumOfReadRetries">3</PARAM>
+				<PARAM DEST="NvMMaxNumOfWriteRetries">3</PARAM>
+				<PARAM DEST="NvMNvBlockNum">2</PARAM>
+				<PARAM DEST="NvMResistantToChangedSw">True</PARAM>
+				<PARAM DEST="NvMRomBlockNum">2</PARAM>
+				<PARAM DEST="NvMSelectBlockForReadAll">True</PARAM>
+				<PARAM DEST="NvMSelectBlockForWriteAll">False</PARAM>
+				<PARAM DEST="NvMStaticBlockIDCheck">True</PARAM>
+				<PARAM DEST="NvMWriteBlockOnce">False</PARAM>
+				<PARAM DEST="NvMWriteVerification">True</PARAM>
+			</PARAMS>
+		</PROFILE>
+		<PROFILE>
+			<SHORT-NAME>App_Ram_Implicit</SHORT-NAME>
+			<MANAGEMENT>IMPLICIT</MANAGEMENT>
+			<DURABILITY>SHORT_TERM</DURABILITY>
+			<BLOCK-SIZE-MAX>10</BLOCK-SIZE-MAX>
+			<SAFETY>true</SAFETY>
+			<DEVICE>FEE</DEVICE>
+			<WRITING-NUMBER>1500</WRITING-NUMBER>
+			<PARAMS>
+				<PARAM DEST="NvMBlockJobPriority">3</PARAM>
+				<PARAM DEST="NvMBlockCrcType">NVM_CRC16</PARAM>
+				<PARAM DEST="NvMBlockManagementType">NVM_BLOCK_NATIVE</PARAM>
+				<PARAM DEST="NvMRedundantRecovery">NVM_AUTOMATIC_RECOVERY</PARAM>
+				<PARAM DEST="NvMBlockUseAutoValidation">False</PARAM>
+				<PARAM DEST="NvMBlockUseCRCCompMechanism">False</PARAM>
+				<PARAM DEST="NvMBlockUseCrc">True</PARAM>
+				<PARAM DEST="NvMBlockUseSetRamBlockStatus">True</PARAM>
+				<PARAM DEST="NvMBlockUseSyncMechanism">True</PARAM>
+				<PARAM DEST="NvMBlockWriteProt">True</PARAM>
+				<PARAM DEST="NvMBswMBlockStatusInformation">False</PARAM>
+				<PARAM DEST="NvMCalcRamBlockCrc">True</PARAM>
+				<PARAM DEST="NvMInitBlockCallback">False</PARAM>
+				<PARAM DEST="NvMMaxNumOfReadRetries">0</PARAM>
+				<PARAM DEST="NvMMaxNumOfWriteRetries">0</PARAM>
+				<PARAM DEST="NvMNvBlockNum">1</PARAM>
+				<PARAM DEST="NvMResistantToChangedSw">False</PARAM>
+				<PARAM DEST="NvMRomBlockNum">1</PARAM>
+				<PARAM DEST="NvMSelectBlockForReadAll">True</PARAM>
+				<PARAM DEST="NvMSelectBlockForWriteAll">False</PARAM>
+				<PARAM DEST="NvMStaticBlockIDCheck">True</PARAM>
+				<PARAM DEST="NvMWriteBlockOnce">True</PARAM>
+				<PARAM DEST="NvMWriteVerification">False</PARAM>
+				<PARAM DEST="NvMWriteVerificationDataSize">4</PARAM>
+			</PARAMS>
+		</PROFILE>
+		<PROFILE>
+			<SHORT-NAME>App_Eep_Explicit_1</SHORT-NAME>
+			<MANAGEMENT>EXPLICIT</MANAGEMENT>
+			<DURABILITY>LONG_TERM</DURABILITY>
+			<BLOCK-SIZE-MAX>100</BLOCK-SIZE-MAX>
+			<SAFETY>true</SAFETY>
+			<DEVICE>FEE</DEVICE>
+			<WRITING-NUMBER>200000</WRITING-NUMBER>
+			<PARAMS>
+				<PARAM DEST="NvMBlockJobPriority">3</PARAM>
+				<PARAM DEST="NvMBlockCrcType">NVM_CRC16</PARAM>
+				<PARAM DEST="NvMBlockManagementType">NVM_BLOCK_NATIVE</PARAM>
+				<PARAM DEST="NvMRedundantRecovery">NVM_RECOVERY_ON_REQUEST</PARAM>
+				<PARAM DEST="NvMBlockUseAutoValidation">False</PARAM>
+				<PARAM DEST="NvMBlockUseCRCCompMechanism">False</PARAM>
+				<PARAM DEST="NvMBlockUseCrc">True</PARAM>
+				<PARAM DEST="NvMBlockUseSetRamBlockStatus">False</PARAM>
+				<PARAM DEST="NvMBlockUseSyncMechanism">True</PARAM>
+				<PARAM DEST="NvMBlockWriteProt">False</PARAM>
+				<PARAM DEST="NvMBswMBlockStatusInformation">False</PARAM>
+				<PARAM DEST="NvMCalcRamBlockCrc">True</PARAM>
+				<PARAM DEST="NvMInitBlockCallback">False</PARAM>
+				<PARAM DEST="NvMMaxNumOfReadRetries">2</PARAM>
+				<PARAM DEST="NvMMaxNumOfWriteRetries">1</PARAM>
+				<PARAM DEST="NvMNvBlockNum">1</PARAM>
+				<PARAM DEST="NvMResistantToChangedSw">False</PARAM>
+				<PARAM DEST="NvMRomBlockNum">1</PARAM>
+				<PARAM DEST="NvMSelectBlockForReadAll">True</PARAM>
+				<PARAM DEST="NvMSelectBlockForWriteAll">True</PARAM>
+				<PARAM DEST="NvMStaticBlockIDCheck">True</PARAM>
+				<PARAM DEST="NvMWriteBlockOnce">False</PARAM>
+				<PARAM DEST="NvMWriteVerification">True</PARAM>
+				<PARAM DEST="NvMWriteVerificationDataSize">4</PARAM>
+			</PARAMS>
+		</PROFILE>
+		<PROFILE>
+			<SHORT-NAME>App_Eep_Explicit_2</SHORT-NAME>
+			<MANAGEMENT>EXPLICIT</MANAGEMENT>
+			<DURABILITY>LONG_TERM</DURABILITY>
+			<BLOCK-SIZE-MAX>100</BLOCK-SIZE-MAX>
+			<SAFETY>true</SAFETY>
+			<DEVICE>FEE</DEVICE>
+			<WRITING-NUMBER>200000</WRITING-NUMBER>
+			<PARAMS>
+				<PARAM DEST="NvMBlockJobPriority">2</PARAM>
+				<PARAM DEST="NvMBlockCrcType">NVM_CRC16</PARAM>
+				<PARAM DEST="NvMBlockManagementType">NVM_BLOCK_REDUNDANT</PARAM>
+				<PARAM DEST="NvMRedundantRecovery">NVM_RECOVERY_ON_REQUEST</PARAM>
+				<PARAM DEST="NvMBlockUseAutoValidation">False</PARAM>
+				<PARAM DEST="NvMBlockUseCRCCompMechanism">False</PARAM>
+				<PARAM DEST="NvMBlockUseCrc">True</PARAM>
+				<PARAM DEST="NvMBlockUseSetRamBlockStatus">False</PARAM>
+				<PARAM DEST="NvMBlockUseSyncMechanism">True</PARAM>
+				<PARAM DEST="NvMBlockWriteProt">False</PARAM>
+				<PARAM DEST="NvMBswMBlockStatusInformation">False</PARAM>
+				<PARAM DEST="NvMCalcRamBlockCrc">True</PARAM>
+				<PARAM DEST="NvMInitBlockCallback">False</PARAM>
+				<PARAM DEST="NvMMaxNumOfReadRetries">2</PARAM>
+				<PARAM DEST="NvMMaxNumOfWriteRetries">3</PARAM>
+				<PARAM DEST="NvMNvBlockNum">2</PARAM>
+				<PARAM DEST="NvMResistantToChangedSw">True</PARAM>
+				<PARAM DEST="NvMRomBlockNum">2</PARAM>
+				<PARAM DEST="NvMSelectBlockForReadAll">True</PARAM>
+				<PARAM DEST="NvMSelectBlockForWriteAll">True</PARAM>
+				<PARAM DEST="NvMStaticBlockIDCheck">True</PARAM>
+				<PARAM DEST="NvMWriteBlockOnce">False</PARAM>
+				<PARAM DEST="NvMWriteVerification">True</PARAM>
+				<PARAM DEST="NvMWriteVerificationDataSize">4</PARAM>
+			</PARAMS>
+		</PROFILE>
+	</PROFILS>
+</CONFIG_PSA_NVM>

@@ -1,0 +1,232 @@
+2018-06-11 15:41:36,697 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Adc_Bswmd.arxml is well-formed
+2018-06-11 15:41:36,699 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Adc_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,836 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.aswc.arxml is well-formed
+2018-06-11 15:41:36,878 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,912 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.aswc.arxml is well-formed
+2018-06-11 15:41:36,921 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,932 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.did_routines.arxml is well-formed
+2018-06-11 15:41:36,934 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.did_routines.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,958 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.aswc.arxml is well-formed
+2018-06-11 15:41:36,965 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,983 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.aswc.arxml is well-formed
+2018-06-11 15:41:36,989 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:36,993 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.did_routines.arxml is well-formed
+2018-06-11 15:41:36,994 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.did_routines.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,005 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.aswc.arxml is well-formed
+2018-06-11 15:41:37,009 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,016 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.aswc.arxml is well-formed
+2018-06-11 15:41:37,019 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,022 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.aswc.arxml is well-formed
+2018-06-11 15:41:37,024 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,029 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.aswc.arxml is well-formed
+2018-06-11 15:41:37,031 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,037 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.aswc.arxml is well-formed
+2018-06-11 15:41:37,039 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,042 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.did_routines.arxml is well-formed
+2018-06-11 15:41:37,043 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.did_routines.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,045 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.aswc.arxml is well-formed
+2018-06-11 15:41:37,047 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,055 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.aswc.arxml is well-formed
+2018-06-11 15:41:37,058 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,067 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.aswc.arxml is well-formed
+2018-06-11 15:41:37,070 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,075 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.aswc.arxml is well-formed
+2018-06-11 15:41:37,077 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,078 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.did_routines.arxml is well-formed
+2018-06-11 15:41:37,078 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.did_routines.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,085 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.aswc.arxml is well-formed
+2018-06-11 15:41:37,088 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,118 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_ParamServer.arxml is well-formed
+2018-06-11 15:41:37,126 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_ParamServer.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,131 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\AUTOSAR_Datatypes.arxml is well-formed
+2018-06-11 15:41:37,133 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\AUTOSAR_Datatypes.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,149 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Base_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,154 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Base_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,156 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.aswc.arxml is well-formed
+2018-06-11 15:41:37,157 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.aswc.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,160 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswM.arxml is well-formed
+2018-06-11 15:41:37,161 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswM.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,163 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswMMode.arxml is well-formed
+2018-06-11 15:41:37,163 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswMMode.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,175 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,180 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BswM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,184 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanIf_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,185 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanIf_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,188 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanSM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,189 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanSM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,191 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanTp_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,192 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\CanTp_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,194 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Can_17_McmCan_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,195 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Can_17_McmCan_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,199 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,201 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,204 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_swc_interface.arxml is well-formed
+2018-06-11 15:41:37,206 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_swc_interface.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,215 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_swc_internal.arxml is well-formed
+2018-06-11 15:41:37,218 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ComM_swc_internal.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,230 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Com_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,233 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Com_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,237 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Crc_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,238 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Crc_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,242 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dcm_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,243 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dcm_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,245 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dem_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,246 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dem_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,249 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,250 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,251 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_swc_interface.arxml is well-formed
+2018-06-11 15:41:37,252 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_swc_interface.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,253 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_swc_internal.arxml is well-formed
+2018-06-11 15:41:37,254 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Det_swc_internal.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,255 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dio_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,256 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Dio_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,260 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EcuM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,261 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EcuM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,263 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthIf_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,264 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthIf_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,266 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthSM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,266 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthSM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,268 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthTrcv_1_T01_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,269 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\EthTrcv_1_T01_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,270 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Eth_17_EthMac_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,271 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Eth_17_EthMac_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,273 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Fee_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,274 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Fee_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,275 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Fls_17_Pmu_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,276 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Fls_17_Pmu_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,277 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Gpt_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,278 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Gpt_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,280 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Icu_17_GtmCcu6_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,280 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Icu_17_GtmCcu6_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,283 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinIf_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,284 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinIf_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,285 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinSM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,286 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinSM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,287 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinTp_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,288 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\LinTp_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,289 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Lin_17_AscLin_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,290 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Lin_17_AscLin_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,291 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Mcu_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,291 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Mcu_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,294 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\MemIf_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,294 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\MemIf_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,296 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\NetworkConfig.arxml is well-formed
+2018-06-11 15:41:37,296 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\NetworkConfig.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,299 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\NvM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,300 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\NvM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,302 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\PbcfgM_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,303 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\PbcfgM_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,305 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\PduR_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,306 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\PduR_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,307 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Port_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,308 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Port_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,309 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Pwm_17_Gtm_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,310 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Pwm_17_Gtm_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,312 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SoAd_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,313 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SoAd_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,315 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Spi_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,316 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Spi_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,320 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\TcpIp_Bswmd.arxml is well-formed
+2018-06-11 15:41:37,321 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\TcpIp_Bswmd.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,323 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\VSM_Types.arxml is well-formed
+2018-06-11 15:41:37,324 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\VSM_Types.arxml is valid with the provided xsd schema
+2018-06-11 15:41:37,325 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config.xml is well-formed
+2018-06-11 15:41:37,325 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,334 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config_swc.xml is well-formed
+2018-06-11 15:41:37,335 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config_swc.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,337 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.mem.config.xml is well-formed
+2018-06-11 15:41:37,338 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,339 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,339 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,340 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.mem.config.xml is well-formed
+2018-06-11 15:41:37,341 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,341 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,342 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,342 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.mem.config.xml is well-formed
+2018-06-11 15:41:37,343 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,343 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,344 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,344 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.mem.config.xml is well-formed
+2018-06-11 15:41:37,345 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,345 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,346 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,347 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.mem.config.xml is well-formed
+2018-06-11 15:41:37,347 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,348 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,350 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,351 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,351 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,352 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,352 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,353 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,353 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,354 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,354 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,355 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,355 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,356 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,356 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,357 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,357 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,358 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,358 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,359 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,360 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,361 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,361 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.RteEvent.config.xml is valid with the provided xsd schema
+2018-06-11 15:41:37,362 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ConfigID.xml is well-formed
+2018-06-11 15:41:37,362 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ConfigID.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,364 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Profiles_cleaned.xml is well-formed
+2018-06-11 15:41:37,364 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Profiles_cleaned.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,365 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SwcAllocation.xml is well-formed
+2018-06-11 15:41:37,365 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SwcAllocation.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,367 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config.xml is well-formed
+2018-06-11 15:41:37,367 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,375 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config_swc.xml is well-formed
+2018-06-11 15:41:37,383 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\allocation.config_swc.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,389 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.mem.config.xml is well-formed
+2018-06-11 15:41:37,390 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,391 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,391 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A28.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,392 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.mem.config.xml is well-formed
+2018-06-11 15:41:37,392 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,393 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,393 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7C.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,394 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.mem.config.xml is well-formed
+2018-06-11 15:41:37,394 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,395 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,395 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D1.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,396 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.mem.config.xml is well-formed
+2018-06-11 15:41:37,396 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,397 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,397 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D2.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,398 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.mem.config.xml is well-formed
+2018-06-11 15:41:37,398 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.mem.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,399 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,400 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_A7D3.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,400 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,400 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M410.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,401 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,402 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M412.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,402 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,402 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M413.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,403 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,403 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M414.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,404 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,404 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M415.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,405 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,405 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M416.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,406 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,406 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M418.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,407 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,407 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M419.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,408 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,408 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ASWC_M41B.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,409 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.RteEvent.config.xml is well-formed
+2018-06-11 15:41:37,409 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\BSWC_NvDM.RteEvent.config.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,410 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ConfigID.xml is well-formed
+2018-06-11 15:41:37,410 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\ConfigID.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,412 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Profiles_cleaned.xml is well-formed
+2018-06-11 15:41:37,413 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\Profiles_cleaned.xml is NOT valid with the provided xsd schema
+2018-06-11 15:41:37,413 INFO The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SwcAllocation.xml is well-formed
+2018-06-11 15:41:37,414 WARNING The file: C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in\SwcAllocation.xml is NOT valid with the provided xsd schema

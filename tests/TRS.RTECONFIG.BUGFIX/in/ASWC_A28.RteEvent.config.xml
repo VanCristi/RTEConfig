@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_GererMenuPerso_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNA_GererMenuPerso_Cyclic</EVENT-REF>
+        <AFTER-EVENT-REF>
+            <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_P28/ASWC_P28/IB_ASWC_P28/RUNP_PresGererMenuPerso_Cyclic</EVENT-REF>
+        </AFTER-EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+    <EVENT>
+        <SHORT-NAME>RUNI_A28_EXIT</SHORT-NAME>
+        <EVENT-REF DEST="SWC-MODE-SWITCH-EVENT">/RootP_ASWC_A28/ASWC_A28/IB_ASWC_A28/RUNI_A28_EXIT</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

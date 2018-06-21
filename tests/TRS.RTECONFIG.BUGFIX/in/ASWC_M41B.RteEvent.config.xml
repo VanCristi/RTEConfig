@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_M41B_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_M41B/ASWC_M41B/IB_ASWC_M41B/RUNA_M41B_Cyclic</EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

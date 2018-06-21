@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-RTE-CONFIGURATOR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigRteConfigurator.xsd">
+	<INPUTS>
+		<CONFIG-EVENT-CONSTR>
+			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\xsd\ConfigEventsConstraints.xsd</XSD>
+			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in</DIR>
+		</CONFIG-EVENT-CONSTR>
+		<CONFIG-SWC-ALLOC>
+			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\xsd\ConfigSwcAllocation.xsd</XSD>
+			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in</DIR>
+		</CONFIG-SWC-ALLOC>
+		<ARXML>
+			<XSD>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\xsd\AUTOSAR_4-2-2_STRICT.xsd</XSD>
+			<DIR RECURSIVE="true">C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\in</DIR>
+		</ARXML>
+	</INPUTS>
+	<OUTPUTS>
+		<SCRIPT>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\generated</SCRIPT>
+		<REPORT>C:\Users\rconstantin\PycharmProjects\RTEConfig\tests\TRS.RTECONFIG.BUGFIX\generated</REPORT>
+	</OUTPUTS>
+</CONFIG-RTE-CONFIGURATOR>
+

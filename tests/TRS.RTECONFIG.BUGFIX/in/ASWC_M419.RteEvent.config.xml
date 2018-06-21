@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_FOG_BEAM_MANAGEMENT_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_M419/ASWC_M419/IB_ASWC_M419/RUNA_FOG_BEAM_MANAGEMENT_Cyclic</EVENT-REF>
+        <AFTER-EVENT-REF>
+            <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_M410/ASWC_M410/IB_ASWC_M410/RUNA_ACQUISITION_COMODO_Cyclic</EVENT-REF>
+        </AFTER-EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>

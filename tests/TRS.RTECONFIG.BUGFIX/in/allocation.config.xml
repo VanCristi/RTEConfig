@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-SWC-ALLOCATION xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigSwcAllocation.xsd">
+ <SWC-ALLOCATION>
+  <SWC-REF DEST="PARAMETER-SW-COMPONENT-TYPE">/RootP_PSWC_ParamDefinition/PSWC_ParamDefinition</SWC-REF>
+  <CORE>CORE0</CORE>
+  <PARTITION>QM</PARTITION>
+ </SWC-ALLOCATION>
+ <SWC-ALLOCATION>
+  <SWC-REF DEST="APPLICATION-SW-COMPONENT-TYPE">/RootP_ASWC_ParamServer/ASWC_ParamServer</SWC-REF>
+  <CORE>CORE0</CORE>
+  <PARTITION>QM</PARTITION>
+ </SWC-ALLOCATION>
+</CONFIG-SWC-ALLOCATION>
+

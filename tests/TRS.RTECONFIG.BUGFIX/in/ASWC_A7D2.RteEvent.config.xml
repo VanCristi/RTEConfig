@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG-EVENTS-CONSTRAINTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ConfigEventsConstraints.xsd">
+    <EVENT>
+        <SHORT-NAME>RUNA_GererIHMInfoCarburant_Cyclic</SHORT-NAME>
+        <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_A7D2/ASWC_A7D2/IB_ASWC_A7D2/RUNA_GererIHMInfoCarburant_Cyclic</EVENT-REF>
+        <AFTER-EVENT-REF>
+            <EVENT-REF DEST="TIMING-EVENT">/RootP_ASWC_P7D/ASWC_P7D/IB_ASWC_P7D/RUNP_P7D_Cyclic</EVENT-REF>
+        </AFTER-EVENT-REF>
+        <DURATION>0.01</DURATION>
+    </EVENT>
+</CONFIG-EVENTS-CONSTRAINTS>
