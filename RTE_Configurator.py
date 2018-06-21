@@ -11,6 +11,7 @@ from decimal import Decimal
 from xml.dom import minidom
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
+from coverage import Coverage
 
 from lxml import etree
 
@@ -52,7 +53,7 @@ class Graph:
         # return contents of stack
         return stack
 
-    def is_cyclic_util(self, v, visited, recStack):
+    def is_cyclic_util(self, v, visited, recStack, cycle):
 
         # Mark current node as visited and adds to recursion stack
         visited[v] = True
@@ -60,9 +61,10 @@ class Graph:
 
         # Recur for all neighbours; if any neighbour is visited and in recStack then graph is cyclic
         for neighbour in self.graph[v]:
+            cycle.append(neighbour)
             if v != neighbour:
                 if visited[neighbour] is False:
-                    if self.is_cyclic_util(neighbour, visited, recStack) is True:
+                    if self.is_cyclic_util(neighbour, visited, recStack, cycle) is True:
                         return True
                 elif recStack[neighbour] is True:
                     return True
@@ -74,10 +76,12 @@ class Graph:
     def is_cyclic(self):
         visited = [False] * self.V
         recStack = [False] * self.V
+        cycle = []
         for node in range(self.V):
+            cycle.append(node)
             if visited[node] is False:
-                if self.is_cyclic_util(node, visited, recStack) is True:
-                    return True
+                if self.is_cyclic_util(node, visited, recStack, cycle) is True:
+                    return cycle
         return False
 
 
@@ -1130,9 +1134,11 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 if child.tag == 'DURATION':
                                     duration = child.text
                                 if child.tag == 'AFTER-EVENT-REF':
-                                    after_list.append(child.text.split('/')[-1])
+                                    if not child.text.isspace():
+                                        after_list.append(child.text.split('/')[-1])
                                 if child.tag == 'BEFORE-EVENT-REF':
-                                    before_list.append(child.text.split('/')[-1])
+                                    if not child.text.isspace():
+                                        before_list.append(child.text.split('/')[-1])
                                 if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
                                     cia = child.text
                                 if child.tag == 'UNMAPPED':
@@ -1185,9 +1191,11 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             if child.tag == 'DURATION':
                                 duration = child.text
                             if child.tag == 'AFTER-EVENT-REF':
-                                after_list.append(child.text.split('/')[-1])
+                                if not child.text.isspace():
+                                    after_list.append(child.text.split('/')[-1])
                             if child.tag == 'BEFORE-EVENT-REF':
-                                before_list.append(child.text.split('/')[-1])
+                                if not child.text.isspace():
+                                    before_list.append(child.text.split('/')[-1])
                             if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
                                 cia = child.text
                             if child.tag == 'UNMAPPED':
@@ -1295,24 +1303,22 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             print('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
                             error_no = error_no + 1
 
-        # TODO: to check the correct negative value of the UNMAPPED parameter
-        for elem in events_aswc[:]:
-            if elem['UNMAPPED'] == "false" or elem['UNMAPPED'] == "0":
-                events_aswc.remove(elem)
-        # for elem in events_aswc:
-        #     if elem['CONTAIN-IMPLICIT-ACCESS'] == "true" or elem['CONTAIN-IMPLICIT-ACCESS'] == "1":
-        #         pass
-        #     else:
-        #         for elem2 in events_aswc:
-        #             if elem2['EVENTS-CALLED'] is None:
-        #                 if elem2['UNMAPPED'] == "false" or elem2['UNMAPPED'] == "0":
-        #                     events_aswc.remove(elem2)
-        #             else:
-        #                 if elem['CORE'] == elem2['CORE'] and elem['PARTITION'] == elem2['PARTITION']:
-        #                     if elem2['UNMAPPED'] == "true" or elem2['UNMAPPED'] == "1" and elem['UNMAPPED'] == "true" or elem['UNMAPPED'] == "1":
-        #                         pass
-        #                     else:
-        #                         events_aswc.remove(elem2)
+        # TRS.RTECONFIG.GEN.003
+        for index1 in events_aswc[:]:
+            value = True
+            for index2 in events_aswc[:]:
+                if index1 != index2:
+                    if index1['CONTAIN-IMPLICIT-ACCESS'] == "true" or index1['CONTAIN-IMPLICIT-ACCESS'] == "1":
+                        pass
+                    else:
+                        if index1['EVENTS-CALLED'] is not None:
+                            if index1['EVENTS-CALLED'].split('/')[-1] == index2['NAME']:
+                                if index1['CORE'] == index2['CORE'] and index1['PARTITION'] == index2['PARTITION']:
+                                    if index1['UNMAPPED'] == '1' or index1['UNMAPPED'] == 'true':
+                                        value = False
+                                        break
+            if not value:
+                events_aswc.remove(index1)
 
         # TRS.RTECONFIG.FUNC.006
         for elem in events_aswc:
@@ -1342,9 +1348,23 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         if element['NAME'] == t:
                             j = events_aswc.index(element)
                     g.add_edge(i, j)
-        if g.is_cyclic():
-            logger.error('There is a cycle in task sequencing')
-            print('There is a cycle in task sequencing')
+        result = g.is_cyclic()
+        error_cycle = []
+        if result is not False:
+            for index in range(len(result)):
+                for elem in range(len(events_aswc)):
+                    if result[index] == elem:
+                        error_cycle.append(events_aswc[elem]['NAME'])
+            text = ""
+            iter = -1
+            for elem in error_cycle:
+                iter = iter + 1
+                if iter == len(error_cycle) - 1:
+                    text = text + elem
+                else:
+                    text = text + elem + " => "
+            logger.error('There is a cycle in task sequencing: ' + text)
+            print('There is a cycle in task sequencing: ' + text)
             error_no = error_no + 1
         else:
             sequence = g.topological_sort()
@@ -1369,7 +1389,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 if events_aswc[elem]['TYPE'] == 'PER':
                                     obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                                 else:
-                                    if events_aswc[elem]['EVENTS-CALLED'] is not None:
+                                    if events_aswc[elem]['EVENTS-CALLED'] is not None and not events_aswc[elem]['EVENTS-CALLED'].isspace():
                                         obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                                     elif events_aswc[elem]['START-ON-EVENT']:
                                         found = False
@@ -1545,8 +1565,12 @@ def check_if_xml_is_wellformed(file):
 
 
 if __name__ == "__main__":
+    # cov = Coverage()
+    # cov.start()
     # process = psutil.Process(os.getpid())
     # start_time = time.clock()
     main()
+    # cov.stop()
+    # cov.html_report(directory="coverage-html")
     # print(str(time.clock() - start_time) + " seconds")
     # print(str(process.memory_info()[0]/float(2**20)) + " MB")
