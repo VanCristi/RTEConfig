@@ -5206,7 +5206,7 @@
                             </AR-TYPED-PER-INSTANCE-MEMORYS>
                             <EVENTS>
                                 <SWC-MODE-SWITCH-EVENT UUID="c614b497-887a-9d86-ad97-19a5e1872571">
-                                    <SHORT-NAME>RUNPI_ASWC_A26_ENTRY</SHORT-NAME>
+                                    <SHORT-NAME>RUNPI_A26_ENTRY</SHORT-NAME>
                                     <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNPI_ASWC_A26</START-ON-EVENT-REF>
                                     <ACTIVATION>ON-ENTRY</ACTIVATION>
                                     <MODE-IREFS>
@@ -5217,14 +5217,33 @@
                                         </MODE-IREF>
                                     </MODE-IREFS>
                                 </SWC-MODE-SWITCH-EVENT>
-								<DATA-RECEIVED-EVENT>
-								    <SHORT-NAME>DataReceivedEvent</SHORT-NAME>
-								    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_SWC_ModifEcho/SWC_ModifyEcho/IB_SWC_ModifyEcho/ModifyEcho</START-ON-EVENT-REF>
-								    <DATA-IREF>
-										<CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_SWC_ModifEcho/SWC_ModifyEcho/R_NewCounterIn_CAN_DIAG</CONTEXT-R-PORT-REF>
-										<TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/RootP_SR_Data/If_Counter/CounterValue</TARGET-DATA-ELEMENT-REF>
-								    </DATA-IREF>
-								</DATA-RECEIVED-EVENT>
+								<TIMING-EVENT UUID="4f48a8d8-99cd-59aa-a9d9-72d2f2fee671">
+                                    <SHORT-NAME>RUNA_GererAutomonieConso_Cyclic</SHORT-NAME>
+                                    <DISABLED-MODE-IREFS>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                        <DISABLED-MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
+                                        </DISABLED-MODE-IREF>
+                                    </DISABLED-MODE-IREFS>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNA_GererAutomonieConso</START-ON-EVENT-REF>
+                                    <PERIOD>0.5</PERIOD>
+                                </TIMING-EVENT>
                                 <SWC-MODE-SWITCH-EVENT UUID="60f910be-9c38-0f5e-5fd5-584b4b69c551">
                                     <SHORT-NAME>RUNI_A26_EXIT</SHORT-NAME>
                                     <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNI_A26</START-ON-EVENT-REF>
