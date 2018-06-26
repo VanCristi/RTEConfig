@@ -1125,7 +1125,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             cia = None
                             unmap = None
                             name = None
-                            event_called = None
+                            event_called = []
                             for child in element.iterchildren():
                                 if child.tag == 'SHORT-NAME':
                                     name = child.text
@@ -1134,17 +1134,28 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 if child.tag == 'DURATION':
                                     duration = child.text
                                 if child.tag == 'AFTER-EVENT-REF':
-                                    if not child.text.isspace():
-                                        after_list.append(child.text.split('/')[-1])
+                                    list_of_events = child.findall('.//EVENT-REF')
+                                    for elem in list_of_events:
+                                        if not elem.text.isspace():
+                                            after_list.append(elem.text.split('/')[-1])
+                                    # if not child.text.isspace():
+                                    #     after_list.append(child.text.split('/')[-1])
                                 if child.tag == 'BEFORE-EVENT-REF':
-                                    if not child.text.isspace():
-                                        before_list.append(child.text.split('/')[-1])
+                                    list_of_events = child.findall('.//EVENT-REF')
+                                    for elem in list_of_events:
+                                        if not elem.text.isspace():
+                                            before_list.append(elem.text.split('/')[-1])
+                                    # if not child.text.isspace():
+                                    #     before_list.append(child.text.split('/')[-1])
                                 if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
                                     cia = child.text
                                 if child.tag == 'UNMAPPED':
                                     unmap = child.text
                                 if child.tag == 'EVENTS-CALLED':
-                                    event_called = child.text
+                                    list_of_events = child.findall('.//EVENT-REF')
+                                    for elem in list_of_events:
+                                        event_called.append(elem.text)
+                                    # event_called = child.text
                             obj_event['NAME'] = name
                             obj_event['DURATION'] = duration
                             obj_event['CIA'] = cia
@@ -1182,7 +1193,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         cia = None
                         unmap = None
                         name = None
-                        event_called = None
+                        event_called = []
                         for child in element.iterchildren():
                             if child.tag == 'SHORT-NAME':
                                 name = child.text
@@ -1191,17 +1202,28 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                             if child.tag == 'DURATION':
                                 duration = child.text
                             if child.tag == 'AFTER-EVENT-REF':
-                                if not child.text.isspace():
-                                    after_list.append(child.text.split('/')[-1])
+                                list_of_events = child.findall('.//EVENT-REF')
+                                for elem in list_of_events:
+                                    if not elem.text.isspace():
+                                        after_list.append(elem.text)
+                                # if not child.text.isspace():
+                                #     after_list.append(child.text.split('/')[-1])
                             if child.tag == 'BEFORE-EVENT-REF':
-                                if not child.text.isspace():
-                                    before_list.append(child.text.split('/')[-1])
+                                list_of_events = child.findall('.//EVENT-REF')
+                                for elem in list_of_events:
+                                    if not elem.text.isspace():
+                                        before_list.append(elem.text)
+                                # if not child.text.isspace():
+                                #     before_list.append(child.text.split('/')[-1])
                             if child.tag == 'CONTAIN-IMPLICIT-ACCESS':
                                 cia = child.text
                             if child.tag == 'UNMAPPED':
                                 unmap = child.text
                             if child.tag == 'EVENTS-CALLED':
-                                event_called = child.text
+                                list_of_events = child.findall('.//EVENT-REF')
+                                for elem in list_of_events:
+                                    event_called.append(elem.text)
+                                # event_called = child.text
                         obj_event['NAME'] = name
                         obj_event['DURATION'] = duration
                         obj_event['CIA'] = cia
@@ -1294,14 +1316,15 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
 
         # implement TRS.RTECONFIG.CHECK.003
         for elem in events_aswc:
-            if elem['EVENTS-CALLED'] is not None:
-                temp = elem['EVENTS-CALLED'].split('/')
-                for elem2 in events_aswc:
-                    if elem2['NAME'] == temp[-1]:
-                        if elem2['EVENTS-CALLED'] is not None:
-                            logger.error('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
-                            print('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
-                            error_no = error_no + 1
+            if elem['EVENTS-CALLED']:
+                for element in elem['EVENTS-CALLED']:
+                    temp = element.split('/')
+                    for elem2 in events_aswc:
+                        if elem2['NAME'] == temp[-1]:
+                            if elem2['EVENTS-CALLED']:
+                                logger.error('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
+                                print('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
+                                error_no = error_no + 1
 
         # TRS.RTECONFIG.GEN.003
         for index1 in events_aswc[:]:
@@ -1311,12 +1334,15 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     if index1['CONTAIN-IMPLICIT-ACCESS'] == "true" or index1['CONTAIN-IMPLICIT-ACCESS'] == "1":
                         pass
                     else:
-                        if index1['EVENTS-CALLED'] is not None:
-                            if index1['EVENTS-CALLED'].split('/')[-1] == index2['NAME']:
-                                if index1['CORE'] == index2['CORE'] and index1['PARTITION'] == index2['PARTITION']:
-                                    if index1['UNMAPPED'] == '1' or index1['UNMAPPED'] == 'true':
-                                        value = False
-                                        break
+                        if index1["EVENTS-CALLED"]:
+                            for element in index1["EVENTS-CALLED"]:
+                                if element.split('/')[-1] == index2['NAME']:
+                        # if index1['EVENTS-CALLED'] is not None:
+                        #     if index1['EVENTS-CALLED'].split('/')[-1] == index2['NAME']:
+                                    if index1['CORE'] == index2['CORE'] and index1['PARTITION'] == index2['PARTITION']:
+                                        if index1['UNMAPPED'] == '1' or index1['UNMAPPED'] == 'true':
+                                            value = False
+                                            break
             if not value:
                 events_aswc.remove(index1)
 
@@ -1389,8 +1415,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 if events_aswc[elem]['TYPE'] == 'PER':
                                     obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                                 else:
-                                    if events_aswc[elem]['EVENTS-CALLED'] is not None and not events_aswc[elem]['EVENTS-CALLED'].isspace():
-                                        obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
+                                    if events_aswc[elem]['EVENTS-CALLED']:
+                                        for element in events_aswc[elem]['EVENTS-CALLED']:
+                                            if not element.isspace():
+                                                obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
+                                    # if events_aswc[elem]['EVENTS-CALLED'] is not None and not events_aswc[elem]['EVENTS-CALLED'].isspace():
+                                    #     obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                                     elif events_aswc[elem]['START-ON-EVENT']:
                                         found = False
                                         for index2 in range(len(events_aswc)):

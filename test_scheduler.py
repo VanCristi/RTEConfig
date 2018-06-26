@@ -385,7 +385,7 @@ class ConnectorDescriptor(unittest.TestCase):
         current_path = os.path.realpath(__file__)
         head, tail = ntpath.split(current_path)
         os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.GEN.0002.4\\ExempleConfigRteConfigurator.xml')
-        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.GEN.0002.4\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.GEN.0002.4\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "PER"))
+        self.assertTrue(FileCompare.scriptParam(head + '\\tests\TRS.RTECONFIG.GEN.0002.4\\rte_config\\ExempleSwcAllocation.xml', head + '\\tests\TRS.RTECONFIG.GEN.0002.4\output\\RTE_Config.xml', "DataReceivedEvent", "RteMappedToTaskRef", "EVT"))
 
     def test_TRS_RTECONFIG_GEN_0002_5(self):
         current_path = os.path.realpath(__file__)
@@ -487,13 +487,13 @@ class ConnectorDescriptor(unittest.TestCase):
         current_path = os.path.realpath(__file__)
         head, tail = ntpath.split(current_path)
         os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.GEN.003.8\\ExempleConfigRteConfigurator.xml')
-        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.GEN.003.8\output\\RTE_Config.xml', ["RUNA_GererAutomonieConso_Cyclic", "RUNA_GererCptTempVhl_Cyclic"], ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.GEN.003.8\output\\RTE_Config.xml', ["RUNA_GererAutomonieConso_Cyclic"], ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
 
     def test_TRS_RTECONFIG_GEN_003_9(self):
         current_path = os.path.realpath(__file__)
         head, tail = ntpath.split(current_path)
         os.system('RTE_Configurator.py -config ' + head + '\\tests\\TRS.RTECONFIG.GEN.003.9\\ExempleConfigRteConfigurator.xml')
-        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.GEN.003.9\output\\RTE_Config.xml', ["RUNA_GererAutomonieConso_Cyclic", "RUNA_GererCptTempVhl_Cyclic"], ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
+        self.assertFalse(FileCompare.checkLog(head + '\\tests\TRS.RTECONFIG.GEN.003.9\output\\RTE_Config.xml', ["RUNA_GererAutomonieConso_Cyclic"], ["RtePositionInTask", "RteMappedToTaskRef", "RteActivationOffset"]))
 
     def test_RTECONFIG_1(self):
         current_path = os.path.realpath(__file__)
@@ -505,7 +505,7 @@ class ConnectorDescriptor(unittest.TestCase):
 suite = unittest.TestLoader().loadTestsFromTestCase(ConnectorDescriptor)
 unittest.TextTestRunner(verbosity=2).run(suite)
 
-current_path = os.path.realpath(__file__)
-head, tail = ntpath.split(current_path)
-if __name__ == "__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=head + "\\tests"))
+# current_path = os.path.realpath(__file__)
+# head, tail = ntpath.split(current_path)
+# if __name__ == "__main__":
+#     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=head + "\\tests"))
