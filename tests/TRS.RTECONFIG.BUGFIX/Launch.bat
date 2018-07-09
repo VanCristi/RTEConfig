@@ -1,2 +1,0 @@
-RTE_Configurator ConfigRteConfigurator.xml
-pause

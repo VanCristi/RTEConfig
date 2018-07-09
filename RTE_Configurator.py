@@ -1359,7 +1359,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
             if elem['EVENT-TYPE'] == "OPERATION-INVOKED-EVENT":
                 if elem['ASWC'] == "IoHwAb" or elem['ASWC'] == "Aswc_IntDcm":
                     events_aswc.remove(elem)
-                    print(elem['NAME'])
+                    # print(elem['NAME'])
 
         # TRS.RTECONFIG.GEN.003
         for index1 in events_aswc[:]:

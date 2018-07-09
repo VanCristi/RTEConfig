@@ -2,7 +2,6 @@ import ntpath
 import os
 import os.path
 import unittest
-import HtmlTestRunner
 
 from lxml import etree
 
@@ -501,6 +500,17 @@ class ConnectorDescriptor(unittest.TestCase):
         os.system('RTE_Configurator.py -config ' + head + '\\tests\\RTECONFIG.1\\ExempleConfigRteConfigurator.xml')
         self.assertTrue(FileCompare.checkLog(head + '\\tests\RTECONFIG.1\output\\result.log', ["ERROR"], "mismatched tag"))
 
+    def test_RTE_EXCEPT_OIE_1(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\RTE.EXCEPT.OIE_1\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.areSame(head + '\\tests\\RTE.EXCEPT.OIE_1\\output.xml', head + '\\tests\\RTE.EXCEPT.OIE_1\\output\\RTE_Config.xml'))
+
+    def test_RTE_EXCEPT_OIE_2(self):
+        current_path = os.path.realpath(__file__)
+        head, tail = ntpath.split(current_path)
+        os.system('RTE_Configurator.py -config ' + head + '\\tests\\RTE.EXCEPT.OIE_2\\ExempleConfigRteConfigurator.xml')
+        self.assertTrue(FileCompare.areSame(head + '\\tests\\RTE.EXCEPT.OIE_2\\output.xml', head + '\\tests\\RTE.EXCEPT.OIE_2\\output\\RTE_Config.xml'))
 
 suite = unittest.TestLoader().loadTestsFromTestCase(ConnectorDescriptor)
 unittest.TextTestRunner(verbosity=2).run(suite)

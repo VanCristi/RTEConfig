@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Scriptor.xsd">
+    <Name>RTE_Config</Name>
+    <Decription>Set the RTE parameters</Decription>
+    <Expression>as:modconf('Rte')[1]</Expression>
+    <Operations>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/Instance_ASWC_A26/MappedToOsApplicationRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/OsApp_APP_3_X"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+    </Operations>
+</Script>
