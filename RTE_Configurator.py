@@ -11,7 +11,6 @@ from decimal import Decimal
 from xml.dom import minidom
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
-from coverage import Coverage
 
 from lxml import etree
 
@@ -192,6 +191,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in ascre_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1].split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -221,6 +221,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in be_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -250,6 +251,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in dree_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -279,6 +281,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in dre_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -308,6 +311,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in dsce_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -337,6 +341,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in dwce_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -366,6 +371,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in etoe_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -395,6 +401,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in ie_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -424,6 +431,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in itoe_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -453,6 +461,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in msae_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -482,6 +491,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in oie_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -511,6 +521,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in smmee_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -540,6 +551,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in smse_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "PER"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -569,6 +581,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in te_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "PER"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -598,6 +611,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         for elem in thee_event:
                             obj_event = {}
                             obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                            obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                             obj_event['TYPE'] = "EVT"
                             obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                             obj_event['DURATION'] = "0.01"
@@ -655,6 +669,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in ascre_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -684,6 +699,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in be_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -713,6 +729,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in dree_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -742,6 +759,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in dre_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -771,6 +789,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in dsce_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -800,6 +819,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in dwce_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -829,6 +849,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in etoe_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -858,6 +879,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in ie_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -887,6 +909,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in itoe_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -916,6 +939,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in msae_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -945,6 +969,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in oie_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -974,6 +999,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in smmee_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -1003,6 +1029,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in smse_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "PER"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -1032,6 +1059,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in te_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "PER"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -1061,6 +1089,7 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                     for elem in thee_event:
                         obj_event = {}
                         obj_event['NAME'] = elem.find('{http://autosar.org/schema/r4.0}SHORT-NAME').text
+                        obj_event['EVENT-TYPE'] = elem.tag.split('}')[-1]
                         obj_event['TYPE'] = "EVT"
                         obj_event['START-ON-EVENT'] = elem.find('{http://autosar.org/schema/r4.0}START-ON-EVENT-REF').text
                         obj_event['DURATION'] = "0.01"
@@ -1325,6 +1354,12 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                 logger.error('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
                                 print('Event ' + elem2['NAME'] + " has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: "+elem['NAME'])
                                 error_no = error_no + 1
+        # all the events of type <OPERATION-INVOKED-EVENT> which belongs to ASWC IoHwAb  or ASWC Aswc_IntDcm mult not be mapped
+        for elem in events_aswc[:]:
+            if elem['EVENT-TYPE'] == "OPERATION-INVOKED-EVENT":
+                if elem['ASWC'] == "IoHwAb" or elem['ASWC'] == "Aswc_IntDcm":
+                    events_aswc.remove(elem)
+                    print(elem['NAME'])
 
         # TRS.RTECONFIG.GEN.003
         for index1 in events_aswc[:]:
@@ -1337,8 +1372,6 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                         if index1["EVENTS-CALLED"]:
                             for element in index1["EVENTS-CALLED"]:
                                 if element.split('/')[-1] == index2['NAME']:
-                        # if index1['EVENTS-CALLED'] is not None:
-                        #     if index1['EVENTS-CALLED'].split('/')[-1] == index2['NAME']:
                                     if index1['CORE'] == index2['CORE'] and index1['PARTITION'] == index2['PARTITION']:
                                         if index1['UNMAPPED'] == '1' or index1['UNMAPPED'] == 'true':
                                             value = False
@@ -1419,8 +1452,6 @@ def create_list(recursive_arxml, simple_arxml, recursive_event, simple_event, re
                                         for element in events_aswc[elem]['EVENTS-CALLED']:
                                             if not element.isspace():
                                                 obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
-                                    # if events_aswc[elem]['EVENTS-CALLED'] is not None and not events_aswc[elem]['EVENTS-CALLED'].isspace():
-                                    #     obj_event['MAPPED-TO-TASK'] = 'TaskApp_' + events_aswc[elem]['CORE'] + '_' + events_aswc[elem]['PARTITION'] + '_PER'
                                     elif events_aswc[elem]['START-ON-EVENT']:
                                         found = False
                                         for index2 in range(len(events_aswc)):
