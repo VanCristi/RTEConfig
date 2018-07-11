@@ -368,43 +368,13 @@
             </Operations>
         </Operation>
         <Operation Type="ForEach">
-            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNA_GererAutomonieConso_Cyclic"]/../RtePositionInTask</Expression>
-            <Operations>
-                <Operation Type="SetEnabled">
-                    <Expression>boolean(1)</Expression>
-                </Operation>
-                <Operation Type="SetValue">
-                    <Expression>num:i(2)</Expression>
-                </Operation>
-            </Operations>
-        </Operation>
-        <Operation Type="ForEach">
-            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNA_GererAutomonieConso_Cyclic"]/../RteMappedToTaskRef</Expression>
-            <Operations>
-                <Operation Type="SetEnabled">
-                    <Expression>boolean(1)</Expression>
-                </Operation>
-                <Operation Type="SetValue">
-                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_PER"</Expression>
-                </Operation>
-            </Operations>
-        </Operation>
-        <Operation Type="ForEach">
-            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNA_GererAutomonieConso_Cyclic"]/../RteActivationOffset</Expression>
-            <Operations>
-                <Operation Type="SetEnabled">
-                    <Expression>boolean(0)</Expression>
-                </Operation>
-            </Operations>
-        </Operation>
-        <Operation Type="ForEach">
             <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNPI_ASWC_A26_ENTRY"]/../RtePositionInTask</Expression>
             <Operations>
                 <Operation Type="SetEnabled">
                     <Expression>boolean(1)</Expression>
                 </Operation>
                 <Operation Type="SetValue">
-                    <Expression>num:i(3)</Expression>
+                    <Expression>num:i(2)</Expression>
                 </Operation>
             </Operations>
         </Operation>
@@ -421,6 +391,36 @@
         </Operation>
         <Operation Type="ForEach">
             <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNPI_ASWC_A26_ENTRY"]/../RteActivationOffset</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(0)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/dsce_rMain"]/../RtePositionInTask</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>num:i(1)</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/dsce_rMain"]/../RteMappedToTaskRef</Expression>
+            <Operations>
+                <Operation Type="SetEnabled">
+                    <Expression>boolean(1)</Expression>
+                </Operation>
+                <Operation Type="SetValue">
+                    <Expression>"ASPath:/Os/Os/TaskApp_APP_2_A_EVT"</Expression>
+                </Operation>
+            </Operations>
+        </Operation>
+        <Operation Type="ForEach">
+            <Expression>as:modconf('Rte')[1]/RteSwComponentInstance/*/RteEventToTaskMapping/*/RteEventRef[.="ASPath:/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/dsce_rMain"]/../RteActivationOffset</Expression>
             <Operations>
                 <Operation Type="SetEnabled">
                     <Expression>boolean(0)</Expression>

@@ -1,11 +1,11 @@
-2018-07-09 15:11:59,539 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
-2018-07-09 15:11:59,565 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
-2018-07-09 15:11:59,568 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:59,569 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:59,570 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:59,571 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:59,572 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:59,573 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:59,574 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:59,575 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:59,575 ERROR CORE or PARTITION not set for SWC-REF:ASWC_A26 -> must be str, not NoneType
+2018-07-11 11:39:54,664 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-07-11 11:39:54,680 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-07-11 11:39:54,680 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:39:54,680 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:39:54,680 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:39:54,680 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:39:54,680 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:39:54,680 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:39:54,696 INFO The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:39:54,696 WARNING The file: ./tests\TRS.RTECONFIG.GEN.002.2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:39:54,696 ERROR CORE or PARTITION not set for SWC-REF:ASWC_A26 -> must be str, not NoneType

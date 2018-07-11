@@ -1,10 +1,10 @@
-2018-07-09 15:11:39,745 INFO The file: ./tests\RTE.EXCEPT.OIE_2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
-2018-07-09 15:11:39,762 INFO The file: ./tests\RTE.EXCEPT.OIE_2\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
-2018-07-09 15:11:39,764 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:39,765 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is valid with the provided xsd schema
-2018-07-09 15:11:39,765 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:39,766 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:39,766 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:39,766 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:39,767 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:39,767 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:48:58,627 INFO  The file ./tests\RTE.EXCEPT.OIE_2\input\ASWC_A26.aswc.arxml is well-formed
+2018-07-11 11:48:58,642 INFO The file: ./tests\RTE.EXCEPT.OIE_2\input\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-07-11 11:48:58,642 INFO  The file ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:48:58,642 INFO The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is valid with the provided xsd schema
+2018-07-11 11:48:58,642 INFO  The file ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:48:58,642 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:48:58,642 INFO  The file ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:48:58,642 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:48:58,642 INFO  The file ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:48:58,642 WARNING The file: ./tests\RTE.EXCEPT.OIE_2\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema

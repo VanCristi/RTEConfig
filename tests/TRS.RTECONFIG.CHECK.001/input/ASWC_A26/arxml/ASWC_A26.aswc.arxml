@@ -5205,33 +5205,11 @@
                                 </VARIABLE-DATA-PROTOTYPE>
                             </AR-TYPED-PER-INSTANCE-MEMORYS>
                             <EVENTS>
-                                <TIMING-EVENT UUID="4f48a8d8-99cd-59aa-a9d9-72d2f2fee671">
-                                    <SHORT-NAME>RUNA_GererAutomonieConso_Cyclic</SHORT-NAME>
-                                    <DISABLED-MODE-IREFS>
-                                        <DISABLED-MODE-IREF>
-                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
-                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
-                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_WAKEUP</TARGET-MODE-DECLARATION-REF>
-                                        </DISABLED-MODE-IREF>
-                                        <DISABLED-MODE-IREF>
-                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
-                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
-                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_OFF</TARGET-MODE-DECLARATION-REF>
-                                        </DISABLED-MODE-IREF>
-                                        <DISABLED-MODE-IREF>
-                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
-                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
-                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_SYNC_INIT</TARGET-MODE-DECLARATION-REF>
-                                        </DISABLED-MODE-IREF>
-                                        <DISABLED-MODE-IREF>
-                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/RootP_ASWC_A26/ASWC_A26/ASWC_A26_MSI</CONTEXT-PORT-REF>
-                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/RootP_Mode/AppModeInterface/AppMode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
-                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/RootP_Mode/ApplicationModeGroup/APP_CONFIG</TARGET-MODE-DECLARATION-REF>
-                                        </DISABLED-MODE-IREF>
-                                    </DISABLED-MODE-IREFS>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNA_GererAutomonieConso</START-ON-EVENT-REF>
-                                    <PERIOD>0.5</PERIOD>
-                                </TIMING-EVENT>
+                               <DATA-SEND-COMPLETED-EVENT UUID="9a534a5a-9574-4c57-91ff-1aeb6b07fa84">
+									 <SHORT-NAME>dsce_rMain</SHORT-NAME>
+									 <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_LPhM/ASWC_LPhM/IB_ASWC_LPhM/LPhM_rMain</START-ON-EVENT-REF>
+									 <EVENT-SOURCE-REF DEST="VARIABLE-ACCESS">/RootP_ASWC_LPhM/ASWC_LPhM/IB_ASWC_LPhM/LPhM_rMain/dsp_CanWkPattern</EVENT-SOURCE-REF>
+								</DATA-SEND-COMPLETED-EVENT>
                                 <SWC-MODE-SWITCH-EVENT UUID="c614b497-887a-9d86-ad97-19a5e1872571">
                                     <SHORT-NAME>RUNPI_ASWC_A26_ENTRY</SHORT-NAME>
                                     <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/RootP_ASWC_A26/ASWC_A26/IB_ASWC_A26/RUNPI_ASWC_A26</START-ON-EVENT-REF>

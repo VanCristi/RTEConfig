@@ -1,11 +1,11 @@
-2018-07-09 15:11:40,950 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
-2018-07-09 15:11:40,967 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
-2018-07-09 15:11:40,970 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:40,971 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:40,971 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:40,972 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:40,972 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:40,973 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:40,973 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:40,974 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is valid with the provided xsd schema
-2018-07-09 15:11:40,974 ERROR There is a cycle in task sequencing: RUNPI_ASWC_A26_ENTRY => RUNA_GererAutomonieConso_Cyclic => RUNI_A26_EXIT => RUNPI_ASWC_A26_ENTRY
+2018-07-11 11:38:41,145 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-07-11 11:38:41,145 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-07-11 11:38:41,161 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:38:41,161 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:38:41,161 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:38:41,161 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:38:41,161 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:38:41,161 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:38:41,161 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:38:41,161 INFO The file: ./tests\TRS.RTECONFIG.CHECK.001\rte_config\ExempleSwcAllocation.xml is valid with the provided xsd schema
+2018-07-11 11:38:41,161 ERROR There is a cycle in task sequencing: dsce_rMain => RUNI_A26_EXIT => RUNPI_ASWC_A26_ENTRY => dsce_rMain

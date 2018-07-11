@@ -1,11 +1,11 @@
-2018-07-09 15:11:42,180 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
-2018-07-09 15:11:42,198 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
-2018-07-09 15:11:42,201 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:42,202 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:42,202 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:42,203 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:42,203 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is well-formed
-2018-07-09 15:11:42,204 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
-2018-07-09 15:11:42,205 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is well-formed
-2018-07-09 15:11:42,205 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is valid with the provided xsd schema
-2018-07-09 15:11:42,205 ERROR Event RUNI_A26_EXIT has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: RUNA_GererAutomonieConso_Cyclic
+2018-07-11 11:40:51,954 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is well-formed
+2018-07-11 11:40:51,969 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\input\ASWC_A26\arxml\ASWC_A26.aswc.arxml is valid with the provided xsd schema
+2018-07-11 11:40:51,985 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:40:51,985 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:40:51,985 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:40:51,985 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is NOT valid with the provided xsd schema
+2018-07-11 11:40:51,985 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is well-formed
+2018-07-11 11:40:51,985 WARNING The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleEventsConstraints.xml is NOT valid with the provided xsd schema
+2018-07-11 11:40:51,985 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is well-formed
+2018-07-11 11:40:51,985 INFO The file: ./tests\TRS.RTECONFIG.CHECK.003\rte_config\ExempleSwcAllocation.xml is valid with the provided xsd schema
+2018-07-11 11:40:51,985 ERROR Event RUNI_A26_EXIT has an EVENTS-CALLED reference, and is referenced in EVENTS-CALLED of event: RUNA_GererAutomonieConso_Cyclic

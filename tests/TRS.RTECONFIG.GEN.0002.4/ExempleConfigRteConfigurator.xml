@@ -4,15 +4,15 @@
 	<INPUTS>
 		<CONFIG-EVENT-CONSTR>
 			<XSD>./tests\TRS.RTECONFIG.GEN.0002.4\rte_config\ConfigEventsConstraints.xsd</XSD>
-			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.GEN.0002.4\rte_config</DIR>
+			<DIR RECURSIVE="false">./tests\TRS.RTECONFIG.GEN.0002.4\rte_config</DIR>
 		</CONFIG-EVENT-CONSTR>
 		<CONFIG-SWC-ALLOC>
 			<XSD>./tests\TRS.RTECONFIG.GEN.0002.4\rte_config\ConfigSwcAllocation.xsd</XSD>
-			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.GEN.0002.4\rte_config</DIR>
+			<DIR RECURSIVE="false">./tests\TRS.RTECONFIG.GEN.0002.4\rte_config</DIR>
 		</CONFIG-SWC-ALLOC>
 		<ARXML>
 			<XSD>./AUTOSAR_4-2-2_STRICT.xsd</XSD>
-			<DIR RECURSIVE="true">./tests\TRS.RTECONFIG.GEN.0002.4\input</DIR>
+			<DIR RECURSIVE="false">./tests\TRS.RTECONFIG.GEN.0002.4\input</DIR>
 		</ARXML>
 	</INPUTS>
 	<OUTPUTS>
